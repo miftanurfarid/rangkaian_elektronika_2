@@ -1,0 +1,1341 @@
+<?xml version="1.0"?>
+<minder version="1.12.1">
+  <theme name="default" label="Default" index="5"/>
+  <styles>
+    <style level="0" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="rounded" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="10" nodepadding="10" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="1" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="2" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="3" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="4" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="5" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="6" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="7" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="8" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="9" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+    <style level="10" isset="false" branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="200" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true" connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+  </styles>
+  <drawarea x="257.0687662760447" y="977.27532958985057" scale="0.75"/>
+  <images/>
+  <nodes>
+    <node id="0" posx="76.999999999996362" posy="-590.33333333333849" width="184" height="46" side="left" fold="false" treesize="3528.0000000000064" layout="Horizontal" group="false">
+      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+      <nodename posx="90.999999999996362" posy="-576.33333333333849" maxwidth="194.1964111328125">
+        <text data="Rangkaian Elektronika II"/>
+      </nodename>
+      <nodenote></nodenote>
+      <nodes>
+        <node id="10" posx="-118.00000000000364" posy="-590.33333333333849" width="95" height="46" side="left" fold="false" treesize="1458" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename posx="-104.00000000000364" posy="-576.33333333333849" maxwidth="196">
+            <text data="RPS RPO"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="11" posx="-289.00000000000364" posy="-1269.3333333333403" width="71" height="46" side="left" fold="false" treesize="100" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="-275.00000000000364" posy="-1255.3333333333403" maxwidth="196">
+                <text data="CPMK"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="12" posx="-758.00000000000273" posy="-1296.3333333333403" width="369" height="100" side="left" fold="false" treesize="100" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="340" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-744.00000000000273" posy="-1282.3333333333403" maxwidth="352.0010986328125">
+                    <text data="Mahasiswa mampu mendeskripsikan dan memahami sistem instrumentasi dari sensor, pengondisian sinyal, hingga sinyal diterjemahkan ke sinyal digital untuk diproses lebih lanjut"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="13" posx="-332.00000000000364" posy="-540.33333333333894" width="114" height="46" side="left" fold="false" treesize="1358" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="-318.00000000000364" posy="-526.33333333333894" maxwidth="196">
+                <text data="Bahan Kajian"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="14" posx="-616.00000000000364" posy="-1196.3333333333399" width="184" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-602.00000000000364" posy="-1182.3333333333399" maxwidth="196">
+                    <text data="1. Pengantar Rangkaian Penguat Oprasional"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="17" posx="-607.00000000000364" posy="-1123.3333333333399" width="175" height="46" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-593.00000000000364" posy="-1109.3333333333399" maxwidth="196">
+                    <text data="2. Konsep Pengukuran"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="24" posx="-885.00000000000261" posy="-1132.3333333333399" width="178" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-871.00000000000261" posy="-1118.3333333333399" maxwidth="196">
+                        <text data="1. Konsep dasar sistem pengukuran"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="18" posx="-605.00000000000364" posy="-1022.3333333333394" width="173" height="46" side="left" fold="false" treesize="138" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-591.00000000000364" posy="-1008.3333333333394" maxwidth="196">
+                    <text data="3. Karakteristik Sensor"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="25" posx="-899.00000000000261" posy="-1068.3333333333394" width="194" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-885.00000000000261" posy="-1054.3333333333394" maxwidth="196">
+                        <text data="2. Sensor dan Transducer"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="26" posx="-878.00000000000261" posy="-1022.3333333333394" width="173" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-864.00000000000261" posy="-1008.3333333333394" maxwidth="196">
+                        <text data="3. Karakteristik Sensor"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="27" posx="-909.00000000000261" posy="-976.3333333333394" width="204" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-895.00000000000261" posy="-962.3333333333394" maxwidth="196">
+                        <text data="4. Tanggapan waktu sensor"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="19" posx="-654.00000000000364" posy="-829.3333333333394" width="222" height="46" side="left" fold="false" treesize="248" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-640.00000000000364" posy="-815.3333333333394" maxwidth="196">
+                    <text data="4. Prinsip Pengondisian Sinyal"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="30" posx="-971.00000000000296" posy="-829.3333333333394" width="217" height="46" side="left" fold="false" treesize="248" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-957.00000000000296" posy="-815.3333333333394" maxwidth="196">
+                        <text data="1. Prinsip pengondisian sinyal"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="31" posx="-1278.0000000000034" posy="-930.3333333333394" width="207" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1264.0000000000034" posy="-916.3333333333394" maxwidth="196">
+                            <text data="1. Pengubahan Level Sinyal"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="32" posx="-1182.0000000000039" posy="-884.3333333333394" width="111" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1168.0000000000039" posy="-870.3333333333394" maxwidth="196">
+                            <text data="2. Linierisasi "/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="33" posx="-1175.0000000000039" posy="-838.3333333333394" width="104" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1161.0000000000039" posy="-824.3333333333394" maxwidth="196">
+                            <text data="3. Konversi "/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="34" posx="-1262.0000000000039" posy="-792.33333333333894" width="191" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1248.0000000000039" posy="-778.33333333333894" maxwidth="196">
+                            <text data="4. Filter dan Penyesuaian Impedansi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="36" posx="-1254.0000000000039" posy="-728.33333333333894" width="183" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1240.0000000000039" posy="-714.33333333333894" maxwidth="196">
+                            <text data="6. Konsep Pembebanan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="20" posx="-556.00000000000364" posy="-627.33333333333894" width="124" height="46" side="left" fold="false" treesize="156" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-542.00000000000364" posy="-613.33333333333894" maxwidth="196">
+                    <text data="5. Filter Analog"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="37" posx="-803.00000000000273" posy="-627.33333333333894" width="147" height="46" side="left" fold="false" treesize="156" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-789.00000000000273" posy="-613.33333333333894" maxwidth="196">
+                        <text data="2. Rangkaian pasif"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="38" posx="-1077.0000000000036" posy="-682.33333333333894" width="174" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1063.0000000000036" posy="-668.33333333333894" maxwidth="196">
+                            <text data="1. Rangkaian Pembagi Tegangan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="39" posx="-1083.0000000000036" posy="-618.33333333333894" width="180" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1069.0000000000036" posy="-604.33333333333894" maxwidth="196">
+                            <text data="2. Rangkaian Jembatan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="40" posx="-1005.0000000000019" posy="-572.33333333333894" width="102" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-991.00000000000193" posy="-558.33333333333894" maxwidth="196">
+                            <text data="3. Filter RC"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="21" posx="-611.00000000000364" posy="-251.33333333333849" width="179" height="46" side="left" fold="false" treesize="596" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-597.00000000000364" posy="-237.33333333333849" maxwidth="196">
+                    <text data="6. Penguat Operasional"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="41" posx="-916.00000000000261" posy="-448.3333333333394" width="205" height="64" side="left" fold="false" treesize="220" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-902.00000000000261" posy="-434.3333333333394" maxwidth="196">
+                        <text data="3. Operational Amplifier (Op amp)"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="42" posx="-1205.0000000000039" posy="-526.33333333333894" width="189" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1191.0000000000039" posy="-512.33333333333894" maxwidth="196">
+                            <text data="1. Filter RC Lolos rendah (LPF)"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="43" posx="-1198.0000000000039" posy="-462.3333333333394" width="182" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1184.0000000000039" posy="-448.3333333333394" maxwidth="196">
+                            <text data="2. Filter RC Lolos Tinggi (HPF)"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="44" posx="-1197.0000000000039" posy="-398.33333333333849" width="181" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1183.0000000000039" posy="-384.33333333333849" maxwidth="196">
+                            <text data="3. Contoh Perancangan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="45" posx="-1198.0000000000039" posy="-352.33333333333849" width="182" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1184.0000000000039" posy="-338.33333333333849" maxwidth="196">
+                            <text data="4. Pertimbangan Praktis"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="46" posx="-925.00000000000205" posy="-237.33333333333849" width="214" height="46" side="left" fold="false" treesize="184" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-911.00000000000205" posy="-223.33333333333849" maxwidth="196">
+                        <text data="1. Rangkaian Penguat Dasar"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="47" posx="-1188.0000000000039" posy="-306.33333333333849" width="163" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1174.0000000000039" posy="-292.33333333333849" maxwidth="196">
+                            <text data="1. Penguat membalik"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="48" posx="-1211.0000000000039" posy="-260.33333333333849" width="186" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1197.0000000000039" posy="-246.33333333333849" maxwidth="196">
+                            <text data="2. Penguat tak membalik"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="49" posx="-1198.0000000000039" posy="-214.33333333333894" width="173" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1184.0000000000039" posy="-200.33333333333894" maxwidth="196">
+                            <text data="3. Penguat penyangga"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="50" posx="-1197.0000000000039" posy="-168.33333333333894" width="172" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1183.0000000000039" posy="-154.33333333333894" maxwidth="196">
+                            <text data="4. Penguat menjumlah"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="51" posx="-882.00000000000261" posy="-90.333333333338032" width="171" height="64" side="left" fold="false" treesize="128" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-868.00000000000261" posy="-76.333333333338032" maxwidth="196">
+                        <text data="2. Rangkaian Penguat Diferensial"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="52" posx="-1153.0000000000039" posy="-122.33333333333803" width="171" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1139.0000000000039" posy="-108.33333333333803" maxwidth="196">
+                            <text data="1. Rangkaian Penguat Diferensial Dasar"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="53" posx="-1153.0000000000039" posy="-58.333333333338032" width="171" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="-1139.0000000000039" posy="-44.333333333338032" maxwidth="196">
+                            <text data="2. Rangkaian Penguat Instrumentasi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="55" posx="-904.00000000000261" posy="5.6666666666619676" width="193" height="64" side="left" fold="false" treesize="64" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="-890.00000000000261" posy="19.666666666661968" maxwidth="196">
+                        <text data="3. Konverter Tegangan ke Arus"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="22" posx="-552.00000000000364" posy="69.666666666661968" width="120" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-538.00000000000364" posy="83.666666666661968" maxwidth="196">
+                    <text data="7. Komparator"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="23" posx="-571.00000000000364" posy="115.66666666666197" width="139" height="46" side="left" fold="false" treesize="46" color="#3689e6" colorroot="false" layout="Horizontal" group="true">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="-557.00000000000364" posy="129.66666666666197" maxwidth="196">
+                    <text data="8. DAC dan ADC"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="57" posx="360.99999999999613" posy="-1238.3333333333394" width="107" height="46" side="right" fold="false" treesize="2232.0000000000027" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename posx="374.99999999999613" posy="-1224.3333333333394" maxwidth="196">
+            <text data="SLIDE RPO"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="58" posx="567.99999999999625" posy="-2331.3333333333394" width="111" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="581.99999999999625" posy="-2317.3333333333394" maxwidth="196">
+                <text data="1. Pengantar"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="59" posx="779" posy="-2331.3333333333394" width="71" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="793" posy="-2317.3333333333394" maxwidth="196">
+                    <text data="CPMK"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="60" posx="567.99999999999625" posy="-2207.3333333333394" width="175" height="46" side="right" fold="false" treesize="202" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="581.99999999999625" posy="-2193.3333333333394" maxwidth="196">
+                <text data="2. Konsep Pengukuran"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="62" posx="843" posy="-2285.3333333333394" width="178" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="857" posy="-2271.3333333333394" maxwidth="196">
+                    <text data="1. Konsep dasar sistem pengukuran"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="61" posx="843" posy="-2221.3333333333385" width="194" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="857" posy="-2207.3333333333385" maxwidth="196">
+                    <text data="2. Sensor dan Transduser"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="63" posx="843" posy="-2175.3333333333394" width="173" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="857" posy="-2161.3333333333394" maxwidth="196">
+                    <text data="3. Karakteristik Sensor"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="64" posx="843" posy="-2129.3333333333394" width="204" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="857" posy="-2115.3333333333394" maxwidth="196">
+                    <text data="4. Tanggapan waktu sensor"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="65" posx="567.99999999999625" posy="-1114.3333333333385" width="139" height="46" side="right" fold="false" treesize="1984.0000000000025" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="581.99999999999625" posy="-1100.3333333333385" maxwidth="196">
+                <text data="Pengondisi sinyal"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="66" posx="807" posy="-1849.3333333333405" width="201" height="46" side="right" fold="false" treesize="514" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="821" posy="-1835.3333333333405" maxwidth="196">
+                    <text data="1. Prinsip pengondisi sinyal"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="70" posx="1107.9999999999989" posy="-2019.3333333333403" width="199" height="46" side="right" fold="false" treesize="174" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1121.9999999999989" posy="-2005.3333333333403" maxwidth="196">
+                        <text data="1. Pengubahan level sinyal"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="75" posx="1407.0000000000007" posy="-2042.3333333333394" width="114" height="46" side="right" fold="false" treesize="128" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1421.0000000000007" posy="-2028.3333333333394" maxwidth="196">
+                            <text data="1. Penguatan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                          <nodes>
+                            <node id="77" posx="1620.9999999999989" posy="-2051.3333333333394" width="177" height="64" side="right" fold="false" treesize="128" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                              <nodename posx="1634.9999999999989" posy="-2037.3333333333394" maxwidth="196">
+                                <text data="1. Pertimbangan dalam pemilihan penguatan"/>
+                              </nodename>
+                              <nodenote></nodenote>
+                              <nodes>
+                                <node id="78" posx="1898.0000000000007" posy="-2083.3333333333394" width="207" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename posx="1912.0000000000007" posy="-2069.3333333333394" maxwidth="196">
+                                    <text data="1. Impedansi masukan yang ditawarkan kepada sensor"/>
+                                  </nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                                <node id="79" posx="1898.0000000000007" posy="-2019.3333333333403" width="177" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                                  <nodename posx="1912.0000000000007" posy="-2005.3333333333403" maxwidth="196">
+                                    <text data="2. Tanggapan frekuensi penguat"/>
+                                  </nodename>
+                                  <nodenote></nodenote>
+                                </node>
+                              </nodes>
+                            </node>
+                          </nodes>
+                        </node>
+                        <node id="76" posx="1407.0000000000007" posy="-1955.3333333333403" width="130" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1421.0000000000007" posy="-1941.3333333333403" maxwidth="196">
+                            <text data="2. Pembebanan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="71" posx="1107.9999999999989" posy="-1886.3333333333405" width="107" height="46" side="right" fold="false" treesize="92" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1121.9999999999989" posy="-1872.3333333333405" maxwidth="196">
+                        <text data="2. Linierisasi"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="80" posx="1314.9999999999998" posy="-1909.3333333333405" width="87" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1328.9999999999998" posy="-1895.3333333333405" maxwidth="196">
+                            <text data="1. Tujuan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="81" posx="1314.9999999999998" posy="-1863.3333333333405" width="138" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1328.9999999999998" posy="-1849.3333333333405" maxwidth="196">
+                            <text data="2. Cara linierisasi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="72" posx="1107.9999999999989" posy="-1771.3333333333405" width="100" height="46" side="right" fold="false" treesize="138" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1121.9999999999989" posy="-1757.3333333333405" maxwidth="196">
+                        <text data="3. Konversi"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="82" posx="1307.9999999999998" posy="-1817.3333333333405" width="91" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1321.9999999999998" posy="-1803.3333333333405" maxwidth="196">
+                            <text data="1. Definisi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="83" posx="1307.9999999999998" posy="-1771.3333333333405" width="145" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1321.9999999999998" posy="-1757.3333333333405" maxwidth="196">
+                            <text data="2. Transmisi sinyal"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="84" posx="1307.9999999999998" posy="-1725.3333333333405" width="141" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1321.9999999999998" posy="-1711.3333333333405" maxwidth="196">
+                            <text data="3. Interface digital"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="73" posx="1107.9999999999989" posy="-1679.3333333333408" width="189" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1121.9999999999989" posy="-1665.3333333333408" maxwidth="196">
+                        <text data="4. Filter dan penyesuaian impedansi"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                    <node id="74" posx="1107.9999999999989" posy="-1615.3333333333389" width="181" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1121.9999999999989" posy="-1601.3333333333389" maxwidth="196">
+                        <text data="5. Konsep pembebanan"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="67" posx="807" posy="-1413.3333333333394" width="149" height="46" side="right" fold="false" treesize="358" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="821" posy="-1399.3333333333394" maxwidth="196">
+                    <text data="2. Rangkaian Pasif"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="85" posx="1056.0000000000007" posy="-1555.3333333333394" width="174" height="64" side="right" fold="false" treesize="92" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1070.0000000000007" posy="-1541.3333333333394" maxwidth="196">
+                        <text data="1. Rangkaian Pembagi Tegangan"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="88" posx="1330.0000000000016" posy="-1569.3333333333394" width="156" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1344.0000000000016" posy="-1555.3333333333394" maxwidth="196">
+                            <text data="1. Bentuk rangkaian"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="89" posx="1330.0000000000016" posy="-1523.3333333333394" width="123" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1344.0000000000016" posy="-1509.3333333333394" maxwidth="196">
+                            <text data="2. Karakteristik"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="86" posx="1056.0000000000007" posy="-1468.3333333333394" width="180" height="46" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1070.0000000000007" posy="-1454.3333333333394" maxwidth="196">
+                        <text data="2. Rangkaian Jembatan"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="90" posx="1336.0000000000016" posy="-1477.3333333333394" width="176" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1350.0000000000016" posy="-1463.3333333333394" maxwidth="196">
+                            <text data="1. Rangkaian jembatan wheatstone"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="87" posx="1056.0000000000007" posy="-1335.3333333333399" width="102" height="46" side="right" fold="false" treesize="202" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1070.0000000000007" posy="-1321.3333333333399" maxwidth="196">
+                        <text data="3. Filter RC"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="91" posx="1258.0000000000016" posy="-1413.3333333333394" width="189" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1272.0000000000016" posy="-1399.3333333333394" maxwidth="196">
+                            <text data="1. Filter RC Lolos rendah (LPH)"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="92" posx="1258.0000000000016" posy="-1349.3333333333394" width="182" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1272.0000000000016" posy="-1335.3333333333394" maxwidth="196">
+                            <text data="2. Filter RC Lolos Tinggi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="93" posx="1258.0000000000016" posy="-1303.3333333333399" width="179" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1272.0000000000016" posy="-1289.3333333333399" maxwidth="196">
+                            <text data="3. Contoh perancangan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="94" posx="1258.0000000000016" posy="-1257.3333333333399" width="180" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1272.0000000000016" posy="-1243.3333333333399" maxwidth="196">
+                            <text data="4. Pertimbangan praktis"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="68" posx="807" posy="-1046.3333333333394" width="242" height="46" side="right" fold="false" treesize="376" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="821" posy="-1032.3333333333394" maxwidth="221.0185546875">
+                    <text data="3. Operational Amplifier (Op amp)"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="95" posx="1149.0000000000007" posy="-1133.3333333333394" width="209" height="46" side="right" fold="false" treesize="202" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1163.0000000000007" posy="-1119.3333333333394" maxwidth="219">
+                        <text data="1. Rangkaian penguat dasar"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="98" posx="1458.0000000000016" posy="-1211.3333333333399" width="163" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1472.0000000000016" posy="-1197.3333333333399" maxwidth="219">
+                            <text data="1. Penguat membalik"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="99" posx="1458.0000000000016" posy="-1165.3333333333399" width="186" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1472.0000000000016" posy="-1151.3333333333399" maxwidth="219">
+                            <text data="2. Penguat tak membalik"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="100" posx="1458.0000000000016" posy="-1119.3333333333394" width="177" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1472.0000000000016" posy="-1105.3333333333394" maxwidth="191.3544921875">
+                            <text data="3. Penguat penyangga/ Pengikut tegangan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="101" posx="1458.0000000000016" posy="-1055.3333333333394" width="175" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1472.0000000000016" posy="-1041.3333333333394" maxwidth="219">
+                            <text data="4. Penguat menjumllah"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="96" posx="1149.0000000000007" posy="-968.33333333333894" width="238" height="46" side="right" fold="false" treesize="128" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1163.0000000000007" posy="-954.33333333333894" maxwidth="219">
+                        <text data="2. Rangkaian penguat diferensial"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="102" posx="1487.0000000000016" posy="-1009.3333333333394" width="169" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="187" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1501.0000000000016" posy="-995.3333333333394" maxwidth="182.599609375">
+                            <text data="1. Rangkaian penguat diferensial dasar"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="103" posx="1487.0000000000016" posy="-945.33333333333985" width="169" height="64" side="right" fold="false" treesize="64" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="187" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1501.0000000000016" posy="-931.33333333333985" maxwidth="187">
+                            <text data="2. Rangkaian penguat instrumentasi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="97" posx="1149.0000000000007" posy="-881.33333333333894" width="222" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1163.0000000000007" posy="-867.33333333333894" maxwidth="219">
+                        <text data="3. Konverter tegangan ke arus"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="69" posx="807" posy="-536.33333333333712" width="190" height="46" side="right" fold="false" treesize="644.00000000000091" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="821" posy="-522.33333333333712" maxwidth="219">
+                    <text data="4. Panduan perancangan"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="104" posx="1097.0000000000007" posy="-743.33333333333803" width="237" height="46" side="right" fold="false" treesize="230" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1111.0000000000007" posy="-729.33333333333803" maxwidth="219">
+                        <text data="1. Definisikan tujuan pengukuran"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="105" posx="1434.0000000000016" posy="-835.33333333333849" width="112" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1448.0000000000016" posy="-821.33333333333849" maxwidth="219">
+                            <text data="1. Parameter"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="106" posx="1434.0000000000016" posy="-789.33333333333849" width="93" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1448.0000000000016" posy="-775.33333333333849" maxwidth="219">
+                            <text data="2. Kisaran"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="107" posx="1434.0000000000016" posy="-743.33333333333803" width="91" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1448.0000000000016" posy="-729.33333333333803" maxwidth="219">
+                            <text data="3. Akurasi"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="108" posx="1434.0000000000016" posy="-697.33333333333803" width="101" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1448.0000000000016" posy="-683.33333333333803" maxwidth="219">
+                            <text data="4. Linieritas"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="109" posx="1434.0000000000016" posy="-651.33333333333758" width="81" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1448.0000000000016" posy="-637.33333333333758" maxwidth="219">
+                            <text data="5. Noise"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="110" posx="1097.0000000000007" posy="-513.33333333333758" width="223" height="46" side="right" fold="false" treesize="230" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1111.0000000000007" posy="-499.33333333333758" maxwidth="219">
+                        <text data="2. Pilih sensor yang digunakan"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="111" posx="1420.0000000000016" posy="-605.33333333333667" width="112" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1434.0000000000016" posy="-591.33333333333667" maxwidth="219">
+                            <text data="1. Parameter"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="112" posx="1420.0000000000016" posy="-559.33333333333667" width="113" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1434.0000000000016" posy="-545.33333333333667" maxwidth="219">
+                            <text data="2. Fungsi alih"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="113" posx="1420.0000000000016" posy="-513.33333333333758" width="157" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1434.0000000000016" posy="-499.33333333333758" maxwidth="219">
+                            <text data="3. Tanggapan waktu"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="114" posx="1420.0000000000016" posy="-467.33333333333621" width="93" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1434.0000000000016" posy="-453.33333333333621" maxwidth="219">
+                            <text data="4. Kisaran"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="115" posx="1420.0000000000016" posy="-421.33333333333576" width="78" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1434.0000000000016" posy="-407.33333333333576" maxwidth="219">
+                            <text data="5. Daya"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                    <node id="116" posx="1097.0000000000007" posy="-315.33333333333576" width="222" height="64" side="right" fold="false" treesize="184" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1111.0000000000007" posy="-301.33333333333576" maxwidth="219">
+                        <text data="3. Rancang pengkondisi sinyal analog (P/S)"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                      <nodes>
+                        <node id="117" posx="1419.0000000000007" posy="-375.33333333333576" width="112" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1433.0000000000007" posy="-361.33333333333576" maxwidth="219">
+                            <text data="1. Parameter"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="118" posx="1419.0000000000007" posy="-329.33333333333576" width="93" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1433.0000000000007" posy="-315.33333333333576" maxwidth="219">
+                            <text data="2. Kisaran"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="119" posx="1419.0000000000007" posy="-283.33333333333576" width="172" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1433.0000000000007" posy="-269.33333333333576" maxwidth="219">
+                            <text data="3. Impedansi masukan"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                        <node id="120" posx="1419.0000000000007" posy="-237.33333333333576" width="169" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                          <nodename posx="1433.0000000000007" posy="-223.33333333333576" maxwidth="219">
+                            <text data="4. Impedansi keluaran"/>
+                          </nodename>
+                          <nodenote></nodenote>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="121" posx="806.99999999999636" posy="-191.33333333333621" width="120" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="820.99999999999636" posy="-177.33333333333621" maxwidth="219">
+                    <text data="5. Komparator"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                  <nodes>
+                    <node id="122" posx="1026.9999999999961" posy="-191.33333333333621" width="231" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                      <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="219" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                      <nodename posx="1040.9999999999961" posy="-177.33333333333621" maxwidth="219">
+                        <text data="1. Komparator dengan histerisis"/>
+                      </nodename>
+                      <nodenote></nodenote>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="123" posx="806.99999999999636" posy="-145.33333333333621" width="139" height="46" side="right" fold="false" treesize="46" color="#68b723" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="820.99999999999636" posy="-131.33333333333621" maxwidth="196">
+                    <text data="6. DAC dan ADC"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="2" posx="360.99999999999613" posy="10.666666666664696" width="112" height="46" side="right" fold="false" treesize="266" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename posx="374.99999999999613" posy="24.666666666664696" maxwidth="196">
+            <text data="Silabus RE II"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="3" posx="572.99999999999363" posy="-90.333333333336213" width="71" height="46" side="right" fold="false" treesize="64" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="586.99999999999363" posy="-76.333333333336213" maxwidth="196">
+                <text data="CPMK"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="4" posx="743.99999999999909" posy="-99.333333333335304" width="295" height="64" side="right" fold="false" treesize="64" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="269" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="757.99999999999909" posy="-85.333333333335304" maxwidth="275.87359619140625">
+                    <text data="Mahasiswa mampu merancang rangkaian penguat dari peralatan elektronika "/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="5" posx="572.99999999999363" posy="42.666666666664696" width="114" height="46" side="right" fold="false" treesize="202" color="#c6262e" colorroot="false" layout="Horizontal" group="true">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="586.99999999999363" posy="56.666666666664696" maxwidth="196">
+                <text data="Bahan Kajian"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="6" posx="787" posy="-35.333333333333485" width="274" height="64" side="right" fold="false" treesize="64" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="246" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="801" posy="-21.333333333333485" maxwidth="254.2860107421875">
+                    <text data="1. Discrete&#x2010;Device Amplifier Concepts, Design and Operation"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="7" posx="787" posy="28.666666666664696" width="210" height="46" side="right" fold="false" treesize="46" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="801" posy="42.666666666664696" maxwidth="196">
+                    <text data="2. Penguat operasional ideal"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="8" posx="787" posy="74.666666666664696" width="249" height="46" side="right" fold="false" treesize="46" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="220" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="801" posy="88.666666666664696" maxwidth="222.4095458984375">
+                    <text data="3. Penguat operasional differensial"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="9" posx="787" posy="120.66666666666561" width="310" height="46" side="right" fold="false" treesize="46" color="#c6262e" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="278" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="801" posy="134.66666666666561" maxwidth="283.9820556640625">
+                    <text data="4. Perancangan rangkaian pengondisi sinyal"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node id="124" posx="360.99999999999613" posy="631.66666666666652" width="196" height="100" side="right" fold="false" treesize="1030" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+          <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+          <nodename posx="374.99999999999613" posy="645.66666666666652" maxwidth="196">
+            <text data="Electrical/ Electronics Engineering Technology (EET) Body of Knowledge (BOK)"/>
+          </nodename>
+          <nodenote></nodenote>
+          <nodes>
+            <node id="125" posx="656.99999999999568" posy="240.66666666666652" width="205" height="82" side="right" fold="false" treesize="230" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="254.66666666666652" maxwidth="196">
+                <text data="1. Discrete&#x2010;Device Amplifier Concepts, Design and Operation"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="126" posx="961.99999999999568" posy="166.66666666666652" width="74" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="975.99999999999568" posy="180.66666666666652" maxwidth="196">
+                    <text data="1. Gain"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="127" posx="961.99999999999568" posy="212.66666666666652" width="95" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="975.99999999999568" posy="226.66666666666652" maxwidth="196">
+                    <text data="2. Loading"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="128" posx="961.99999999999568" posy="258.66666666666652" width="212" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="975.99999999999568" posy="272.66666666666652" maxwidth="196">
+                    <text data="3. Frequency Considerations"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="129" posx="961.99999999999568" posy="304.66666666666652" width="101" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="975.99999999999568" posy="318.66666666666652" maxwidth="196">
+                    <text data="4. Coupling"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="130" posx="961.99999999999568" posy="350.66666666666652" width="150" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="975.99999999999568" posy="364.66666666666652" maxwidth="196">
+                    <text data="5. Amplifier classes"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="131" posx="656.99999999999568" posy="419.66666666666652" width="179" height="46" side="right" fold="false" treesize="92" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="433.66666666666652" maxwidth="196">
+                <text data="2. Differential Amplifiers"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="132" posx="935.99999999999579" posy="396.66666666666652" width="74" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="949.99999999999579" posy="410.66666666666652" maxwidth="196">
+                    <text data="1. Gain"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="133" posx="935.99999999999579" posy="442.66666666666652" width="150" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="949.99999999999579" posy="456.66666666666652" maxwidth="196">
+                    <text data="2. Input impedance"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="134" posx="656.99999999999568" posy="557.66666666666652" width="219" height="46" side="right" fold="false" treesize="184" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="571.66666666666652" maxwidth="196">
+                <text data="3. Ideal Operational Amplifiers"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="135" posx="975.99999999999568" posy="488.66666666666652" width="174" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="989.99999999999568" posy="502.66666666666652" maxwidth="196">
+                    <text data="1. Basic characteristics"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="136" posx="975.99999999999568" posy="534.66666666666652" width="173" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="989.99999999999568" posy="548.66666666666652" maxwidth="196">
+                    <text data="2. Open loop response"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="137" posx="975.99999999999568" posy="580.66666666666652" width="183" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="989.99999999999568" posy="594.66666666666652" maxwidth="196">
+                    <text data="3. Closed loop response"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="138" posx="975.99999999999568" posy="626.66666666666652" width="168" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="989.99999999999568" posy="640.66666666666652" maxwidth="196">
+                    <text data="4. Feedback concepts"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="139" posx="656.99999999999568" posy="709.66666666666652" width="161" height="64" side="right" fold="false" treesize="138" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="723.66666666666652" maxwidth="196">
+                <text data="4. Actual Operational Amplifiers"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="140" posx="917.99999999999591" posy="672.66666666666652" width="197" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="931.99999999999591" posy="686.66666666666652" maxwidth="196">
+                    <text data="1. Op-Amp Characteristics"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="141" posx="917.99999999999591" posy="718.66666666666652" width="132" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="931.99999999999591" posy="732.66666666666652" maxwidth="196">
+                    <text data="2. Specifications"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="142" posx="917.99999999999591" posy="764.66666666666652" width="112" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="931.99999999999591" posy="778.66666666666652" maxwidth="196">
+                    <text data="3. Limitations"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="143" posx="656.99999999999568" posy="856.66666666666652" width="216" height="64" side="right" fold="false" treesize="156" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="870.66666666666652" maxwidth="196">
+                <text data="5. Basic Operational Amplifier Circuits"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="144" posx="972.99999999999568" posy="810.66666666666652" width="218" height="64" side="right" fold="false" treesize="64" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="986.99999999999568" posy="824.66666666666652" maxwidth="196">
+                    <text data="1. Inverting and Non&#x2010;Inverting Configurations"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="145" posx="972.99999999999568" posy="874.66666666666652" width="167" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="986.99999999999568" posy="888.66666666666652" maxwidth="196">
+                    <text data="2. Basic Comparators"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="146" posx="972.99999999999568" posy="920.66666666666652" width="171" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="986.99999999999568" posy="934.66666666666652" maxwidth="196">
+                    <text data="3. Summing Amplifiers"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+            <node id="147" posx="656.99999999999568" posy="1049.6666666666665" width="185" height="64" side="right" fold="false" treesize="230" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+              <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+              <nodename posx="670.99999999999568" posy="1063.6666666666665" maxwidth="196">
+                <text data="6. Advanced Operational Amplifier Circuits"/>
+              </nodename>
+              <nodenote></nodenote>
+              <nodes>
+                <node id="148" posx="941.99999999999579" posy="966.66666666666652" width="113" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="955.99999999999579" posy="980.66666666666652" maxwidth="196">
+                    <text data="1. Integrators"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="149" posx="941.99999999999579" posy="1012.6666666666665" width="134" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="955.99999999999579" posy="1026.6666666666665" maxwidth="196">
+                    <text data="2. Differentiators"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="150" posx="941.99999999999579" posy="1058.6666666666665" width="177" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="955.99999999999579" posy="1072.6666666666665" maxwidth="196">
+                    <text data="3. Feedback Oscillators"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="151" posx="941.99999999999579" posy="1104.6666666666665" width="125" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="955.99999999999579" posy="1118.6666666666665" maxwidth="196">
+                    <text data="4. Active Filters"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+                <node id="152" posx="941.99999999999579" posy="1150.6666666666665" width="201" height="46" side="right" fold="false" treesize="46" color="#7a36b1" colorroot="false" layout="Horizontal" group="false">
+                  <style branchmargin="100" linktype="straight" linkwidth="4" linkarrow="false" linkdash="solid" nodeborder="underlined" nodewidth="196" nodeborderwidth="4" nodefill="false" nodemargin="8" nodepadding="6" nodefont="Sans 11" nodemarkup="true"/>
+                  <nodename posx="955.99999999999579" posy="1164.6666666666665" maxwidth="196">
+                    <text data="5. A&#x2010;D and D&#x2010;A Converters"/>
+                  </nodename>
+                  <nodenote></nodenote>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+  <groups>
+    <group color="#f37329">
+      <node id="25"/>
+    </group>
+    <group color="#f37329">
+      <node id="26"/>
+    </group>
+    <group color="#f37329">
+      <node id="27"/>
+    </group>
+    <group color="#f37329">
+      <node id="24"/>
+    </group>
+    <group color="#f37329">
+      <node id="30"/>
+    </group>
+    <group color="#f37329">
+      <node id="37"/>
+    </group>
+    <group color="#f37329">
+      <node id="26"/>
+      <node id="18"/>
+      <node id="17"/>
+    </group>
+    <group color="#f37329">
+      <node id="41"/>
+    </group>
+    <group color="#f37329">
+      <node id="19"/>
+      <node id="20"/>
+      <node id="21"/>
+    </group>
+    <group color="#f37329">
+      <node id="22"/>
+      <node id="23"/>
+    </group>
+    <group color="#f37329">
+      <node id="46"/>
+      <node id="51"/>
+      <node id="55"/>
+    </group>
+    <group color="#c6262e">
+      <node id="5"/>
+    </group>
+  </groups>
+  <connections>
+    <connection from_id="59" to_id="11" drag_x="280.49999999999841" drag_y="-1777.333333333343">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="62" to_id="24" drag_x="67.999999999999204" drag_y="-1676.8333333333412">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="61" to_id="25" drag_x="68.999999999999204" drag_y="-1621.8333333333424">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="63" to_id="26" drag_x="68.999999999999204" drag_y="-1575.8333333333433">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="64" to_id="27" drag_x="68.999999999999204" drag_y="-1529.8333333333424">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="66" to_id="30" drag_x="22.499999999997954" drag_y="-1316.3333333333405">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="67" to_id="37" drag_x="75.999999999997385" drag_y="-997.33333333334213">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="70" to_id="31" drag_x="16.49999999999568" drag_y="-1451.8333333333401">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="71" to_id="32" drag_x="17.49999999999568" drag_y="-1362.3333333333401">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="73" to_id="34" drag_x="17.99999999999568" drag_y="-1203.8333333333408">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="74" to_id="36" drag_x="17.99999999999568" drag_y="-1148.8333333333417">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="85" to_id="38" drag_x="76.499999999995566" drag_y="-1086.8333333333417">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="86" to_id="39" drag_x="76.499999999995566" drag_y="-1020.3333333333421">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="87" to_id="40" drag_x="76.499999999995566" drag_y="-930.83333333334349">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="91" to_id="42" drag_x="120.99999999999511" drag_y="-937.83333333334349">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="92" to_id="43" drag_x="120.99999999999511" drag_y="-878.33333333334349">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="93" to_id="44" drag_x="120.49999999999534" drag_y="-827.83333333334213">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="94" to_id="45" drag_x="120.49999999999534" drag_y="-781.83333333334122">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="8" to_id="96" drag_x="1089.75" drag_y="-423.83333333334122">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="72" to_id="33" drag_x="17.49999999999568" drag_y="-1281.8333333333401">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="68" to_id="41" drag_x="57.249999999997385" drag_y="-719.83333333334076">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="95" to_id="46" drag_x="217.7499999999975" drag_y="-662.33333333333985">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="98" to_id="47" drag_x="216.4999999999975" drag_y="-735.8333333333394">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="99" to_id="48" drag_x="216.4999999999975" drag_y="-689.83333333333985">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="100" to_id="49" drag_x="217.4999999999975" drag_y="-639.33333333333985">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="101" to_id="50" drag_x="217.2499999999975" drag_y="-588.8333333333394">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="96" to_id="51" drag_x="235.7499999999975" drag_y="-501.83333333333894">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="102" to_id="52" drag_x="251.99999999999727" drag_y="-533.8333333333394">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="103" to_id="53" drag_x="251.99999999999727" drag_y="-469.83333333333849">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="97" to_id="55" drag_x="226.2499999999975" drag_y="-410.33333333333758">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="121" to_id="22" drag_x="183.49999999999466" drag_y="-37.833333333337123">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="123" to_id="23" drag_x="187.49999999999466" drag_y="8.1666666666628771">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+    <connection from_id="131" to_id="96" drag_x="1007.2499999999984" drag_y="-251.3333333333353">
+      <style connectiondash="dotted" connectionlwidth="2" connectionarrow="fromto" connectionpadding="3" connectionfont="Sans 10" connectiontwidth="100"/>
+      <title></title>
+      <note></note>
+    </connection>
+  </connections>
+  <stickers/>
+</minder>
