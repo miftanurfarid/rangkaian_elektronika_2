@@ -6,3 +6,10 @@ MITRES_6-010S13_comchaptrs*
 Robert*
 \(The\ Morgan*
 *.lock
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
