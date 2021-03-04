@@ -619,8 +619,54 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item Gambar di samping adalah noninverting input dan eingle-ended output.
+			\item Gambar di samping adalah noninverting input dan single-ended output.
 			\item Dengan $ R_E $ yang besar, arus tail hampir konstan saat ada sinyal AC yang kecil.
+			\item Jika arus emitter d $ Q_1 $ meningkat maka arus emitter di  $ Q_2 $ menurun, dan sebaliknya.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Teori Operasi}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Transistor $ Q_1 $ bertindak seperti emitter follower yang menghasilkan tegangan AC di seberang resistor emitter.
+			\item Tegangan AC ini bernilai setengah dari tegangan input $ v_1 $
+			\item Pada setengah siklus positif daru tegangan input, arus emitter $ Q_1 $ meningkat, arus emitter $ Q_2 $ menurun, dan tegangan collector $ Q_2 $ meningkat.
+			\item Sama halnya pada setengah siklus negatif dari tegangan input, arus emitter $ Q_1 $ menurun, arus emitter $ Q-2 $ meningkat, dan tegangan collector $ Q_2 $ menurun.
+			\item Hal ini yang menyebabkan gelombang sinus yang dikuatkan memiliki fasa yang sama dengan noninverting input.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Single-Ended Output Gain}
+\begin{frame}{Single-ended output gain}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.ac_equivalent_circuit}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Gambar di samping adalah rangkaian ekivalennya
+			\item Setiap transistor memiliki $ r'_e $
+			\item $ R_E $ paralel dengan $ r'_e $ pada transistor kanan karena base dari $ Q_2 $ di-grounding.
+			\item Karena $ R_E $ jauh lebih besar dariada $ r'_e $ maka $ R_E $ bisa diabaikan.
+			\item Sehingga kita dapat rangkaian yang lebih sederhana sebagai berikut:
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Single-ended output gain}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.simplified_ac-equivalent_circuit}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item 
 		\end{itemize}
 	\end{multicols}
 \end{frame}
