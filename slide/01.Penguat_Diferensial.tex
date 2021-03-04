@@ -29,8 +29,8 @@
 \patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
 \makeatother
 
-\author{Tim Dosen Pengampu \\
-	Rangkaian Elektronika II}
+\author{Mifta Nur Farid, S.T., M.T. \\
+	miftanurfarid@lecturer.itk.ac.id}
 \title{RANGKAIAN ELEKTRONIKA II}
 \subtitle{Penguat Diferensial}
 \institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
@@ -346,8 +346,8 @@
 	\end{multicols}
 \end{frame}
 
-\subsection{Metode kedua}
-\begin{frame}{Metode kedua}
+\subsection{Metode Perkiraan Kedua}
+\begin{frame}{Metode perkiraan kedua}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=0.7\textheight]{gambar/01.second_approximation}
@@ -358,6 +358,7 @@
 			\begin{equation} \label{pers.8}
 				I_T = \frac{V_{EE} - V_{BE}}{R_E}
 			\end{equation}
+			dimana $ V_{BE} = 0.7 $ V untuk transistor silikon.
 		\end{itemize}
 		\vfill\null
 	\end{multicols}
@@ -397,10 +398,230 @@
 			\item Jawaban:
 			\begin{itemize}
 				\item Setiap tegangan collectornya adalah:
-				\[ V_C = V_{CC} - I_C R_C = 15 \text{ V} - (1 \text{ mA}(5 \text{ k}\Omega)) \]
+				\[ V_C = V_{CC} - I_C R_C = 15 \text{ V} - (1 \text{ mA})(5 \text{ k}\Omega) \]
 			\end{itemize}
 		\end{itemize}
 		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 1}
+\begin{frame}{Latihan Soal 1}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa arus dan teganan ideal jika $ R_E = 5 \text{ k}\Omega $
+			\end{itemize}
+			\item Jawaban: ??
+			\begin{itemize}
+				\item \textit{Silakan dikerjakan}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 2}
+\begin{frame}{Contoh Soal 2}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Dengan menggunakan metode kedua, berapa arus dan tegangan ideal dari gambar di samping?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Arus tail-nya adalah:
+				\begin{align*}
+					I_T &= \frac{V_{EE}-V_{BE}}{R_E} = \frac{15 \text{ V} - 0.7 \text{ V}}{7.5 \text{ k}\Omega} \\
+					&= 1.91 \text{ mA}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Setiap arus emitternya adalah setengah dari arus tailnya:
+				\[ I_E = \frac{I_T}{2} = \frac{1.91 \text{ mA}}{2} = 0.955 \text{ mA} \]
+				\item Tegangan collectornya sebesar:
+				\begin{align*}
+					V_C &= V_{CC} - I_C R_C \\
+					&= 15 \text{ V} - (0.955 \text{ mA})(5 \text{ k}\Omega) \\
+					&= 10.2 \text{ V}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 2}
+\begin{frame}{Latihan Soal 2}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Dengan menggunakan metode kedua, berapa arus dan teganan ideal jika $ R_E = 5 \text{ k}\Omega $
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item \textit{Silakan dikerjakan}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 3}
+\begin{frame}{Contoh Soal 3}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa arus dan tegangan di dalam rangkaian single-ended output di samping
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Idealnya, arus tail:
+				\[ I_T = \frac{V_{EE}}{R_E} = \frac{12 \text{ V}}{5 \text{ kV}} = 2.4 \text{ mA} \]
+				\item Setiap arus emitter adalah setengah dari arus tailnya:
+				\[ I_E = \frac{I_T}{2} = \frac{2.4 \text{ mA}}{2} =1.2 \text{ mA} \]
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 3}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Tegangan collector yang sebelah kanan adalah:
+				\begin{align*}
+					V_C &= V_{CC} - I_C R_C \\
+					&= 12 \text{ V} - (1.2 \text{ mA})(3 \text{ k}\Omega) \\
+					&= 8.4 \text{ V}
+				\end{align*}
+				\item Sedangkan tegangan collector sebelah kiri adalah 12 V.
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 3}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Jika kita gunakan metode yang kedua, kita dapatkan:
+				\begin{align*}
+					I_T &= \frac{V_{EE} - V_{BE}}{R_E} \\
+					&= \frac{12 \text{ V} - 0.7 \text{ V}}{5 \text{ k}\Omega} \\
+					&= 2.26 \text{ mA} \\
+					\\
+					I_E &= \frac{I_T}{2} = \frac{2.26 \text{ mA}}{2} = 1.13 \text{ mA}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 3}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item[]
+				\begin{align*}
+					V_C &= V_{CC} - I_C R_C \\
+					&= 12 \text{ V} - (1.13 \text{ mA})(3 \text{ k}\Omega) \\
+					&= 8.61 \text{ V}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 3}
+\begin{frame}{Latihan Soal 3}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika $ R_E = 3 \text{ k}\Omega $, tentukan arus dan tegangan dengan menggunakan metode kedua.
+			\end{itemize}
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\section{Analisis AC dari Diff Amp}
+\begin{frame}{Analisis AC dari Diff Amp}
+	\begin{itemize}
+		\item Pada bagian ini, kita akan menurunkan persamaan untuk penguatan tegangan (voltage gain) dari diff amp.
+		\item Kita mulai dengan konfigurasi yang paling sederhana, noninverting input dan single-ended output.
+		\item Setelah menurunkan penguatan tegangan, kita akan kembangkan hasilnya ke konfigurasi yang lain.
+	\end{itemize}
+\end{frame}
+
+\subsection{Teori Operasi}
+\begin{frame}{Teori Operasi}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Gambar di samping adalah noninverting input dan eingle-ended output.
+			\item Dengan $ R_E $ yang besar, arus tail hampir konstan saat ada sinyal AC yang kecil.
+		\end{itemize}
 	\end{multicols}
 \end{frame}
 
