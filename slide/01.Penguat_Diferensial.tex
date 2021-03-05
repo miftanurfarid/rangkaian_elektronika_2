@@ -636,6 +636,17 @@
 			\item Transistor $ Q_1 $ bertindak seperti emitter follower yang menghasilkan tegangan AC di seberang resistor emitter.
 			\item Tegangan AC ini bernilai setengah dari tegangan input $ v_1 $
 			\item Pada setengah siklus positif daru tegangan input, arus emitter $ Q_1 $ meningkat, arus emitter $ Q_2 $ menurun, dan tegangan collector $ Q_2 $ meningkat.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Teori Operasi}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
 			\item Sama halnya pada setengah siklus negatif dari tegangan input, arus emitter $ Q_1 $ menurun, arus emitter $ Q-2 $ meningkat, dan tegangan collector $ Q_2 $ menurun.
 			\item Hal ini yang menyebabkan gelombang sinus yang dikuatkan memiliki fasa yang sama dengan noninverting input.
 		\end{itemize}
@@ -666,7 +677,12 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item 
+			\item Tegangan input $ v_1 $ sepanjang kedua $ r'_e $
+			\item Karena kedua $ r'_e $ bernilai sama, maka tegangan pada $ r'_e $ adalah setengah dari tegangan inputnya.
+			\item Ini lah mengapa tegangan AC sepanjang resistor tail adalah setengah dari tegangan input.
+			\item Tegangan output AC: $ v_{out} = i_C R_C $
+			\item Tegangan input AC: $ v_{in} = i_e r'_e + i_e r'_e = 2i_er'_e$
+			\item Penguatan tegangan (voltage gain): $  $
 		\end{itemize}
 	\end{multicols}
 \end{frame}
