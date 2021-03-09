@@ -273,6 +273,7 @@
 	\end{multicols}
 \end{frame}
 
+\subsection{Ringkasan}
 \begin{frame}{Ringkasan}
 	\begin{center}
 		\includegraphics[height=0.6\textheight]{gambar/01.ringkasan_dif-amp-conf}
@@ -379,7 +380,7 @@
 			\item Jawaban:
 			\begin{itemize}
 				\item Berdasarkan persamaan \ref{pers.5}, arus tail adalah:
-				\[I_T = \frac{V_{EE}}{R_E} = \frac{15 \text{ v }}{7.5 \text{ m}\Omega} = 2 \text{ mA} \]
+				\[I_T = \frac{V_{EE}}{R_E} = \frac{15 \text{ v }}{7.5 \text{ k}\Omega} = 2 \text{ mA} \]
 				\item Tiap arus emitter adalah separuh dari arus tail:
 				\[ I_E = \frac{I_T}{2} = \frac{2 \text{ mA}}{2} = 1 \text{ mA} \]
 			\end{itemize}
@@ -398,7 +399,12 @@
 			\item Jawaban:
 			\begin{itemize}
 				\item Setiap tegangan collectornya adalah:
-				\[ V_C = V_{CC} - I_C R_C = 15 \text{ V} - (1 \text{ mA})(5 \text{ k}\Omega) \]
+				\begin{align*}
+					V_C &= V_{CC} - I_C R_C \\
+					&= 15 \text{ V} - (1 \text{ mA})(5 \text{ k}\Omega) \\
+					&= 10 \text{ V}
+				\end{align*}
+				\[  \]
 			\end{itemize}
 		\end{itemize}
 		\vfill\null
@@ -415,7 +421,7 @@
 		\begin{itemize}
 			\item Pertanyaan:
 			\begin{itemize}
-				\item Berapa arus dan teganan ideal jika $ R_E = 5 \text{ k}\Omega $
+				\item Berapa arus dan tegangan ideal jika $ R_E = 5 \text{ k}\Omega $
 			\end{itemize}
 			\item Jawaban: ??
 			\begin{itemize}
@@ -621,7 +627,7 @@
 		\begin{itemize}
 			\item Gambar di samping adalah noninverting input dan single-ended output.
 			\item Dengan $ R_E $ yang besar, arus tail hampir konstan saat ada sinyal AC yang kecil.
-			\item Jika arus emitter d $ Q_1 $ meningkat maka arus emitter di  $ Q_2 $ menurun, dan sebaliknya.
+			\item Jika arus emitter di $ Q_1 $ meningkat maka arus emitter di  $ Q_2 $ menurun, dan sebaliknya.
 		\end{itemize}
 	\end{multicols}
 \end{frame}
@@ -635,7 +641,7 @@
 		\begin{itemize}
 			\item Transistor $ Q_1 $ bertindak seperti emitter follower yang menghasilkan tegangan AC di seberang resistor emitter.
 			\item Tegangan AC ini bernilai setengah dari tegangan input $ v_1 $
-			\item Pada setengah siklus positif daru tegangan input, arus emitter $ Q_1 $ meningkat, arus emitter $ Q_2 $ menurun, dan tegangan collector $ Q_2 $ meningkat.
+			\item Pada setengah siklus positif dari tegangan input, arus emitter $ Q_1 $ meningkat, arus emitter $ Q_2 $ menurun, dan tegangan collector $ Q_2 $ meningkat.
 		\end{itemize}
 	\end{multicols}
 \end{frame}
@@ -647,7 +653,7 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item Sama halnya pada setengah siklus negatif dari tegangan input, arus emitter $ Q_1 $ menurun, arus emitter $ Q-2 $ meningkat, dan tegangan collector $ Q_2 $ menurun.
+			\item Sama halnya pada setengah siklus negatif dari tegangan input, arus emitter $ Q_1 $ menurun, arus emitter $ Q_2 $ meningkat, dan tegangan collector $ Q_2 $ menurun.
 			\item Hal ini yang menyebabkan gelombang sinus yang dikuatkan memiliki fasa yang sama dengan noninverting input.
 		\end{itemize}
 	\end{multicols}
@@ -680,11 +686,402 @@
 			\item Tegangan input $ v_1 $ sepanjang kedua $ r'_e $
 			\item Karena kedua $ r'_e $ bernilai sama, maka tegangan pada $ r'_e $ adalah setengah dari tegangan inputnya.
 			\item Ini lah mengapa tegangan AC sepanjang resistor tail adalah setengah dari tegangan input.
-			\item Tegangan output AC: $ v_{out} = i_C R_C $
-			\item Tegangan input AC: $ v_{in} = i_e r'_e + i_e r'_e = 2i_er'_e$
-			\item Penguatan tegangan (voltage gain): $  $
 		\end{itemize}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}{Single-ended output gain}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.simplified_ac-equivalent_circuit}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Tegangan output AC: $$ v_{out} = i_C R_C $$
+			\item Tegangan input AC: $$ v_{in} = i_e r'_e + i_e r'_e = 2i_er'_e $$
+			\item Penguatan tegangan (voltage gain), yaitu $ v_{out} $ dibagi $ v_{in} $, sehingga
+			\begin{equation}
+				\text{single-ended output: } A_v = \frac{R_C}{2r'_e}
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Differential-Output Gain}
+\begin{frame}{Differential output gain}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input_and_differential_output}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Gambar di samping adalah rangkaian ekivalen dari noninverting input \& differential output.
+			\item Analisis mirip dengan sebelumnya, kecuali tegangan outputnya adalah dua kalinya karena terdapat 2 resistor collector.
+			\begin{align*}
+				v_{out} &= v_{C2} - v_{C1} = i_C R_C - (-i_C R_C) \\
+				&= 2 i_C R_C
+			\end{align*}
+			\item Tanda negatif $ \rightarrow $ sinyal $ v_{C1} $ memiliki beda fasa sebesar $ \pi $
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Differential output gain}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input_and_differential_output}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Tegangan input AC nya masih sama
+			\[ v_{in} = 2 i_e r'_e \]
+			\item Voltage gain : 
+			\begin{equation}
+				\text{Differential output }: A_v = \frac{R_C}{r'_e}
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Konfigurasi inverting-input}
+\begin{frame}{Konfigurasi inverting-input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.inverting_input_+single-ended_output}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Gambar di samping adalah inverting input dan single-ended output
+			\item Analisis AC hampir sama dengan analisis noninverting
+			\item Inverting input $ v_2 $ menghasilkan tegangan output yang diperkuat dan terbalik
+			\item $ r'_e $ masih bagian dari pembagi tegangan $ \rightarrow $ tegangan di seberang $ R_E $ setengah dari tegangan inverting input
+			\item Jika menggunakan differential output, voltage gainnya adalah bernilai dua kalinya
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Konfigurasi differential-input}
+\begin{frame}{Konfigurasi differential-input}
+	\begin{itemize}
+		\item Pada konfigurasi differential-input $ \rightarrow $ kedua inputnya aktif secara bersamaan
+		\item Analisis AC dengan menggunakan teorema superposisi
+		\item Tegangan output untuk noninverting input adalah $$ v_{out} = A_v(v_1) $$ dan tegangan output untuk inverting input adalah $$ v_{out} = -A_v (v_2) $$
+		\item Gabungkan keduanya, $$ v_{out} = A_v (v_1 - v_2) $$
+	\end{itemize}
+\end{frame}
+
+\subsection{Impedansi Input}
+\begin{frame}{Impedansi input}
+	\begin{itemize}
+		\item Pada CE stage, impedansi input dari base adalah
+		\[ z_{in} = \beta r'_e \]
+		\item Pada diff amp, impedansi input dari salah satu base adalah dua kalinya
+		\begin{equation}
+			z_{in} = 2 \beta r'_e
+		\end{equation}
+		\item Karena terdapat 2 resistor emitter AC $ r'_e $ di dalam rangkaian ekivalennya
+	\end{itemize}
+\end{frame}
+
+\subsection{Ringkasan}
+\begin{frame}{Ringkasan}
+	\begin{center}
+		\includegraphics[height=0.7\textheight]{gambar/01.summary-diff-amp_voltage_gains}
+	\end{center}
+\end{frame}
+
+\subsection{Contoh Soal 4}
+\begin{frame}{Contoh Soal 4}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berdasarkan gambar di samping, berapa tegangan output AC? Jika $ \beta = 300 $, berapa impedansi input dari diff amp tersebut ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 4}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Idealnya, 15 V di seberang resistor emitter, menghasilkan arus tail sebesar 2 mA, yang artinya arus emitter DC pada masing masing transistor sebesar
+				\[ I_E = 1 \text{ mA} \]
+				\item Lalu kita hitung resistansi emitternya
+				\[ r'_e = \frac{25 \text{ mV}}{ I_E} =\frac{25 \text{ mV}}{1 \text{ mA}} = 25~\Omega \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 4}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Voltage gain:
+				\[ A_v = \frac{R_C}{r'_e} = \frac{5 \text{ k}\Omega }{25 \text{ }\Omega } = 200 \]
+				\item Tegangan keluaran AC
+				\[ v_{out} = A_v v_1 = 200(1 \text{ mV}) = 200 \text{ mV} \]
+				\item Impedansi input
+				\[ z_{in(base)} = 2 \beta r'_e = 2(300)(25\Omega) = 15 \text{ k}\Omega\]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 4}
+\begin{frame}{Latihan Soal 4}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berdasarkan gambar di samping, jika $ R_E = 5 \text{ k}\Omega $, berapa tegangan output AC? Jika $ \beta = 300 $, berapa impedansi input dari diff amp tersebut ?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Silakan dikerjakan
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 5}
+\begin{frame}{Contoh Soal 5}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berdasarkan gambar di samping, jika menggunakan metode ke 2, berapa tegangan output AC? Jika $ \beta = 300 $, berapa impedansi input dari diff amp tersebut ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 5}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Tentukan arus tail
+				\begin{align*}
+					I_T &= \frac{V_{EE} - V_{BE}}{R_E} = \frac{15 \text{ V} - 0.7 \text{ V}}{7.5 \text{ k}\Omega} \\
+					&= 1.91 \text{ mA}
+				\end{align*}
+				\item Arus emitter DC
+				\[ I_E = \frac{I_T}{2} = \frac{1.91}{2} = 0.955 \text{ mA}\]
+				\item Resistansi emitter AC
+				\[ r'_e = \frac{25 \text{ mV}}{ I_E} =\frac{25 \text{ mV}}{0.955 \text{ mA}} = 26.2~\Omega \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 5}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Voltage gain
+				\[ A_v = \frac{R_C}{r'_e} = \frac{5 \text{ k}\Omega }{26.2 \text{ }\Omega } = 191 \]
+				\item Tegangan keluaran AC
+				\[ v_{out} = A_v v_1 = 191(1 \text{ mV}) = 191 \text{ mV} \]
+				\item Impedansi input
+				\[ z_{in(base)} = 2 \beta r'_e = 2(300)(26.2\Omega) = 15.7 \text{ k}\Omega\]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 7}
+\begin{frame}{Contoh Soal 7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berdasarkan gambar di samping, jika $ \beta = 300 $, berapa impedansi input dari diff amp tersebut ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Idealnya sebesar 15 V pada emitter resistor, sehingga arus tailnya:
+				\[ I_T = \frac{V_{EE}}{R_E} = \frac{15 \text{ V}}{1 \text{ M}\Omega} = 15~\mu\text{A} \]
+				\item Karena arus emitter di setiap transistornya adalah separuh dari arus tail, maka resistansi dari emitternya adalah:
+				\[ r'_e = \frac{25 \text{ mV}}{ I_E} =\frac{25 \text{ mV}}{7.5 \mu\text{ A}} = 3.33 \text{ k}\Omega \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Voltage gain
+				\[ A_v = \frac{R_C}{2r'_e} = \frac{1 \text{ M}\Omega }{2 (3.33 \text{ k}\Omega) } = 150 \]
+				\item Tegangan keluaran AC
+				\[ v_{out} = A_v v_1 = 150(7 \text{ mV}) = 1.05 \text{ V} \]
+				\item Impedansi input
+				\begin{align*}
+					z_{in(base)} &= 2 \beta r'_e = 2(300)(3.33 \text{ k}\Omega) \\
+					&= 2 \text{ M}\Omega
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 7}
+\begin{frame}{Latihan Soal 7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berdasarkan gambar di samping, jika $ \beta = 300 $ dan $ R_E = 500 \text{ k}\Omega $, berapa impedansi input dari diff amp tersebut ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+
+\section{Karakteristik Input dari Sebuah Op Amp}
+\begin{frame}{Karakteristik Input dari Sebuah Op Amp}
+	\begin{itemize}
+		\item Asumsu bahwa diff amp adalah simetris (transistor yang digunakan identik) adalah metode pendekatan yang bagus untuk beberapa aplikasi.
+		\item Namun pada aplikasi yang lebih presisi, kita tidak bisa lagi mengasumsikan bahwa kedua identik.
+		\item Terdapat 3 karakteristik pada datasheet pada setiap op amp yang biasanya digunakan oleh para engineer yang membutuhkan jawaban yang lebih akurat.
+		\item Karakteristik tersebut antara lain
+		\begin{enumerate}
+			\item Arus bias input
+			\item Arus offset input
+			\item Tegangan offset input
+		\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\subsection{Arus Bias Input}
+\begin{frame}{Arus bias input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.different_base_currents}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pada op amp yang terintegrasi, $ \beta_{dc} $ dari masing-masing transistor pada stage yang pertama sedikit berbeda
+			\item Sehingga arus base juga sedikit berbeda, seperti yang ditampilkan pada gambar di samping.
+			\item Arus bias input didefinisikan sebagai rata-rata dari arus base DC:
+			\begin{equation}
+				I_{in(bias)} = \frac{I_{B1} + I_{B2}}{2}
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Arus bias input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.different_base_currents}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Misalkan, jika $ I_{B1} = 90 \text{ nA} $ dan $ I_{B2} = 70 \text{ nA} $, maka arus bias input-nya adalah:
+			\[ I_{in(bias)} = \frac{ 90 \text{ nA} + 70 \text{ nA} }{2} = 80 \text{ nA}\]
+			\item Jika menggunakan BJT, biasanya arus bias input sebesar nanoampere. Jika menggunakan JFET, biasanya arus bias inputnya sebesar picoampere.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Arus Offset Input}
+\begin{frame}{Arus offset input}
+	\begin{itemize}
+		\item Arus offset input didefinisikan sebagai perbedaan arus base DC
+		\begin{equation}
+			I_{in(off)} = I_{B1} - I_{B2}
+		\end{equation}
+		\item Perbedaan di dalam arus base mengindikasikan seberapa mirip transistornya.
+		\item Jika transistornya identik, arus offset inputnya akan bernilai nol.
+		\item Tapi, kedua transistor hampir selalu berbeda dan kedua arus basenya tidak sama.
+		\item Misalkan, jika $ I_{B1} = 90 \text{ nA} $ dan $ I_{B2} = 70 \text{ nA} $, maka arus offset input-nya adalah:
+		\[ I_{in(off)} = 90 \text{ nA} - 70 \text{ nA} = 20 \text{ nA}\]
+		\item Artinya, transistor $ Q_1 $ memiliki lebih 20 nA arus base dari pada transistor $ Q_2 $. Hal ini akan menyebabkan masalah nantinya ketika menggunakan resistansi base yang besar.
+	\end{itemize}
+\end{frame}
+
+\subsection{Arus Base dan Offset}
+\begin{frame}{Arus base dan offset}
+	\begin{itemize}
+		\item Kita bisa turunkan persamaan arus bias dan arus offset input menjadi:
+		\begin{align*}
+			I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \\
+			I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2}
+		\end{align*}
+		\item Datasheet hanya menunjukkan $ I_{in(bias)} $ dan $ I_in(off) $, bukan $ I_{B1} $ dan $ I_{B2} $, sehingga kita butuh persamaan tsb.
+	\end{itemize}
+\end{frame}
+
+\subsection{Pengaruh dari Arus Base}
+\begin{frame}{Pengaruh dari Arus Base}
+	\begin{itemize}
+		\item Kita bisa turunkan persamaan arus bias dan arus offset input menjadi:
+		\begin{align*}
+			I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \\
+			I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2}
+		\end{align*}
+		\item Datasheet hanya menunjukkan $ I_{in(bias)} $ dan $ I_{in(off)} $, bukan $ I_{B1} $ dan $ I_{B2} $, sehingga kita butuh persamaan tsb.
+	\end{itemize}
 \end{frame}
 
 \section{Referensi}
