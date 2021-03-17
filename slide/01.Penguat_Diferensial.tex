@@ -63,7 +63,7 @@
 \begin{frame}{Pengantar}
 	\begin{figure}
 		\centering
-		\includegraphics[height=0.75\textheight]{gambar/01.history-op-amp}
+		\includegraphics[height=0.75\textheight]{gambar/01.diff-amp/01.history-op-amp}
 		\caption{Perkembangan op-amp}
 		\label{fig:history-op-amp}
 	\end{figure}
@@ -121,7 +121,7 @@
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
-			\includegraphics[height=0.7\textheight]{gambar/01.differential_input_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.differential_input_output}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
@@ -136,17 +136,17 @@
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
-			\includegraphics[height=0.7\textheight]{gambar/01.differential_input_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.differential_input_output}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
 			\item Tegangan output AC :\\
 			
 			\begin{equation} \label{pers.1}
-				V_{out} =  v_{c2} - v_{c1}
+				v_{out} =  v_{c2} - v_{c1}
 			\end{equation}
 		
-			\item $ V_{out} $ = differential output, karena menggabungkan 2 tegangan collector.
+			\item $ v_{out} $ = differential output, karena menggabungkan 2 tegangan collector.
 			\item Transistor yang identik + resistor collector yang sama $ \rightarrow $ ideal
 			\item $ v_1 = v_2 \rightarrow v_{out} = 0 $
 			\item $ v_1 > v_2 \rightarrow v_{out} $ memiliki polaritas seperti gambar di samping.
@@ -159,7 +159,7 @@
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
-			\includegraphics[height=0.7\textheight]{gambar/01.differential_input_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.differential_input_output}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
@@ -174,7 +174,7 @@
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
-			\includegraphics[height=0.7\textheight]{gambar/01.differential_input_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.differential_input_output}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
@@ -192,13 +192,13 @@
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
-			\includegraphics[height=0.8\textheight]{gambar/01.diferential_input_single_ended}
+			\includegraphics[height=0.8\textheight]{gambar/01.diff-amp/01.diferential_input_single_ended}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
 			\item Differential output (gambar sebelumnya) membutuhkan floating load, karena kedua ujung dari load tidak ke ground.
 			\item Umumnya, load/ beban adalah single-ended, salah satu ujungnya ke ground. Seperti pada gambar (a).
-			\item $ V_{out} = A_v (v_1 - v_2) $, tapi voltage gain ($ A_v $) hanya setengah
+			\item $ v_{out} = A_v (v_1 - v_2) $, tapi voltage gain ($ A_v $) hanya setengah
 			\item Blok-diagram, gambar (b), sama dengan op-amp
 		\end{itemize}
 	\end{multicols}
@@ -207,7 +207,7 @@
 \begin{frame}{Konfigurasi Noninverting-Input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input+differential_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting_input+differential_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -227,7 +227,7 @@
 \begin{frame}{Konfigurasi Noninverting-Input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input+single-ended_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting_input+single-ended_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -248,7 +248,7 @@
 \begin{frame}{Konfigurasi Inverting-input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.inverting_input+differential_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.inverting_input+differential_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -264,7 +264,7 @@
 \begin{frame}{Konfigurasi Inverting-input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.inverting_input+single-ended_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.inverting_input+single-ended_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -276,7 +276,7 @@
 \subsection{Ringkasan}
 \begin{frame}{Ringkasan}
 	\begin{center}
-		\includegraphics[height=0.6\textheight]{gambar/01.ringkasan_dif-amp-conf}
+		\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.ringkasan_dif-amp-conf}
 	\end{center}
 \end{frame}
 
@@ -284,7 +284,7 @@
 \begin{frame}{Analisis DC dari Diff Amp}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.7\textheight]{gambar/01.ideal_dc_analysis}
+			\includegraphics[width=0.7\textheight]{gambar/01.diff-amp/01.ideal_dc_analysis}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -299,7 +299,7 @@
 \begin{frame}{Analisis Ideal}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.7\textheight]{gambar/01.ideal_dc_analysis}
+			\includegraphics[width=0.7\textheight]{gambar/01.diff-amp/01.ideal_dc_analysis}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -314,7 +314,7 @@
 \begin{frame}{Analisis Ideal}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.7\textheight]{gambar/01.ideal_dc_analysis}
+			\includegraphics[width=0.7\textheight]{gambar/01.diff-amp/01.ideal_dc_analysis}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -334,7 +334,7 @@
 \begin{frame}{Analisis Ideal}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.7\textheight]{gambar/01.ideal_dc_analysis}
+			\includegraphics[width=0.7\textheight]{gambar/01.diff-amp/01.ideal_dc_analysis}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -351,7 +351,7 @@
 \begin{frame}{Metode perkiraan kedua}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.7\textheight]{gambar/01.second_approximation}
+			\includegraphics[width=0.7\textheight]{gambar/01.diff-amp/01.second_approximation}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -369,7 +369,7 @@
 \begin{frame}{Contoh Soal 1}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -392,7 +392,7 @@
 \begin{frame}{Contoh Soal 1}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -415,7 +415,7 @@
 \begin{frame}{Latihan Soal 1}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -436,7 +436,7 @@
 \begin{frame}{Contoh Soal 2}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -460,7 +460,7 @@
 \begin{frame}{Contoh Soal 2}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -484,7 +484,7 @@
 \begin{frame}{Latihan Soal 2}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_1a}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_1a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -505,7 +505,7 @@
 \begin{frame}{Contoh Soal 3}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_3}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -528,7 +528,7 @@
 \begin{frame}{Contoh Soal 3}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_3}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -550,7 +550,7 @@
 \begin{frame}{Contoh Soal 3}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_3}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -573,7 +573,7 @@
 \begin{frame}{Contoh Soal 3}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_3}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -595,7 +595,7 @@
 \begin{frame}{Latihan Soal 3}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=0.6\textheight]{gambar/01.latihan_soal_3}
+			\includegraphics[width=0.6\textheight]{gambar/01.diff-amp/01.latihan_soal_3}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -621,7 +621,7 @@
 \begin{frame}{Teori Operasi}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting-input+single-ended-output_AC}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -635,7 +635,7 @@
 \begin{frame}{Teori Operasi}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting-input+single-ended-output_AC}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -649,7 +649,7 @@
 \begin{frame}{Teori Operasi}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting-input+single-ended-output_AC}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting-input+single-ended-output_AC}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -663,7 +663,7 @@
 \begin{frame}{Single-ended output gain}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.ac_equivalent_circuit}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.ac_equivalent_circuit}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -679,7 +679,7 @@
 \begin{frame}{Single-ended output gain}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.simplified_ac-equivalent_circuit}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.simplified_ac-equivalent_circuit}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -693,7 +693,7 @@
 \begin{frame}{Single-ended output gain}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.simplified_ac-equivalent_circuit}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.simplified_ac-equivalent_circuit}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -711,7 +711,7 @@
 \begin{frame}{Differential output gain}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input_and_differential_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting_input_and_differential_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -729,7 +729,7 @@
 \begin{frame}{Differential output gain}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.noninverting_input_and_differential_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.noninverting_input_and_differential_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -747,7 +747,7 @@
 \begin{frame}{Konfigurasi inverting-input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.inverting_input_+single-ended_output}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.inverting_input_+single-ended_output}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -786,7 +786,7 @@
 \subsection{Ringkasan}
 \begin{frame}{Ringkasan}
 	\begin{center}
-		\includegraphics[height=0.7\textheight]{gambar/01.summary-diff-amp_voltage_gains}
+		\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.summary-diff-amp_voltage_gains}
 	\end{center}
 \end{frame}
 
@@ -794,7 +794,7 @@
 \begin{frame}{Contoh Soal 4}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -809,7 +809,7 @@
 \begin{frame}{Contoh Soal 4}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -827,7 +827,7 @@
 \begin{frame}{Contoh Soal 4}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -848,7 +848,7 @@
 \begin{frame}{Latihan Soal 4}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -868,7 +868,7 @@
 \begin{frame}{Contoh Soal 5}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -883,7 +883,7 @@
 \begin{frame}{Contoh Soal 5}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -906,7 +906,7 @@
 \begin{frame}{Contoh Soal 5}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_1-2}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -923,11 +923,31 @@
 	\end{multicols}
 \end{frame}
 
+\subsection{Contoh Soal 6}
+\begin{frame}{Contoh Soal 6}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_1-2}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika pada gambar di samping $ v_2 = 1 \text{ mV} $ dan $ v_1 = 0 $ maka berapa tegangan output AC? Jika $ \beta = 300 $, maka berapa impedansi inputnya?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Hasilnya sama dengan Contoh Soal 4, hanya saja memiliki magnitude yang berkebalikan karena menggunakan inverting input.
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
 \subsection{Contoh Soal 7}
 \begin{frame}{Contoh Soal 7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_07}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -942,7 +962,7 @@
 \begin{frame}{Contoh Soal 7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_07}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -960,7 +980,7 @@
 \begin{frame}{Contoh Soal 7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_07}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -984,7 +1004,7 @@
 \begin{frame}{Latihan Soal 7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.contoh_soal_07}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_07}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -1016,7 +1036,7 @@
 \begin{frame}{Arus bias input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.different_base_currents}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.different_base_currents}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -1033,7 +1053,7 @@
 \begin{frame}{Arus bias input}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.different_base_currents}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.different_base_currents}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -1065,23 +1085,387 @@
 	\begin{itemize}
 		\item Kita bisa turunkan persamaan arus bias dan arus offset input menjadi:
 		\begin{align*}
-			I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \\
-			I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2}
+			I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \tag{13.a} \label{13.a}\\
+			I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2}	\tag{13.b} \label{13.b}
 		\end{align*}
-		\item Datasheet hanya menunjukkan $ I_{in(bias)} $ dan $ I_in(off) $, bukan $ I_{B1} $ dan $ I_{B2} $, sehingga kita butuh persamaan tsb.
+		\item Datasheet hanya menunjukkan $ I_{in(bias)} $ dan $ I_{in(off)} $, bukan $ I_{B1} $ dan $ I_{B2} $. Sehingga dengan persamaan \ref{13.a} \& \ref{13.b}, kita dapat menghitung arus base-nya.
+		\item Persamaan \ref{13.a} \& \ref{13.b} mengasumsikan bahwa $ I_{B1} > I_{B2} $. Jika $ I_{B1} < I_{B2} $, maka ubah urutan persamaannya.
 	\end{itemize}
 \end{frame}
 
 \subsection{Pengaruh dari Arus Base}
 \begin{frame}{Pengaruh dari Arus Base}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.base_resistor_produces_unwanted_input_voltage}
+		\end{center}
+		\begin{itemize}
+			\item Beberapa diff amp beroperasi dengan sebuah resistor base di satu sisi saja.
+			\item Karena arah arus base, arus base melalui $ R_B $ menghasilkan tegangan input dc noninverting sebesar
+			\[ V_1 = -I_{B1}R_B \]
+			\item Resistor base menghasilkan tegangan input yang tidak diinginkan
+			\item \textbf{Catatan:} Huruf kapital menunjukkan tegangan error dc ($ V_1 $)
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Pengaruh dari Arus Base}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.base_resistor_produces_unwanted_input_voltage}
+		\end{center}
+	\columnbreak
+		\begin{itemize}
+			\item Sebagai contoh, jika di datasheet $ I_{in(bias)} = 80 \text{ nA} $ dan $ I_{in(off)} = 20 \text{ nA}$, maka
+			\begin{align*}
+				I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \\
+				&= 80 \text{ nA} + \frac{20 \text{ nA}}{2} = 90 \text{ nA} \\
+				I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2} \\
+				&= 80 \text{ nA} - \frac{20 \text{ nA}}{2} = 70 \text{ nA}
+			\end{align*}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Pengaruh dari Arus Base}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.base_resistor_produces_unwanted_input_voltage}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jika $ R_B = 1 \text{ k}\Omega $, input noninverting memiliki error tegangan sebesar
+			\begin{align*}
+				V_1 &= -I_{B1}R_B \\
+				&= ( 90 \text{ nA} ) ( 1 \text{ k}\Omega ) \\
+				&= 90 \text{ }\mu V
+			\end{align*}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Pengaruh dari Arus Offset Input}
+\begin{frame}{Pengaruh dari Arus Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.equal_base_resistance_on_other_side_reduces_error}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Cara mengurangi error tegangan output dengan menggunakan resistor base yang sama pada sisi lainnya, seperti gambar di samping.
+			\item Sehingga kita memiliki differential dc input
+			\begin{align*}
+				V_{in} &= I_{B1}R_B - I_{B2}R_B \\
+				&= (I_{B1} - I_{B2})R_B				
+			\end{align*}
+			\begin{equation}
+				V_{in} = I_{in(off)}R_B
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Pengaruh dari Arus Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.equal_base_resistance_on_other_side_reduces_error}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Karena biasanya $ I_{in(off)}  < (0.25)( I_{in(bias)})$, error tegangan input jauh lebih kecil ketika resistor base yang sama digunakan.
+			\item Sebagai contoh, jika $ I_{in(bias)} = 80 \text{ nA} $ dan $ I_{in(off)} = 20 \text{ nA} $, lalu resistor base sebesar $ 1 \text{ k}\Omega $ menghasilkan error tegangan input sebesar
+			\begin{align*}
+				V_{in} &= (I_{in(off)})(R_B) \\
+				&= (20 \text{ nA})(1 \text{ k}\Omega) = 20 \text{ }\mu\text{V}\\
+			\end{align*}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Tegangan Offset Input}
+\begin{frame}{Tegangan Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.different_collector_resistors_produce_error_when_bases_are_grounded}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Ketika diff amp terintegrasi sebagai first stage dari op amp, kedua sisinya hampir identik
+			\item Kedua resistor collector bisa saja berbeda
+			\item Akibatnya muncul error tegangan di output-nya
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Tegangan Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.different_base-emitter_curves_added_to_error}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Sumber error lainnya adalah perbedaan kurva $ V_{BE} $ dari transistornya
+			\item Sebagai contoh, anggaplah kedua kurva base-emitter memiliki arus yang sama seperti gambar di samping
+			\item Karena kurva tersebut berbeda, maka terdapat perbedaan antara kedua $ V_{BE} $
+			\item Perbedaan ini menyebabkan penambahan error tegangan
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Tegangan Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.4\textheight]{gambar/01.diff-amp/01.input_offset_voltage_is_equivalent_to_an_unwanted_input_voltage}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Tegangan offset input = tegangan input yang menghasilkan error tegangan ouput yang sama di diff amp yang ideal
+			\begin{equation}
+				V_{in(off)} = \frac{V_{error}}{A_v}
+			\end{equation}
+			\item $ V_{error} $ tidak menyertakan efek bias input dan arus offset karena kedua base di-ground ketika $ V_{error} $ diukur.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Tegangan Offset Input}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.4\textheight]{gambar/01.diff-amp/01.input_offset_voltage_is_equivalent_to_an_unwanted_input_voltage}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Sebagai contoh, jika diff amp memiliki error tegangan sebesar $ 0.6 \text{ V} $ dan penguatan tegangan sebesar 300, tegangan offset input adalah
+			\begin{align*}
+				V_{in(off)} = \frac{V_{error}}{A_v} = \frac{0.6 \text{ V}}{300} = 2 \text{ mV}
+			\end{align*}
+			\item Gambar di samping mengilustrasikan tegangan offset input sebesar $ 2 \text{ mV} $ menghasilkan error tegangan sebesar $ 0.6 \text{ V} $
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Efek Gabungan}
+\begin{frame}{Efek Gabungan}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.output_of_diff_amp_includes_desired_signal_and_error_voltage}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item Tegangan output adalah superposisi dari semua efek input
+			\item Terdapat input ac ideal: $$ v_{in} = v_1 - v_2 $$
+			\item Dari 2 sumber input, dikuatkan, menghasilkan output ac yang diinginkan: $$ v_{out} = A_v(v_1 - v_2) $$
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Efek Gabungan}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.output_of_diff_amp_includes_desired_signal_and_error_voltage}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item terdapat 3 error input dc:
+			\begin{equation}
+				V_{1err} = (R_{B1} - R_{B2}) I_{in(bias)}
+			\end{equation}
+			\begin{equation}
+				V_{2err} = (R_{B1} + R_{B2}) \frac{I_{in(off)}}{2}
+			\end{equation}
+			\begin{equation}
+				V_{3err} = V_{in(off)}
+			\end{equation}
+			\item Ketiga error dc dikuatkan kemudian menghasilkan error tegangan output:
+			\begin{equation}
+				V_{error} = A_v (V_{1err} + V_{2err} + V_{3err})
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Efek Gabungan}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.output_of_diff_amp_includes_desired_signal_and_error_voltage}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item Dalam aplikasinya, $ V_{error} $ dapat diabaikan. Misalnya kita akan membuat ac amplifier, $ V_{error} $ tidak lah penting. Kecuali kita akan membuat dc amplifier yang presisi, maka $ V_{error} $ perlu diperhatikan.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Resistor Base yang Sama}
+\begin{frame}{Resistor Base yang Sama}
 	\begin{itemize}
-		\item Kita bisa turunkan persamaan arus bias dan arus offset input menjadi:
+		\item Ketika error offset dan bias tidak dapat diabaikan, maka hal yang bisa dilakukan adalah gunakan resistor base yang sama: $ R_{B1} = R_{B2} = R_{B}$
+		\item Karena:
 		\begin{align*}
-			I_{B1} &= I_{in(bias)} + \frac{I_{in(off)}}{2} \\
-			I_{B2} &= I_{in(bias)} - \frac{I_{in(off)}}{2}
+			V_{1err} &= 0 \\
+			V_{2err} &= R_B I_{in(off)} \\
+			V_{3err} &= V_{in(off)}
 		\end{align*}
-		\item Datasheet hanya menunjukkan $ I_{in(bias)} $ dan $ I_{in(off)} $, bukan $ I_{B1} $ dan $ I_{B2} $, sehingga kita butuh persamaan tsb.
+		\item Atau bisa menggunakan rangkaian nulling yang tersedia di datasheet $ \leftarrow $ akan dijelaskan pada bab selanjutnya.
 	\end{itemize}
+\end{frame}
+
+\subsection{Ringkasan}
+\begin{frame}{Ringkasan}
+	\begin{center}
+		\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.ringkasan_3}
+	\end{center}
+\end{frame}
+
+\subsection{Contoh Soal 8}
+\begin{frame}{Contoh Soal 8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.latihan_soal_8}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diff amp di samping memiliki $ A_v = 200 $,\\ $ I_{in(bias)} = 3~\mu\text{A} $, \\ $ I_{in(off)} = 0.5~\mu\text{A} $, \\ $ V_{in(off)} = 1 \text{ mV}$.  
+				\item Berapa error tegangan output?
+				\item Jika menggunakan resistor base yang identik, berapa error tegangan output?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.latihan_soal_8}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Masing-masing error tegangan:
+				\begin{align*}
+					V_{1err} &= (R_{B1} - R_{B2}) I_{in(bias)} \\
+					&= (1 \text{ k}\Omega)(3~\mu\text{A}) = 3 \text{ mV} \\
+					V_{2err} &= (R_{B1} + R_{B2}) \frac{I_{in(off)}}{2} \\
+					&= (1 \text{ k}\Omega)(0.25~\mu\text{A}) = 0.25 \text{ mV} \\
+					V_{3err} &= V_{in(off)} = 1 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.latihan_soal_8}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Error tegangan output:
+				\begin{align*}
+					V_{error} &= A_v (V_{1err} + V_{2err} + V_{3err}) \\
+					&= 200(3 \text{ mV} + 0.25 \text{ mV} + 1 \text{ mV}) \\
+					&= 850 \text{ mV}
+				\end{align*}
+			\end{itemize}
+			\begin{itemize}
+				\item Jika menggunakan resistor base yang identik di bagian inverting input:
+				\begin{align*}
+					V_{1err} &= 0 \\
+					V_{2err} &= R_{B}I_{in(off)} \\
+					&= (1 \text{ k}\Omega)(0.5~\mu\text{A}) = 0.5 \text{ mV} \\
+					V_{3err} &= V_{in(off)} = 1 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.latihan_soal_8}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Error tegangan output:
+				\begin{align*}
+					V_{error} &= A_v (V_{1err} + V_{2err} + V_{3err}) \\
+					&= 200(0.5 \text{ mV} + 1 \text{ mV}) \\
+					&= 300 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 8}
+\begin{frame}{Latihan Soal 8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.latihan_soal_8}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa error tegangan ouput jika diff amp tersebut di samping memiliki penguatan tegangan sebesar 150?
+			\end{itemize}
+			\item Jawaban: \textit{Silakan dikerjakan}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 9}
+\begin{frame}{Contoh Soal 9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_9}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diketahui diff amp memiliki\\
+				$ A_v = 300 $, \\
+				$ I_{in(bias)} = 80 \text{ nA}$, \\
+				$ I_{in(off)} = 20 \text{ nA}$, dan \\
+				$ V_{in(off)} = 5 \text{ mV}$.
+				\item Berapa error tegangan output?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_9}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Rangkaian tersebut menggunakan resistor base yang sama, maka:
+				\begin{align*}
+					V_{1err} &= 0 \\
+					V_{2err} &= R_{B}I_{in(off)} \\
+					&= (10 \text{ k}\Omega)(20 \text{ nA}) = 0.2 \text{ mV} \\
+					V_{3err} &= V_{in(off)} = 5 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
 \end{frame}
 
 \section{Referensi}
