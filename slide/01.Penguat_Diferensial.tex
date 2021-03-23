@@ -1522,9 +1522,38 @@
 			\item Tegangan input yang sama $( v_{in(CM)} )$ di setiap base $ \rightarrow $ \textbf{common-mode signal}
 			\item Jika diff amp benar-benar simetris $ \rightarrow $ tidak ada tegangan output ac dengan common-mode signal karena $ v_1 = v_2 $
 			\item Jika diff amp tidak simetris $ \rightarrow $ ada tegangan output ac yang kecil
+			\item Jika $ v_1 = v_2 $ maka $ v_{out} = 0 $, lalu untuk apa?
 		\end{itemize}
 	\end{multicols}
 \end{frame}
+
+\begin{frame}{Common-Mode Signal}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.common-mode_input_signal}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Sebagian besar noise static atau interference = common-mode signal
+			\item Bagaimana common-mode signal bisa muncul? $ \rightarrow $ Wiring pada base mirip antena kecil.
+			\item Lingkungannya dif amp banyak gelombang elektromagnetik $ \rightarrow $ tiap base akan mengambil sinyal tegangan yang tidak diinginkan
+			\item Alasan utama menggunakan diff amp sebagai first stage dari op amp $ \rightarrow $ diff amp tidak menguatkan common-mode signal
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Common-Mode Signal}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.equivalent_circuit_commonmode}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Karena tegangan /././.
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
 
 \section{Referensi}
 \begin{frame}{Referensi}
