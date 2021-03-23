@@ -1463,7 +1463,65 @@
 					&= (10 \text{ k}\Omega)(20 \text{ nA}) = 0.2 \text{ mV} \\
 					V_{3err} &= V_{in(off)} = 5 \text{ mV}
 				\end{align*}
+			\item Total error tegangan output:
+			\begin{align*}
+				V_{error} &= A_v (V_{1err} + V_{2err} + V_{3err}) \\
+				&= 300 (0.2 \text{ mV} + 5 \text{ mV}) \\
+				V_{error} &= 1.56 \text{ V}
+			\end{align*}
 			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Latihan Soal 9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.contoh_soal_9}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diketahui diff amp memiliki\\
+				$ A_v = 300 $, \\
+				$ I_{in(bias)} = 80 \text{ nA}$, \\
+				$ I_{in(off)} = 10 \text{ nA}$, dan \\
+				$ V_{in(off)} = 5 \text{ mV}$.
+				\item Berapa error tegangan output?
+			\end{itemize}
+			\item Jawaban: \textit{Silakan dikerjakan}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\section{Common-Mode Gain}
+\begin{frame}{Common-Mode Signal}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.common-mode_input_signal}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Rangkaian differential input dan single-ended output
+			\item Tegangan input yang sama $( v_{in(CM)} )$ di setiap base $ \rightarrow $ \textbf{common-mode signal}
+			\item Jika diff amp benar-benar simetris $ \rightarrow $ tidak ada tegangan output ac dengan common-mode signal karena $ v_1 = v_2 $
+			\item Jika diff amp tidak simetris $ \rightarrow $ ada tegangan output ac yang kecil
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Common-Mode Signal}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.common-mode_input_signal}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Rangkaian differential input dan single-ended output
+			\item Tegangan input yang sama $( v_{in(CM)} )$ di setiap base $ \rightarrow $ \textbf{common-mode signal}
+			\item Jika diff amp benar-benar simetris $ \rightarrow $ tidak ada tegangan output ac dengan common-mode signal karena $ v_1 = v_2 $
+			\item Jika diff amp tidak simetris $ \rightarrow $ ada tegangan output ac yang kecil
 		\end{itemize}
 	\end{multicols}
 \end{frame}
