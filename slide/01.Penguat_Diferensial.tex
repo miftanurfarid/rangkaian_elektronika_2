@@ -1549,11 +1549,267 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item Karena tegangan /././.
+			\item Karena kedua tegangan $ v_{in(CM)} $ sama maka hampir tidak ada arus yang mengalir antara kedua emitter.
+			\item Sehingga rangkaian di samping menjadi sebagai berikut ini (slide selanjutnya)
 		\end{itemize}
 	\end{multicols}
 \end{frame}
 
+\begin{frame}{Common-Mode Signal}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.fig20}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Dengan common-mode signal, rangkaian bagian kanan ekivalen dengan heavily swamped CE amplifier
+			\item Karena $ R_E $ jauh lebih besar daripada $ r'_e $, swamped voltage gain (penguatan tegangan terbenam) adalah
+			\begin{equation}\label{pers.20}
+				A_{v(CM)} = \frac{R_C}{2R_E}
+			\end{equation}
+			\item Biasanya $ A_{v(CM)} < 1 $
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Common-Mode Rejection Ratio (CMRR)}
+\begin{frame}{Common-Mode Rejection Ratio (CMRR)}
+	\begin{itemize}
+		\item Common-Mode Rejection Ratio (CMRR) :
+		\begin{equation}\label{pers.21}
+			\text{CMMR} = \frac{A_v}{A_{v(CM)}}
+		\end{equation}
+		\item Misalkan $ A_v = 200 $ dan $ A_{v(CM)} = 0.5 $ maka CMMR = 400
+		\item Semakin tinggi nilai CMRR, maka semakin baik.
+		\item CMRR yang tinggi : menaikkan sinyal yang diinginkan dan tidak untuk common-mode signal-nya
+		\item Datasheet biasanya menampilkan CMRR dalam satuan decibels (dB)
+		\begin{equation}\label{pers.22}
+			\text{CMRR}_{dB} = 20 \log \text{CMRR}
+		\end{equation}
+		\item Misalkan CMRR = 400 maka $ \text{CMRR}_{dB} = 52 \text{ dB} $
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 10}
+\begin{frame}{Contoh Soal 10}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig21}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa common-mode voltage gain?
+				\item Berapa tegangan output?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item $ A_{v(CM)} = \frac{R_C}{2R_E} = \frac{1 \text{ M}\Omega}{1 \text{ M}\Omega} = 0.5 $
+				\item $ v_out = \frac{0.5}{1 \text{ mV}} = 0.5 \text{ mV} $
+				\item Terbukti bahwa diff amp melemahkan common-mode signal daripada menguatkannya
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 10}
+\begin{frame}{Latihan Soal 10}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig21}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika $ R_E = 2 \text{ M}\Omega $
+				\item Berapa common-mode voltage gain?
+				\item Berapa tegangan output?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Silakan dikerjakan
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 11}
+\begin{frame}{Contoh Soal 11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig22}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diketahui: $ A_v = 150 $, $ A_{v(CM)} = 0.5 $, dan $ v_1 = 1 \text{ mV} $.
+				\item Jika base menerima common-mode signal sebesar 1 mV, berapa tegangan output?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Input memiliki 2 komponen: sinyal yang diinginkan dan common-mode signal
+				\item Keduanya memiliki amplitudo yang sama
+				\item Sinyal yang diinginkan akan dikuatkan:
+				\[ v_{out1} = A_v v_1 = (150)(1 \text{ mV}) = 150 \text{ mV} \]
+				\item Common-mode signal akan dilemahkan:
+				\[ v_{out1} = A_{v(CM)} v_1 = (0.5)(1 \text{ mV}) = 0.5 \text{ mV} \]
+				\item Output total:
+				\[ v_{out} = v_{out1} + v_{out2} = 150.5 \text{ mV} \]
+				\item Output mengandung kedua komponen tsb, tapi komponen yang diinginkan lebih besar 300 kali lipat daripada komponen yang tidak diinginkan
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 11}
+\begin{frame}{Latihan Soal 11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig22}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diketahui: $ A_v = 200 $, $ A_{v(CM)} = 0.5 $, dan $ v_1 = 1 \text{ mV} $.
+				\item Jika base menerima common-mode signal sebesar 1 mV, berapa tegangan output?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Silakan dikerjakan
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 12}
+\begin{frame}{Contoh Soal 12}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Diketahui sebuah op-amp 741 dengan $ A_v = 200000 $ dan $ \text{CMRR}_\text{dB} = 90 \text{ dB}$
+			\item Berapa common-mode voltage gain?
+			\item Jika kedua input (yang diinginkan dan common-mode signal) bernilai $ 1~\mu\text{V} $, berapa tegangan output?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Contoh Soal 12}
+	\begin{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item CMMR :
+			\begin{align*}
+				CMRR_{dB} = 20 \log CMRR \rightarrow CMRR &= \log^{-1}\frac{ CMRR_{dB} }{20} \\
+				&= \log^{-1} \frac{ 90 \text{ dB} }{20} = 31600
+			\end{align*}
+			\item $ A_{v(CM)} $:
+			\[ A_{v(CM)} =  \frac{A_v}{CMRR} \]
+			\item komponen output yang diinginkan:
+			\[ v_{out1} = 200000(1 \mu\text{V}) = 0.2 \text{ V} \]
+			\item common-mode output:
+			\[ v_{out2} = 6.32(1 \mu\text{V}) = 6.32 \text{ V} \]
+			\item output yang diinginkan $ > $ common-mode output
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Latihan Soal 12}
+\begin{frame}{latihan Soal 12}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Diketahui sebuah op-amp 741 dengan $ A_v = 100000 $ dan $ \text{CMRR}_\text{dB} = 90 \text{ dB}$
+			\item Berapa common-mode voltage gain?
+			\item Jika kedua input (yang diinginkan dan common-mode signal) bernilai $ 1~\mu\text{V} $, berapa tegangan output?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\section{The Current Mirror}
+\begin{frame}{The Current Mirror}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.fig22}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Ada cara untuk meningkatkan voltage gain dan CMRR dari diff amp dengan menggunakan compensating diode yang paralel terhadap emitter diode transistor
+			\item Arus yang melalui resistor $ R $ :
+			\begin{equation}\label{pers.23}
+				I_R = \frac{V_{CC} - V_{BE}}{R}
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{The Current Mirror}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.fig28}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jika compensating diode dan emitter diode memiliki kurva I-v yang sama maka arus collector = arus resistor
+			\begin{equation}\label{pers.24}
+				I_C = I_R
+			\end{equation}
+			\item \textbf{Current mirror} $ \rightarrow $ arus collector = "\textit{mirror image}" dari arus resistor
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Current Mirror Sources the Tail Current}
+\begin{frame}{Current Mirror Sources the Tail Current}
+	\begin{itemize}
+		\item Pada single-ended output, voltage gain diff amp adalah $ \frac{R_C}{2 r'_e} $ dan common-mode voltage gain adalah $ \frac{R_C}{2R_E} $
+		\item Rasio dari kedua gain adalah $ \text{CMRR} = \frac{R_E}{r'_e}$
+		\item Semakin besar $ R_E $ amak semakin besar $ CMRR $
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Current Mirror Sources the Tail Current}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.fig29}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Cara untuk memperbesar $ R_E $ ekivalen adalah dengan menggunakan current mirror untuk menghasilkan tail current
+			\item Arus yang melalui compensating diode
+			\begin{equation}\label{pers.25}
+				I_R = \frac{V_{CC} + V_{EE} - V_{BE}}{R}
+			\end{equation}
+			\item Current mirror $\rightarrow$ tail current memiliki nilai yang sama
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Current Mirror Sources the Tail Current}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.fig29}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item $ Q_4 $ bertindak seperti sumber arus $ \leftarrow $ memiliki impedansi yang sangat besar
+			\item Akibatnya, $ R_E $ ekivalen memiliki ratusan $ \text{ M}\Omega \rightarrow CMRR $ akan naik drastis
+			\item $ Q_3 $ sebagai dioda, karena base \& collector transistor $ Q_3 $ terhubung $ \rightarrow $ biasanya ada di dalam IC
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Active Load}
+\begin{frame}{Active Load}
+	\begin{itemize}
+		\item 
+	\end{itemize}
+\end{frame}
+
+% Referensi
 
 \section{Referensi}
 \begin{frame}{Referensi}
