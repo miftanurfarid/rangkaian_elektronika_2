@@ -1,9 +1,0 @@
-01.Pengantar_OpAmp.aux
-01.Pengantar_OpAmp.tex
-02.Op_Amp_741.tex
-03.Inverting_Amplifier.tex
-04.Non_inverting_Amplifier.tex
-05.Aplikasi_Op_Amp.tex
-99.terima_kasih.aux
-99.terima_kasih.tex
-ls.txt
