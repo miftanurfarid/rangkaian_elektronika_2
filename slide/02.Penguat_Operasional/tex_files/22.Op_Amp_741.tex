@@ -83,7 +83,42 @@
 		\centering
 		\includegraphics[width=\linewidth]{gambar/fig-16.07}
 		\caption{Grafik (a) Common-Mode Rejection Ratio (CMRR), (b) Maximum Peak-to-Peak Output (MPP), dan (c) Open-Loop Voltage Gain $A_{VOL}$ dari 741C}
-		\label{fig:fig-16}
+		\label{fig:fig-07}
 	\end{figure}
 	\vfill\null
+\end{frame}
+
+\subsection{Slew Rate}
+\begin{frame}{Slew Rate}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\linewidth]{gambar/fig-16.08}
+			\caption{(a) Respon ideal dan aktual terhadap tegangan step input, (b) ilustrasi definisi slew rate, (c) $ S_R = 0.5 \text{ V/}\mu\text{s} $}
+			\label{fig:fig-08a}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item Persamaan slew rate, $ S_R $
+			\begin{equation}\label{pers.1}
+				S_R = \frac{\Delta v_{out}}{\Delta t}
+			\end{equation}
+			\item Exponential wave meningkat 0.5 V selama 1 mikrodetik pertama:
+			\begin{align*}
+				S_R &= \frac{\Delta v_{out}}{\Delta t} \\
+				&= \frac{0.5 \text{ V}}{1~\mu\text{s}} \\
+				&= 0.5 \text{ V/}\mu\text{s}
+			\end{align*}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/fig-16.09}
+		\caption{(a) Initial slope dari gelombang sinus, (b) distorsi terjadi jika initial slope melebihi slew rate}
+		\label{fig-16.09}
+	\end{figure}
+	
 \end{frame}
