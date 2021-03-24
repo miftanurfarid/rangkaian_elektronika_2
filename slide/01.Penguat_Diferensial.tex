@@ -1606,7 +1606,7 @@
 			\item Jawaban:
 			\begin{itemize}
 				\item $ A_{v(CM)} = \frac{R_C}{2R_E} = \frac{1 \text{ M}\Omega}{1 \text{ M}\Omega} = 0.5 $
-				\item $ v_out = \frac{0.5}{1 \text{ mV}} = 0.5 \text{ mV} $
+				\item $ v_{out} = \frac{0.5}{1 \text{ mV}} = 0.5 \text{ mV} $
 				\item Terbukti bahwa diff amp melemahkan common-mode signal daripada menguatkannya
 			\end{itemize}
 		\end{itemize}
@@ -1648,14 +1648,38 @@
 				\item Diketahui: $ A_v = 150 $, $ A_{v(CM)} = 0.5 $, dan $ v_1 = 1 \text{ mV} $.
 				\item Jika base menerima common-mode signal sebesar 1 mV, berapa tegangan output?
 			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig22}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Input memiliki 2 komponen: sinyal yang diinginkan dan common-mode signal
-				\item Keduanya memiliki amplitudo yang sama
+				\item Input memiliki 2 komponen: sinyal yang diinginkan dan common-mode signal dengan amplitudo yang sama
 				\item Sinyal yang diinginkan akan dikuatkan:
 				\[ v_{out1} = A_v v_1 = (150)(1 \text{ mV}) = 150 \text{ mV} \]
 				\item Common-mode signal akan dilemahkan:
 				\[ v_{out1} = A_{v(CM)} v_1 = (0.5)(1 \text{ mV}) = 0.5 \text{ mV} \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth, height=0.7\textheight]{gambar/01.diff-amp/01.fig22}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
 				\item Output total:
 				\[ v_{out} = v_{out1} + v_{out2} = 150.5 \text{ mV} \]
 				\item Output mengandung kedua komponen tsb, tapi komponen yang diinginkan lebih besar 300 kali lipat daripada komponen yang tidak diinginkan
@@ -1718,7 +1742,7 @@
 \end{frame}
 
 \subsection{Latihan Soal 12}
-\begin{frame}{latihan Soal 12}
+\begin{frame}{Latihan Soal 12}
 	\begin{itemize}
 		\item Pertanyaan:
 		\begin{itemize}
@@ -1804,18 +1828,117 @@
 
 \subsection{Active Load}
 \begin{frame}{Active Load}
-	\begin{itemize}
-		\item 
-	\end{itemize}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.fig30}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item $ A_v = R_C / 2r'_e $
+			\item $ R_C $ naik $ \rightarrow A_v$ naik
+			\item Gunakan current mirror sebagai active load resistor
+			\item Karena $ Q_6 $ \textit{pnp} sumber arus, $ Q_2 $ ekivalen $ R_C $ dengan ratusan $ M\Omega $
+			\item Hasilnya: Voltage gain jauh lebih besar dengan menggunakan active load daripada resistor biasa.
+			\item Active load ini banyak digunakan di op-amp
+		\end{itemize}
+	\end{multicols}
 \end{frame}
 
-% Referensi
+\subsection{Diff Amp Terbeban}
+\begin{frame}{Diff Amp Terbeban}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.fig31a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Materi sebelumnya, diff amp tidak menggunakan resistor beban
+			\item Penambahan resistor beban $ \rightarrow $ analisis menjadi lebih rumit, terlebih lagi jika menggunakan differential output
+			\item Resistor beban di antara collector
+			\item Analisis:
+			\begin{itemize}
+				\item Metode loop $ \rightarrow $ sulit
+				\item Metode teorema Thevenin $ \rightarrow $ lebih mudah
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
 
-\section{Referensi}
-\begin{frame}{Referensi}
-	\begin{enumerate}
-		\item test
-	\end{enumerate}
+\begin{frame}{Diff Amp Terbeban}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{gambar/01.diff-amp/01.fig31}
+		\caption{(a) Diff amp dengan resistor beban, (b) Rangkaian ekivalen Thevenin untuk differential output, (c) Rangkaian ekivalen Thevenin untuk single-ended output}
+		\label{fig:31}
+	\end{figure}
+\end{frame}
+
+\subsection{Contoh Soal 13}
+\begin{frame}{Contoh Soal 13}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.7\textheight]{gambar/01.diff-amp/01.fig32}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa tegangan beban jika $ R_L = 15 \text{ k}\Omega $ ?
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Idealnya:
+				\begin{align*}
+					I_T &= \frac{V_{EE}}{R_E} = \frac{15 \text{ V}}{7.5 \text{ k}\Omega} = 2 \text{ mA} \\
+					I_E &= \frac{I_T}{2} = 1 \text{ mA} \\
+					r'_e &= \frac{25 \text{ mV}}{I_E} = \frac{25 \text{ mV}}{1 \text{ mA}} = 25~\Omega \\
+					A_v &= \frac{R_C}{r'_e} = \frac{7.5 \text{ k}\Omega}{25~\Omega} = 300
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 13}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.4\textheight]{gambar/01.diff-amp/01.fig32b}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Resistor Thevenin:
+				\[ R_{TH} = 2R_C = 2(7.5 \text{ k}\Omega) = 15 \text{ k}\Omega \]
+				\item Tegangan beban:
+				\[ v_L = 0.5(3 \text{ V}) = 1.5 \text{ V} \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 13}
+\begin{frame}{Latihan Soal 13}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.6\textheight]{gambar/01.diff-amp/01.fig32}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Tentukan tegangan bebannya jika $ R_L = 10 \text{ k}\Omega $
+			\end{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Silakan dikerjakan.
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\centering TERIMA KASIH
 \end{frame}
 
 \end{document}
