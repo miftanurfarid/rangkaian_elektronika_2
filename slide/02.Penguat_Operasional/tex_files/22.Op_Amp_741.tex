@@ -1,0 +1,89 @@
+\section{Op Amp 741}
+\begin{frame}{Op Amp 741}
+	\begin{itemize}
+		\item Monolitic amp $ \mu\text{A709} $ tahun 1965 oleh Fairchild Semiconductor
+		\item $ \mu\text{A709} $ memiliki kekurangan $ \rightarrow $ dibuatlah $ \mu\text{A741} $
+		\item Banyak manufaktur yang membuat $ \mu\text{A741} $:
+		\begin{itemize}
+			\item ON Semiconductor: MC1741
+			\item Texas Instruments: LM741
+			\item Analog Devices: AD741.
+		\end{itemize}
+		\item Istilah umumnya op amp 741
+	\end{itemize}
+\end{frame}
+
+\subsection{Standar Industri}
+\begin{frame}{Standar Industri}
+	\begin{itemize}
+		\item Beberapa versi: 741, 741A, 741C, 741E, dan 741N
+		\item Bergantung pada karakteristiknya (voltage gain, temp. range, noise level, dll)
+		\item 741C (C = \textit{Commercial grade}) $ \rightarrow $ sedikit lebih murah dan paling banyak digunakan
+		\item $ A_{VOL} = 100000 $, $ z_{in} = 2 \text{ M}\Omega $, $ z_out = 75~\Omega $
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Standar Industri}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{gambar/fig-16.03}
+		\caption{Op amp 741 pinouts (a) dual-in-line, (b) ceramic flatpak, (c) metal can}
+		\label{fig-16.03}
+	\end{figure}
+\end{frame}
+
+\subsection{Rangkaian Ekivalen dari Op Amp 741}
+\begin{frame}{Rangkaian Ekivalen dari Op Amp 741}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.9\linewidth]{gambar/fig-16.04}
+			\caption{Rangkaian ekivalen dari op amp 741}
+			\label{fig-16.04}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item Input diff amp
+			\item Final Stage
+			\item Active Loading
+			\item Frequency Compensation $ C_{in(M)} = (A_v + 1) C_c $
+		\end{itemize}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\linewidth]{gambar/fig-16.05}
+			\caption{Bode plot $ A_{VOL} $ 741C ideal}
+			\label{fig-16.05}
+		\end{figure}
+	\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Bias \& Offset}
+\begin{frame}{Bias \& Offset}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\linewidth]{gambar/fig-16.06}
+			\caption{Penggunaan compensation dan nulling 741C}
+			\label{fig-16.06}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item Tidak ada input signal $ \rightarrow $ input bias dan offset $ \rightarrow $ error output
+			\item Error output berkurang $ \leftarrow $ base resistor yang sama $ \rightarrow $ hanya menghilangkan arus bias tapi tidak arus offset dan tegangan offset
+			\item Solusi: menggunakan rangkaian nulling di datasheet
+		\end{itemize}
+		\vfill\null
+	\end{multicols}
+\end{frame}
+
+\subsection{Common-Mode Rejection Ratio}
+\begin{frame}{Common-Mode Rejection Ratio}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{gambar/fig-16.07}
+		\caption{Grafik CMRR, MPP, dan $A_{VOL}$ dari 741C}
+		\label{fig:fig-16}
+	\end{figure}
+	
+\end{frame}

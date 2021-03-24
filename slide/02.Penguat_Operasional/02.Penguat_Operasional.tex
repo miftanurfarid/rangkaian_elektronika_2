@@ -1,0 +1,60 @@
+\pdfminorversion=4
+\documentclass[aspectratio=169]{beamer}
+\usepackage{animate} % for animation
+\usepackage{array,multirow,graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\graphicspath{{gambar/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Hide subsubsections from TOC, but keep PDF bookmarks with beamer
+\hypersetup{bookmarksopen=true,bookmarksopenlevel=4}
+\setcounter{tocdepth}{4}
+
+\renewcommand{\figurename}{Gambar.}
+\renewcommand{\tablename}{Tabel.}
+
+\usetheme[pageofpages=of,	% String used between the current page and the
+							% total page count.
+			alternativetitlepage=true,% Use the fancy title page.
+			titleline=true,
+			titlepagelogo=OK-LOGO-ITK.jpg
+%          	 titlepagelogo=fig/jaist_logo.png
+			]{Torino}
+			% change /beamerinnerthemefancy.sty to resize the logo
+\usecolortheme{freewilly}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
+\makeatother
+
+\author{Mifta Nur Farid, S.T., M.T. \\
+	miftanurfarid@lecturer.itk.ac.id}
+\title{RANGKAIAN ELEKTRONIKA II}
+\subtitle{Penguat Operasional}
+\institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
+\date{\tiny Maret 8, 2021}
+
+% The log drawn in the upper right corner.
+\logo{\includegraphics[height=0.13\paperheight]{OK-LOGO-ITK.jpg}}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\begin{frame}{Bahan Kajian}
+    \tableofcontents[subsectionstyle=hide]
+\end{frame}
+
+\include{./tex_files/21.Pengantar_OpAmp}
+\include{./tex_files/22.Op_Amp_741.tex}
+\include{./tex_files/23.Inverting_Amplifier.tex}
+\include{./tex_files/24.Non_inverting_Amplifier.tex}
+\include{./tex_files/25.Aplikasi_Op_Amp.tex}
+\include{./tex_files/99.terima_kasih}
+
+\end{document}
+
