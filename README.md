@@ -1,2 +1,2 @@
-# rangkaian_elektronika_2
+# Rangkaian Elektronika II
 Repo Mata Kuliah Rangkaian Elektronika II
