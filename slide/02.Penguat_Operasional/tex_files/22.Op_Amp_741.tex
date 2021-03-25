@@ -120,5 +120,36 @@
 		\caption{(a) Initial slope dari gelombang sinus, (b) distorsi terjadi jika initial slope melebihi slew rate}
 		\label{fig-16.09}
 	\end{figure}
-	
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Sinyal dan frekuensinya sangat kecil $ \rightarrow $ slew rate bukan masalah
+		\item Sinyal dan frekuensinya sangat besar $ \rightarrow $ slew rate akan mendistorsi sinyal ouput
+		\[ S_S = 2 \pi f V_p \]
+		\item $ S_s $: initial slope dari gelombang sinus, $ f $: frekuensi, $ V_p $: nilai peak
+		\begin{align*}
+			S_S &\leq S_R \\
+			2 \pi f V_p &\leq S_R \\
+			f &\leq \frac{S_R}{2 \pi V_p} \\
+		\end{align*}
+		\begin{equation} \label{pers.16.2}
+			f_{max} = \frac{S_R}{2 \pi V_p}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.8\linewidth]{gambar/fig-16.10}
+			\caption{Grafik power bandwidth vs. peak voltage}
+			\label{fig-16.10}
+		\end{figure}
+		\columnbreak
+		\begin{itemize}
+			\item  $ f_{max} $: power bandwidth atau large-signal bandwidth
+		\end{itemize}
+	\end{multicols}	
 \end{frame}
