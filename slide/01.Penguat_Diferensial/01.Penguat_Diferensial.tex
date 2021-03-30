@@ -54,7 +54,7 @@
 \section{Pengantar}
 \begin{frame}{Pengantar}
 	\begin{itemize}
-		\item Istilah Operational amplifier (op-amp) merujuk kepada sebuah amplifier/penguat yang menjalankan suatu operasi matematika.
+		\item Istilah operational amplifier (op-amp) merujuk kepada sebuah amplifier/penguat yang menjalankan suatu operasi matematika.
 		\item Dalam sejarahnya, op-amp pertama digunakan di dalam komputer analog untuk melakukan operasi penjumlahan, perkalian dan lainnya.
 		\item Op-amp dibuat sebagai sirkuit diskrit $ \rightarrow $ sekarang kebanyakan op-amp adalah sirkuit terintegrasi/ integrated circuits (IC). 
 	\end{itemize}
@@ -304,7 +304,7 @@
 		\columnbreak
 		\begin{itemize}
 			\item Diff amp disebut juga long-tail pair karena kedua transistor saling berbagi satu common resistor $ R_E $.
-			\item Arus yang mengalir melalui common resistor ini disebut tail current.
+			\item Arus yang mengalir melalui common resistor ini disebut tail current / arus tail.
 			\item Jika kita mengabaikan $ V_{BE} $ drop sepanjang dioda emitter, maka di atas emitter resistor idealnya adalah sebuah titik ground DC.
 		\end{itemize}
 		\vfill\null
@@ -324,7 +324,7 @@
 			\end{equation}
 			\item Ketika keduanya benar-benar sama, maka arus tail akan terbagi sama, sehingga tiap transistor memiliki arus emitter sebesar \\
 			\begin{equation} \label{pers.6}
-				I_{EE} = \frac{I_T}{2}
+				I_{E} = \frac{I_T}{2}
 			\end{equation}
 		\end{itemize}
 		\vfill\null
@@ -718,10 +718,10 @@
 			\item Gambar di samping adalah rangkaian ekivalen dari noninverting input \& differential output.
 			\item Analisis mirip dengan sebelumnya, kecuali tegangan outputnya adalah dua kalinya karena terdapat 2 resistor collector.
 			\begin{align*}
-				v_{out} &= v_{C2} - v_{C1} = i_C R_C - (-i_C R_C) \\
-				&= 2 i_C R_C
+				v_{out} &= v_{c2} - v_{c1} = i_c R_C - (-i_c R_C) \\
+				&= 2 i_c R_C
 			\end{align*}
-			\item Tanda negatif $ \rightarrow $ sinyal $ v_{C1} $ memiliki beda fasa sebesar $ \pi $
+			\item Tanda negatif $ \rightarrow $ sinyal $ v_{c1} $ memiliki beda fasa sebesar $ \pi $
 		\end{itemize}
 	\end{multicols}
 \end{frame}
@@ -751,12 +751,13 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item Gambar di samping adalah inverting input dan single-ended output
+			\item Inverting input dan single-ended output
 			\item Analisis AC hampir sama dengan analisis noninverting
 			\item Inverting input $ v_2 $ menghasilkan tegangan output yang diperkuat dan terbalik
 			\item $ r'_e $ masih bagian dari pembagi tegangan $ \rightarrow $ tegangan di seberang $ R_E $ setengah dari tegangan inverting input
-			\item Jika menggunakan differential output, voltage gainnya adalah bernilai dua kalinya
+			\item Jika menggunakan differential output, voltage gainnya adalah bernilai 2$\times$
 		\end{itemize}
+		\vfill\null
 	\end{multicols}
 \end{frame}
 
@@ -815,8 +816,9 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Idealnya, 15 V di seberang resistor emitter, menghasilkan arus tail sebesar 2 mA, yang artinya arus emitter DC pada masing masing transistor sebesar
-				\[ I_E = 1 \text{ mA} \]
+				\item Idealnya:
+				\[ I_T = \frac{V_{EE}}{R_E} = \frac{15 \text{ V}}{2 \text{ mA}} = 2 \text{ mA}\]
+				\[ I_E = \frac{I_T}{2} = \frac{2 \text{ mA}}{2} = 1 \text{ mA} \]
 				\item Lalu kita hitung resistansi emitternya
 				\[ r'_e = \frac{25 \text{ mV}}{ I_E} =\frac{25 \text{ mV}}{1 \text{ mA}} = 25~\Omega \]
 			\end{itemize}
@@ -968,9 +970,10 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Idealnya sebesar 15 V pada emitter resistor, sehingga arus tailnya:
+				\item Idealnya:
 				\[ I_T = \frac{V_{EE}}{R_E} = \frac{15 \text{ V}}{1 \text{ M}\Omega} = 15~\mu\text{A} \]
-				\item Karena arus emitter di setiap transistornya adalah separuh dari arus tail, maka resistansi dari emitternya adalah:
+				\[ I_E = \frac{I_T}{2} = \frac{15~\mu\text{A}}{2} = 7.5~\mu\text{A}\]
+				\item Resistansi dari emitternya adalah:
 				\[ r'_e = \frac{25 \text{ mV}}{ I_E} =\frac{25 \text{ mV}}{7.5 \mu\text{ A}} = 3.33 \text{ k}\Omega \]
 			\end{itemize}
 		\end{itemize}
@@ -1223,7 +1226,7 @@
 			\begin{equation}
 				V_{in(off)} = \frac{V_{error}}{A_v}
 			\end{equation}
-			\item $ V_{error} $ tidak menyertakan efek bias input dan arus offset karena kedua base di-ground ketika $ V_{error} $ diukur.
+			\item $ V_{error} $ tidak termasuk efek bias input dan arus offset karena kedua base di-ground ketika $ V_{error} $ diukur.
 		\end{itemize}
 	\end{multicols}
 \end{frame}
@@ -1303,7 +1306,7 @@
 \begin{frame}{Resistor Base yang Sama}
 	\begin{itemize}
 		\item Ketika error offset dan bias tidak dapat diabaikan, maka hal yang bisa dilakukan adalah gunakan resistor base yang sama: $ R_{B1} = R_{B2} = R_{B}$
-		\item Karena:
+		\item Sehingga:
 		\begin{align*}
 			V_{1err} &= 0 \\
 			V_{2err} &= R_B I_{in(off)} \\
@@ -1521,7 +1524,7 @@
 		\end{center}
 		\columnbreak
 		\begin{itemize}
-			\item Sebagian besar noise static atau interference = common-mode signal
+			\item Karena input jenis ini disebabkan oleh noise static atau interference = common-mode signal
 			\item Bagaimana common-mode signal bisa muncul? $ \rightarrow $ Wiring pada base mirip antena kecil.
 			\item Lingkungannya dif amp banyak gelombang elektromagnetik $ \rightarrow $ tiap base akan mengambil sinyal tegangan yang tidak diinginkan
 			\item Alasan utama menggunakan diff amp sebagai first stage dari op amp $ \rightarrow $ diff amp tidak menguatkan common-mode signal
@@ -1868,7 +1871,7 @@
 \begin{frame}{Contoh Soal 1.13}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.7\textheight]{gambar/01.fig32}
+			\includegraphics[width=0.8\linewidth]{gambar/01.fig32}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -1893,14 +1896,14 @@
 \begin{frame}{Contoh Soal 1.13}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[height=0.4\textheight]{gambar/01.fig32b}
+			\includegraphics[height=0.3\textheight]{gambar/01.fig32b}
 		\end{center}
 		
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
 				\item Tegangan Thevenin atau Tegangan output tanpa beban:
-				\[ v_{out} = A_v(v_1) = 300 (10 \text{ mV}) = 3 \text{ V} \]
+				\[ v_{TH} = v_{out} = A_v(v_1) = 300 (10 \text{ mV}) = 3 \text{ V} \]
 				\item Resistor Thevenin:
 				\[ R_{TH} = 2R_C = 2(7.5 \text{ k}\Omega) = 15 \text{ k}\Omega \]
 				\item Tegangan beban:
