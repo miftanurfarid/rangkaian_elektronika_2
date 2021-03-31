@@ -83,7 +83,7 @@
 		\centering
 		\includegraphics[width=\linewidth]{gambar/fig-16.07}
 		\caption{Grafik (a) Common-Mode Rejection Ratio (CMRR), (b) Maximum Peak-to-Peak Output (MPP), dan (c) Open-Loop Voltage Gain $A_{VOL}$ dari 741C}
-		\label{fig:fig-07}
+		\label{fig-16.07}
 	\end{figure}
 	\vfill\null
 \end{frame}
@@ -95,7 +95,7 @@
 			\centering
 			\includegraphics[width=0.8\linewidth]{gambar/fig-16.08}
 			\caption{(a) Respon ideal dan aktual terhadap tegangan step input, (b) ilustrasi definisi slew rate, (c) $ S_R = 0.5 \text{ V/}\mu\text{s} $}
-			\label{fig:fig-08a}
+			\label{fig-16.08}
 		\end{figure}
 		\columnbreak
 		\begin{itemize}
@@ -116,7 +116,7 @@
 \begin{frame}{Slew Rate}
 	\begin{figure}
 		\centering
-		\includegraphics[width=\linewidth]{gambar/fig-16.09}
+		\includegraphics[width=0.7\linewidth]{gambar/fig-16.09}
 		\caption{(a) Initial slope dari gelombang sinus, (b) distorsi terjadi jika initial slope melebihi slew rate}
 		\label{fig-16.09}
 	\end{figure}
@@ -160,7 +160,7 @@
 \begin{frame}{Contoh Soal 2.1}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=\linewidth]{gambar/fig-16.11}
+			\includegraphics[width=\linewidth]{gambar/fig-16.11a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -170,4 +170,66 @@
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.1}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.11b}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Berdasarkan Gambar \ref{fig-16.07} (b), $ \text{MPP} = 27 \text{ V} $ untuk $ R_L = \text{ k}\Omega $
+				\item Sehingga tegangan output negatif saturasinya = - 13.5 V
+				\item Karena $ A_{VOL} = 100000 $, maka tegangan input yang dibutuhkan:
+				\begin{align*}
+					v_2 &= \frac{v_{out}}{A_{VOL}} \\
+					&= \frac{13.5 \text{ V}}{100000} = 135 ~\mu\text{V}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 2.1}
+\begin{frame}{Latihan Soal 2.1}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.11a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa tegangan inverting input yang dibutuhkan untuk men-drive op amp 741C hingga saturasi negatif jika $ A_{VOL} = 200000 $ ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 2.2}
+\begin{frame}{Contoh Soal 2.2}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Berapa common-mode rejection ratio (CMRR) dari 741C ketika frekuensi input-nya adalah 100 kHz?
+		\end{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item Berdasarkan Gambar \ref{fig-16.07} (a), $ \text{CMRR}_{\text{dB}} \approx 40 \text{ dB} $ 
+			\[ \text{CMRR} = 10^{(\text{CMRR}_{\text{dB}}/20)} = 10^{(40 \text{ dB}/20)} = 100\]
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Latihan Soal 2.2}
+\begin{frame}{Latihan Soal 2.2}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Berapa common-mode rejection ratio (CMRR) dari 741C ketika frekuensi input-nya adalah 10 kHz?
+		\end{itemize}
+	\end{itemize}
 \end{frame}
