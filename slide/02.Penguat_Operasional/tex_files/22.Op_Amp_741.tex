@@ -100,7 +100,7 @@
 		\columnbreak
 		\begin{itemize}
 			\item Persamaan slew rate, $ S_R $
-			\begin{equation}\label{pers.1}
+			\begin{equation}\label{pers.16.1}
 				S_R = \frac{\Delta v_{out}}{\Delta t}
 			\end{equation}
 			\item Exponential wave meningkat 0.5 V selama 1 mikrodetik pertama:
@@ -230,6 +230,109 @@
 		\item Pertanyaan:
 		\begin{itemize}
 			\item Berapa common-mode rejection ratio (CMRR) dari 741C ketika frekuensi input-nya adalah 10 kHz?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 2.3}
+\begin{frame}{Contoh Soal 2.3}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Berapa open-loop voltage gain dari 741C jika frekuensi input-nya adalah 1 kHz ? 10 kHz ? 100 kHz ?
+		\end{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item Berdasarkan Gambar \ref{fig-16.07} (c), voltage gain-nya adalah 1000 untuk 1 kHz, 100 untuk 10 kHz, dan 10 untuk 100 kHz.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 2.4}
+\begin{frame}{Contoh Soal 2.4}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Tegangan input ke op amp adalah tegangan fungsi step. Output-nya adalah sebuah waveform eksponensial yang berubah ke 0.25 V dalam 0.1 $ \mu \text{s} $. Berapa slew rate dari op amp tersebut?
+		\end{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item Berdasarkan Persamaan \ref{pers.16.1}
+			\[ S_R = \frac{\Delta v_{out}}{\Delta t} = \frac{0.25 \text{ V}}{0.1 ~\mu \text{s}} = 2.5 \text{ V/}\mu \text{s}\]
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Latihan Soal 2.4}
+\begin{frame}{Latihan Soal 2.4}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Tegangan input ke op amp adalah tegangan fungsi step. Output-nya adalah sebuah waveform eksponensial yang berubah ke 0.8 V dalam 0.2 $ \mu \text{s} $. Berapa slew rate dari op amp tersebut?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 2.5}
+\begin{frame}{Contoh Soal 2.5}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Op amp LF411A dengan slew rate $ 	15 \text{ V/}\mu \text{s} $. Berapa power bandwidth dari tegangan peak output 10 V ?
+		\end{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item Berdasarkan Persamaan \ref{pers.16.2}
+			\[ f_{max} = \frac{S_R}{2 \pi V_p} = \frac{15 \text{ V/}\mu \text{s}}{2 \pi (10 \text{ V}) } = 239 \text{ kHz}\] 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Latihan Soal 2.5}
+\begin{frame}{Latihan Soal 2.5}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Op amp LF411A dengan slew rate $ 	15 \text{ V/}\mu \text{s} $. Berapa power bandwidth dari tegangan peak output 200 mV ?
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 2.6}
+\begin{frame}{Contoh Soal 2.6}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Berapa power bandwidth dari:
+			\begin{itemize}
+				\item $ S_R = 0.5 \text{ V/}\mu\text{s} $ dan $ V_p = 8 \text{ V} $ 
+				\item $ S_R = 5 \text{ V/}\mu\text{s} $ dan $ V_p = 8 \text{ V} $ 
+				\item $ S_R = 50 \text{ V/}\mu\text{s} $ dan $ V_p = 8 \text{ V} $ 
+			\end{itemize}
+		\end{itemize}
+		\item Jawaban:
+		\begin{itemize}
+			\item Berdasarkan Gambar \ref{fig-16.10}
+			\begin{itemize}
+				\item $ f_{max} = 10 \text{ kHz}$ 
+				\item $ f_{max} = 100 \text{ kHz}$
+				\item $ f_{max} = 1 \text{ MHz}$
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{Latihan Soal 2.6}
+\begin{frame}{Latihan Soal 2.6}
+	\begin{itemize}
+		\item Pertanyaan:
+		\begin{itemize}
+			\item Berapa power bandwidth dari:
+			\begin{itemize}
+				\item $ S_R = 0.5 \text{ V/}\mu\text{s} $ dan $ V_p = 1 \text{ V} $ 
+				\item $ S_R = 5 \text{ V/}\mu\text{s} $ dan $ V_p = 1 \text{ V} $ 
+				\item $ S_R = 50 \text{ V/}\mu\text{s} $ dan $ V_p = 1 \text{ V} $ 
+			\end{itemize}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
