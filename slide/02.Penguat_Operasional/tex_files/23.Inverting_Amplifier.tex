@@ -92,5 +92,41 @@
 
 \subsection{Bias dan Offset}
 \begin{frame}{Bias dan Offset}
-	content...
+	\begin{itemize}
+		\item Total error tegangan output:
+		\begin{equation}\label{pers.16.7}
+			V_{error} \cong \pm A_{v(CL)} (\pm V_{1err} \pm V_{2err} \pm V_{3err} )
+		\end{equation}
+		\item Error tegangan input:
+		\begin{equation}\label{pers.16.8}
+			V_{1err} = (R_{B1} - R_{(B2)}) I_{in(bias)}
+		\end{equation}
+		\begin{equation}\label{pers.16.9}
+			V_{2err} = (R_{B1} + R_{(B2)}) \frac{I_{in(off)}}{2}
+		\end{equation}
+		\begin{equation}\label{pers.16.10}
+			V_{3err} = V_{in(off)}
+		\end{equation}
+		\item Resistor Thevenin
+		\begin{equation}\label{pers.16.11}
+			R_{B2} = R_1 \parallel R_f
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\subsection{Contoh Soal 2.7}
+\begin{frame}{Contoh Soal 2.7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.16a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa penguatan tegangan closed-loop dan bandwidth?
+				\item Berapa tegangan output di 1 kHz? dan di 1 MHz?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
 \end{frame}
