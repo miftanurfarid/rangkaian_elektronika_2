@@ -21,16 +21,28 @@
 
 \subsection{Virtual Ground}
 \begin{frame}{Virtual Ground}
-	\begin{figure}
-		\centering
-		\includegraphics[height=0.5\textheight]{gambar/fig-16.13}
-		\caption{Konsep virtual ground}
-		\label{fig-16.13}
-	\end{figure}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.4\textheight]{gambar/fig-16.13}
+			\caption{Konsep virtual ground}
+			\label{fig-16.13}
+		\end{figure}
+	\columnbreak
+		\begin{itemize}
+			\item Analisis inverting amplifier lebih mudah
+			\item Berdasarkan op amp ideal:
+			\begin{itemize}
+				\item $ R_{in} = \infty \rightarrow i_2 = 0$
+				\item $ A_{VOL} = \infty \rightarrow v_2 = 0 \rightarrow $
+			\end{itemize}
+			\item Karena $ i_2 = 0 $ maka $ i_{R_f} = i_{in} $
+		\end{itemize}
+	\end{multicols}
 \end{frame}
 
 \subsection{Voltage Gain}
-\begin{frame}{Virtual Ground}
+\begin{frame}{Voltage Gain}
 	\begin{figure}
 		\centering
 		\includegraphics[height=0.5\textheight]{gambar/fig-16.14}
