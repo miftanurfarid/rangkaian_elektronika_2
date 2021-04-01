@@ -43,12 +43,23 @@
 
 \subsection{Voltage Gain}
 \begin{frame}{Voltage Gain}
-	\begin{figure}
-		\centering
-		\includegraphics[height=0.5\textheight]{gambar/fig-16.14}
-		\caption{Inverting amplifier memiliki arus yang sama yang melewati kedua resistor}
-		\label{fig-16.14}
-	\end{figure}
+	\begin{multicols}{2}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.4\textheight]{gambar/fig-16.14}
+			\caption{Inverting amplifier memiliki arus yang sama yang melewati kedua resistor}
+			\label{fig-16.14}
+		\end{figure}
+	\columnbreak
+		\begin{itemize}
+			\item Tegangan input: \[ v_{in} = i_{in} R_1 \]
+			\item Tegangan output: \[ v_{out} = -i_{in} R_f \]
+			\item Penguatan tegangan:
+			\begin{equation}\label{pers.16.3}
+				A_{v(CL)} = \frac{-R_f}{R_1}
+			\end{equation}
+		\end{itemize}
+	\end{multicols}
 \end{frame}
 
 \subsection{Bandwidth}
