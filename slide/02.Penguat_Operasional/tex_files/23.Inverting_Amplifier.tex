@@ -41,8 +41,8 @@
 	\end{multicols}
 \end{frame}
 
-\subsection{Voltage Gain}
-\begin{frame}{Voltage Gain}
+\subsection{Voltage Gain \& Impedansi Input}
+\begin{frame}{Voltage Gain \& Impedansi Input}
 	\begin{multicols}{2}
 		\begin{figure}
 			\centering
@@ -52,11 +52,16 @@
 		\end{figure}
 	\columnbreak
 		\begin{itemize}
-			\item Tegangan input: \[ v_{in} = i_{in} R_1 \]
-			\item Tegangan output: \[ v_{out} = -i_{in} R_f \]
-			\item Penguatan tegangan:
+			\item Tegangan input: $ v_{in} = i_{in} R_1 $
+			\item Tegangan output: $ v_{out} = -i_{in} R_f $
+			\item Penguatan tegangan closed-loop:
 			\begin{equation}\label{pers.16.3}
 				A_{v(CL)} = \frac{-R_f}{R_1}
+			\end{equation}
+			%\item $ A_{v(CL)} < A_{VOL} $
+			\item Impedansi input:
+			\begin{equation}\label{pers.16.4}
+				z_{in(CL)} = R_1
 			\end{equation}
 		\end{itemize}
 	\end{multicols}
