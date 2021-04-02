@@ -80,7 +80,7 @@
 		\begin{itemize}
 			\item Closed-loop bandwidth:
 			\begin{equation}\label{pers.16.5}
-				f_{2(CL)} = \frac{f_{unity}}{dA_{v(CL)}}
+				f_{2(CL)} = \frac{f_{unity}}{A_{v(CL)}}
 			\end{equation}
 			\item Gain-band-width product (GBW):
 			\begin{equation}\label{pers.16.6}
@@ -124,9 +124,244 @@
 		\begin{itemize}
 			\item Pertanyaan:
 			\begin{itemize}
-				\item Berapa penguatan tegangan closed-loop dan bandwidth?
+				\item Berapa penguatan tegangan closed-loop dan bandwidth closed-loop nya?
 				\item Berapa tegangan output di 1 kHz? dan di 1 MHz?
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.16b}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Penguatan tegangan closed-loop:
+				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
+				\item Bandwidth closed-loop:
+				\[ f_{2(CL)} = \frac{f_{unity}}{A_{v(CL)}} = \frac{1 \text{ MHz}}{50} = 20 \text{ kHz}\]
+				\item Ideal bode-plot dari $ A_{v(CL)} $
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.16b}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Tegangan output di 1 kHz:
+				\begin{align*}
+					v_{out} &= (A_{v(CL)})(v_{in}) = (-50)(10 \text{ mVp-p}) \\
+					&= -500 \text{ mVp-p}
+				\end{align*}
+				\item Tegangan output di 1 MHz. Karena 1 MHz adalah unity-gain frekuensinya, maka
+					\[ v_{out} = -10 \text{ mVp-p} \]
+				\item Tanda negatif menunjukkan phase-shift $ 180^{\circ} $ antara input dan output
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 2.7}
+\begin{frame}{Latihan Soal 2.7}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.16a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa tegangan output di 100 kHz ?
+				\item \textit{Hint:} Gunakan persamaan \[ A_v = \frac{A_{v(mid)}}{ \sqrt{1 + (f/f_2)^2} } \]
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Berapa tegangan output ketika $ v_{in} = 0 $?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Berdasarkan Tabel di Gambar \ref{tab-16.01}, didapatkan:
+				\[ I_{\text{in}(\text{bias})} = 80 \text{ nA} \]
+				\[ I_{\text{in}(\text{off})} = 20 \text{ nA} \]
+				\[ V_{\text{in}(\text{off})} = 2 \text{ mV} \]
+				\item Berdasarkan Persamaan \ref{pers.16.11}:
+				\begin{align*}
+					R_{B2} &= R_1 \parallel R_f = 1.5 \text{ k}\Omega \parallel 75 \text{ k}\Omega \\
+					&= 1.47 \text{ k}\Omega
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Error tegangan input:
+				\begin{align*}
+					V_{1err} &= (R_{B1} - R_{B2})I_{in(bias)} \\
+					&= ( - 1.47 \text{ k}\Omega )(80 \text{ nA}) \\
+					&= -0.118 \text{ mV} \\
+					V_{2err} &= (R_{B1} + R_{B2}) \frac{I_{in(off)}}{2} \\
+					&= ( 1.47 \text{ k}\Omega )(10 \text{ nA}) \\
+					&= 0.0147 \text{ mV} \\
+					V_{3err} &= V_{in(off)} = 2 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Penguatan tegangan closed-loop:
+				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
+				\item Error tegangan output:
+				\begin{align*}
+					V_{error} &= \pm 50 (V_{1err} + V_{2err} + V_{2err}) \\
+					&= \pm 50 (0.118 \text{mV} + 0.0147 \text{mV} + 2 \text{mV}) \\
+					&= \pm 107 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 2.8}
+\begin{frame}{Latihan Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika op amp yang digunakan adalah LF157A, berapa tegangan output ketika $ v_{in} = 0 $?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Diketahui: \\
+				$ I_{in(bias)} = 500 \text{ nA} $, \\
+				$ I_{in(off)} = 200 \text{ nA}$, dan \\
+				$ V_{in(off)} = 6 \text{ mV} $
+				\item Berapa tegangan output jika $ v_{in} = 0 $ ?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Error tegangan input:
+				\begin{align*}
+					V_{1err} &= (R_{B1} - R_{B2})I_{in(bias)} \\
+					&= ( - 1.47 \text{ k}\Omega )(500 \text{ nA}) \\
+					&= -0.735 \text{ mV} \\
+					V_{2err} &= (R_{B1} + R_{B2}) \frac{I_{in(off)}}{2} \\
+					&= ( 1.47 \text{ k}\Omega )(100 \text{ nA}) \\
+					&= 0.147 \text{ mV} \\
+					V_{3err} &= V_{in(off)} = 6 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.9}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Penguatan tegangan closed-loop:
+				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
+				\item Error tegangan output:
+				\begin{align*}
+					V_{error} &= \pm 50 (V_{1err} + V_{2err} + V_{2err}) \\
+					&= \pm 50 (0.735 \text{mV} + 0.147 \text{mV} + 6 \text{mV}) \\
+					&= \pm 344 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.9}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{gambar/fig-16.17}
+		\caption{(a) Rangkaian op amp 741C dan (b) Rangkaian op amp 741C dengan penambahan compensating resistor dan potensiometer}
+		\label{fig-16.17}
+	\end{figure}
+	
 \end{frame}
