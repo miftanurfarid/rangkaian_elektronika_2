@@ -105,7 +105,7 @@
 \begin{frame}{Contoh Soal 2.10}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=\linewidth]{gambar/fig-16.22a}
+			\includegraphics[width=0.8\linewidth]{gambar/fig-16.22b}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -113,12 +113,95 @@
 			\begin{itemize}
 				\item Penguatan tegangan closed-loop:
 				\begin{align*}
-					A_{v(CL)} &= \frac{R_f}{R_1} + 1 = \frac{3.9 \text{ k}\Omega}{100 \text{ k}\Omega} + 1 \\
-					&= 40
+					A_{v(CL)} &= \frac{R_f}{R_1} + 1 = \frac{3.9 \text{ k}\Omega}{100 \text{ k}\Omega} + 1 = 40
 				\end{align*}
 				\item Bandwidth:
 				\begin{align*}
-					f_{2(CL)}
+					f_{2(CL)} = \frac{f_{unity}}{A_{v(CL)}} = \frac{1 \text{ MHz}}{40} = 25 \text{ kHz}
+				\end{align*}
+				\item Tegangan output di 250 kHz
+				\begin{align*}
+					v_{out} &= A_{c(CL)} v_{in} = 4(50 \text{ mVp-p})\\
+					&= 200 \text{ mVp-p}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Latihan Soal 2.10}
+\begin{frame}{Latihan Soal 2.10}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.22a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika $ R_f = 4.9 \text{ k}\Omega $, tentukan $ A_{v(CL)} $ dan $ v_{out} $ di 200 kHz.
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\subsection{Contoh Soal 2.11}
+\begin{frame}{Contoh Soal 2.11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.22a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Pertanyaan:
+			\begin{itemize}
+				\item Jika $ I_{in(bias)} = 500 \text{ nA} $, $ I_{in(off)} = 200 \text{ nA} $, dan $ V_{in(off)} = 6 \text{ mV} $, berapa error tegangan output?
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.22a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Resistor Thevenin:
+				\begin{align*}
+					R_{B2} &= R_1 \parallel R_f = 3.9 \text{ k}\Omega \parallel 100~\Omega \\
+					R_{B2} &\approx 100~\Omega
+				\end{align*}
+				\item Error tegangan input
+				\begin{align*}
+					V_{1err} &= (R_{B1} - R_{B2})I_{in(bias)}  \\
+					&= (-100~\Omega)(500 \text{ nA}) = -0.05 \text{ mV}\\
+					V_{2err} &= (R_{B1} + R_{B2})I_{in(bias)} \\
+					&= (100~\Omega)(100 \text{ nA}) = 0.01 \text{ mV}\\
+					V_{3err} &= V_{in(off)} = 6 \text{ mV}
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{Contoh Soal 2.11}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.22a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item Error tegangan output
+				\begin{align*}
+					V_{error} &= \pm A_{v(CL)}(\pm V_{1err} \pm V_{2err} \pm V_{3err}) \\
+					&= \pm 40 (0.05 \text{ mV} + 0.01 \text{ mV} + 6 \text{ mV}) \\
+					&= \pm 242 \text{ mV}
 				\end{align*}
 			\end{itemize}
 		\end{itemize}
