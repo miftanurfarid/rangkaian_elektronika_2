@@ -1,0 +1,57 @@
+\pdfminorversion=4
+\documentclass[aspectratio=169]{beamer}
+\usepackage{animate} % for animation
+\usepackage{array,multirow,graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\graphicspath{{gambar/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Hide subsubsections from TOC, but keep PDF bookmarks with beamer
+\hypersetup{bookmarksopen=true,bookmarksopenlevel=4}
+\setcounter{tocdepth}{4}
+
+\renewcommand{\figurename}{Gambar.}
+\renewcommand{\tablename}{Tabel.}
+
+\usetheme[pageofpages=of,	% String used between the current page and the
+							% total page count.
+			alternativetitlepage=true,% Use the fancy title page.
+			titleline=true,
+			titlepagelogo=OK-LOGO-ITK.jpg
+%          	 titlepagelogo=fig/jaist_logo.png
+			]{Torino}
+			% change /beamerinnerthemefancy.sty to resize the logo
+\usecolortheme{freewilly}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
+\makeatother
+
+\author{Mifta Nur Farid, S.T., M.T. \\
+	miftanurfarid@lecturer.itk.ac.id}
+\title{RANGKAIAN ELEKTRONIKA II}
+\subtitle{Negative Feedback}
+\institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
+\date{\tiny Maret 10, 2021}
+
+% The log drawn in the upper right corner.
+\logo{\includegraphics[height=0.13\paperheight]{OK-LOGO-ITK.jpg}}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\include{./tex_files/30.Sub_CPMK.tex}
+\include{./tex_files/31.Pengantar_Negative_Feedback.tex}
+\include{./tex_files/32.VCVS.tex}
+\include{./tex_files/33.ICVS.tex}
+\include{./tex_files/34.VCIS.tex}
+\include{./tex_files/35.ICIS.tex}
+\include{./tex_files/99.terima_kasih.tex}
+
+\end{document}
+
