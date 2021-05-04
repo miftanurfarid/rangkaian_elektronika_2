@@ -1,8 +1,12 @@
 \section{Op Amp 741}
-\begin{frame}{Op Amp 741}
+
+\subsection{Pengantar Op Amp 741}
+
+\begin{frame}{Pengantar Op Amp 741}
 	\begin{itemize}
-		\item Monolitic amp $ \mu\text{A709} $ tahun 1965 oleh Fairchild Semiconductor
-		\item $ \mu\text{A709} $ memiliki kekurangan $ \rightarrow $ dibuatlah $ \mu\text{A741} $
+		\item Monolitic amp $ \mu\text{A709} $ dibuat tahun 1965 oleh Fairchild Semiconductor
+		\item Meskipun tergolong sukses, generasi pertama op amp ini memiliki kekurangan maka dibuatlah $ \mu\text{A741} $
+		\item Karena harganya yang tidak mahal dan mudah digunakan, $ \mu\text{A741} $ sangatlah sukses.
 		\item Banyak manufaktur yang membuat $ \mu\text{A741} $:
 		\begin{itemize}
 			\item ON Semiconductor: MC1741
@@ -14,12 +18,14 @@
 \end{frame}
 
 \subsection{Standar Industri}
+
 \begin{frame}{Standar Industri}
 	\begin{itemize}
-		\item Beberapa versi: 741, 741A, 741C, 741E, dan 741N
+		\item Tipe 741 memiliki beberapa versi: 741, 741A, 741C, 741E, dan 741N
 		\item Bergantung pada karakteristiknya (voltage gain, temp. range, noise level, dll)
 		\item 741C (C = \textit{Commercial grade}) $ \rightarrow $ sedikit lebih murah dan paling banyak digunakan
 		\item $ A_{VOL} = 100000 $, $ z_{in} = 2 \text{ M}\Omega $, $ z_out = 75~\Omega $
+		\item Gambar \ref{fig-16.03} menunjukkan 3 package yang terkenal beserta pinoutnya
 	\end{itemize}
 \end{frame}
 
@@ -32,30 +38,47 @@
 	\end{figure}
 \end{frame}
 
-\subsection{Rangkaian Ekivalen dari Op Amp 741}
+\subsection{Diagram skematik yang disederhanakan dari 741}
+
+\begin{frame}{Diagram skematik yang disederhanakan dari 741}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.9\textheight]{gambar/fig-16.04}
+		\caption{Rangkaian ekivalen dari op amp 741}
+		\label{fig-16.04}
+	\end{figure}
+\end{frame}
+
+\subsection{Input Diff Amp}
+
+\begin{frame}{Input Diff Amp}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.04} adalah diagram skematik yang disederhanakan dari 741.
+		\item Rangkaian ini merupakan ekivalen dari 741 dan op amp generasi-generasi selanjutnya.
+		\item Tidak perlu memahami secara detail rangkaian tersebut, cukup pahami ide dasarnya saja.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Input Diff Amp}
+	\begin{itemize}
+		\item Input stage yang digunakan adalah diff amp ($ Q_1 $ dan $ Q_2 $).
+		\item $ Q_{14} $
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Rangkaian Ekivalen dari Op Amp 741}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.9\linewidth]{gambar/fig-16.04}
-			\caption{Rangkaian ekivalen dari op amp 741}
-			\label{fig-16.04}
-		\end{figure}
-		\columnbreak
-		\begin{itemize}
-			\item Input diff amp
-			\item Final Stage
-			\item Active Loading
-			\item Frequency Compensation $ C_{in(M)} = (A_v + 1) C_c $
-		\end{itemize}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.5\linewidth]{gambar/fig-16.05}
-			\caption{Bode plot $ A_{VOL} $ 741C ideal}
-			\label{fig-16.05}
-		\end{figure}
-	\vfill\null
-	\end{multicols}
+	\begin{itemize}
+		\item Input diff amp
+		\item Final Stage
+		\item Active Loading
+		\item Frequency Compensation $ C_{in(M)} = (A_v + 1) C_c $
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{gambar/fig-16.05}
+		\caption{Bode plot $ A_{VOL} $ 741C ideal}
+		\label{fig-16.05}
+	\end{figure}
 \end{frame}
 
 \subsection{Bias \& Offset}
