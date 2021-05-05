@@ -43,7 +43,7 @@
 \begin{frame}{Diagram skematik yang disederhanakan dari 741}
 	\begin{figure}
 		\centering
-		\includegraphics[height=0.9\textheight]{gambar/fig-16.04}
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.04}
 		\caption{Rangkaian ekivalen dari op amp 741}
 		\label{fig-16.04}
 	\end{figure}
@@ -62,17 +62,67 @@
 \begin{frame}{Input Diff Amp}
 	\begin{itemize}
 		\item Input stage yang digunakan adalah diff amp ($ Q_1 $ dan $ Q_2 $).
-		\item $ Q_{14} $
+		\item $ Q_{14} $ adalah sumber arus yang menggantikan tail resistor.
+		\item $ R_2 $, $ Q_{13} $, $ Q_{14} $ adalah current mirror yang menghasilkan tail current untuk $ Q_1 $ dan $ Q_2 $.
+		\item Daripada menggunakan resistor biasa sebagai resistor kolektor, 741 ini menggunakan active-load resistor.
+		\item Active-load $ Q_4 $ bertindak sebagai seperti sumber arus dengan impedansi yang sangat tinggi.
+		\item Akibatnya, voltage gain dari diff amp menjadi jauh lebih besar daripada menggunakan passive-load resistor.
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Rangkaian Ekivalen dari Op Amp 741}
+\begin{frame}{Input Diff Amp}
 	\begin{itemize}
-		\item Input diff amp
-		\item Final Stage
-		\item Active Loading
-		\item Frequency Compensation $ C_{in(M)} = (A_v + 1) C_c $
+		\item Sinyal yang dikuatkan dari diff amp akan mendrive base dari $ Q_5 $, sebuah emitter follower.
+		\item Stage ini akan menaikkan level impedansi untuk menghindari loading down dari diff amp.
+		\item Sinyal yang keluar dari $ Q_5 $ menuju ke $ Q_6 $.
+		\item Dioda $ Q_7 $ dan $ Q_8 $ adalah bagian dari bias untuk final stage.
+		\item $ Q_{11} $ adalah active-load resistor untuk $ Q_6 $, sehingga $ Q_6 $ dan $ Q_{11} $ seperti CE driver stage dengan voltage gain yang sangat besar.
+		\item Simbol dioda digunakan ketika transistor memiliki base yang terhubung singkat dengan collector, seperti $ Q_3 $.
 	\end{itemize}
+\end{frame}
+
+\subsection{Final Stage}
+
+\begin{frame}{Final Stage}
+	\begin{itemize}
+		\item Sinyal yang dikuatkan yang keluar dari CE driver stage ($ Q_6 $) menuju ke final stage, yang merupakan Class-B push-pull emitter follower ($ Q_9 $ dan $ Q_{10} $).
+		\item Karena supply tegangan yang terbagi menjadi 2 (Positif $ V_CC $ dan negatif $ V_EE $), quiescent output idealnya adalah 0 V ketika tegangan inputnya nol.
+		\item Deviasi berapapun dari 0 V disebut tegangan error output (output error voltage).
+		\item Jika $ v_1 > v_2 $, tegangan input $ v_{in} $ akan menghasilkan tegangan output $ v_{out} $ positif. Sebaliknya, jika $ v_2 > v_1 $, tegangan input $ v_{in} $ akan menghasilkan tegangan output $ v_{out} $ negatif.
+		\item Idealnya , $ v_{out} $ bisa sama positifnya dengan $ +V_{CC} $ dan sama negatifnya dengan $ -V_{EE} $ sebelum clipping terjadi.
+		\item Output swing normalnya dalam 1 hingga 2 V dari tiap tegangan supply karena tegangan drop di dalam 741.
+	\end{itemize}
+\end{frame}
+
+\subsection{Active Loading}
+
+\begin{frame}{Active Loading}
+	\begin{itemize}
+		\item Pada Gambar \ref{fig-16.04}, terdapat 2 active-loading (menggunakan transistor daripada resistor sebagai load atau bebannya).
+		\item Pertama, ada active-load $ Q_4 $ di input diff.
+		\item Kedua, ada active-load $ Q_{11} $ do CE driver stage.
+		\item Karena sumber arus memiliki impedansi output yang besar, active-load menghasilkan voltage gain yang lebih besar daripada jika menggunakan resistor.
+		\item Active-load ini umumnya menghasilkan voltage gain sebesar 100000 untuk 741C.
+		\item Active-load sangat populer di dalam IC karena lebih mudah dan lebih murah untuk membuat transistor di dalam chip daripada membuat resistor.
+	\end{itemize}
+\end{frame}
+
+\subsection{Frequency Compensation}
+
+\begin{frame}{Frequency Compensation}
+	\begin{itemize}
+		\item Pada Gambar \ref{fig-16.04}, $ C_c $ adalah compensating capacitor.
+		\item Karena efek Miller, kapasitor kecil ini (umumnya 30 pF) dikalikan dengan voltage gain dari $ Q_5 $ dan $ Q_6 $ untuk mendapatkan kapasitansi ekivalen yang lebih besar yaitu\\
+		$$ C_{in(M)} = (A_v + 1) C_c $$ \\
+		di mana $ A_v $ adalah voltage gain dari stage $ Q_5 $ dan $ Q_6 $.
+		\item Resistansi yang berhadapan dengan kapasitansi Miller adalah impedansi output dari diff amp sehingga kita memiliki rangkaian lag.
+		\item Rangkaian lag menghasilkan cut off frequency 10 Hz di 741C.
+		\item Open-loop gain dari op amp adalah di bawah 3 dB di cut off frequency ini.
+		\item Kemudian, $ A_{VOL} $ menurun sekitar 20 dB/decade hingga mencapai unity-gain frequency.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Frequency Compensation}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.5\linewidth]{gambar/fig-16.05}
@@ -81,26 +131,59 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Frequency Compensation}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.05} menunjukkan Bode plot ideal dari open-loop voltage gain terhadap frequency.
+		\item 741C memiliki open-loop voltage gain sebesar 100000, ekivalen dengan 100 dB.
+		\item Karena open-loop cut off frequency adalah 10 Hz, voltage gain akan berhenti di 10 Hz dan turun sebesar 20 dB/decade hingga 0 dB di 1 MHz.
+	\end{itemize}
+\end{frame}
+
 \subsection{Bias \& Offset}
+
 \begin{frame}{Bias \& Offset}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.8\linewidth]{gambar/fig-16.06}
-			\caption{Penggunaan compensation dan nulling 741C}
-			\label{fig-16.06}
-		\end{figure}
-		\columnbreak
-		\begin{itemize}
-			\item Tidak ada input signal $ \rightarrow $ input bias dan offset $ \rightarrow $ error output
-			\item Error output berkurang $ \leftarrow $ base resistor yang sama $ \rightarrow $ hanya menghilangkan arus bias tapi tidak arus offset dan tegangan offset
-			\item Solusi: menggunakan rangkaian nulling di datasheet
-		\end{itemize}
-		\vfill\null
-	\end{multicols}
+	\begin{itemize}
+		\item Telah dijelaskan sebelumnya bahwa diff amp memiliki input bias dan offset yang menghasikan error output ketika tidak ada input sinyal.
+		\item Dalam beberapa aplikasi, output error adalah cukup kecil untuk diabaikan.
+		\item Tapi ketika output error tidak bisa diabaikan, designer dapat mereduksinya dengan menggunakan base resistor yang bernilai sama.
+		\item Cara ini dapat menghilangkan permasalahan dari arus bias tapi tidak unutk arus offset dan tegangan offset.	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Bias \& Offset}
+	\begin{itemize}
+		\item Sehingga cara terbaik untuk menghilangkan error output adalah dengan menggunakan nulling circuit yang diberikan di datasheet.
+		\item Nulling circuit dapat menghilangkan output error dan meminimalkan thermal drift, perubahan yang pelan di tegangan output yang disebabkan oleh perubahan temperatur pada parameter op amp.
+		\item Terkadang datasheet tidak menyertakan nulling circuit, sehingga kita berikan tegangan input yang kecil untuk me-null-kan output.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Bias \& Offset}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.06}
+		\caption{Penggunaan compensation dan nulling 741C}
+		\label{fig-16.06}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Bias \& Offset}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.06} menunjukkan metode nulling yang disarankan oleh datasheet 741C.
+		\item Sumber AC men-drive inverting input yang memiliki resistansi Thevenin $ R_B $.
+		\item Untuk menetralkan efek dari arus bias input (80 nA) yang mengalir melalui resistor ini, resistor diskret yang bernilai sama ditambahkan ke noninverting input seperti di gambar tersebut.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Bias \& Offset}
+	\begin{itemize}
+		\item Untuk menghilangkan efek dari arus offset input 20 nA dan tegangan offset input 2 mV, datasheet 741C merekomendasikan untuk menggunakan 10 k$ \Omega $ potentiometer antara pon 1 dan pin 5.
+		\item Dengan meng-adjust potensiometer ini dengan tanpa sinyal input, kita dapat membuat tegangan output menjadi nol.
+	\end{itemize}
 \end{frame}
 
 \subsection{CMRR, MPP, dan $A_{VOL}$}
+
 \begin{frame}{CMRR, MPP, dan $A_{VOL}$}
 	\begin{figure}
 		\centering
@@ -108,10 +191,97 @@
 		\caption{Grafik (a) Common-Mode Rejection Ratio (CMRR), (b) Maximum Peak-to-Peak Output (MPP), dan (c) Open-Loop Voltage Gain $A_{VOL}$ dari 741C}
 		\label{fig-16.07}
 	\end{figure}
-	\vfill\null
+\end{frame}
+
+\subsection{Common-Mode Rejection Ratio}
+
+\begin{frame}{Common-Mode Rejection Ratio}
+	\begin{itemize}
+		\item Untuk 741C, CMRRnya adalah 90 dB di frekuensi rendah.
+		\item Jika diberikan 2 sinyal yang sama, sinyal yang diinginkan dan yang tidak, sinyal yang diinginkan akan bernilai 90 dB lebih besar di output daripada common-mode signal-nya.
+		\item Atau sinyal yang diinginkan 30000 kali lebih besar daripada common-mode signal.
+		\item Pada frekuensi tinggi, efek reaktif menurunkan CMRR seperti yang ditunjukkan oleh Gambar \ref{fig-16.07}a.
+	\end{itemize}
+\end{frame}
+
+\subsection{Maximum Peak-to-Peak Output}
+
+\begin{frame}{Maximum Peak-to-Peak Output}
+	\begin{itemize}
+		\item Nilai MPP dari amplifier adalah output peak-to-peak maksimum yang amplifier dapat hasilkan tanpa clipping.
+		\item Karena quiescent output dari op amp idealnya bernilai nol, tegangan output ac dapat berayun secara positif atau negatif.
+		\item Untuk resistansi beban yang lebih besar daripada $ R_{out} $, tegangan output dapat berayun hampir ke tegangan supply.
+		\item Contoh, jika $ V_{CC} $ = +15 V dan $ V_{EE} $ = - 15 V, nilai MPP dengan resistansi beban sebesar 10 k$ \Omega $ idealnya adalah 30 V.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Maximum Peak-to-Peak Output}
+	\begin{itemize}
+		\item Dengan op amp yang tidak ideal, output tidak dapat berayun ke tegangan supply karena ada tegangan drop yang kecil di final stage op amp.
+		\item Ketika resistansi beban tidak besar dibandingkan dengan $ R_{out} $, beberapa tegangan yang dikuatkan akan drop di $ R_{out} $, artinya tegangan output final lebih kecil.
+		\item Gambar \ref{fig-16.07}b menunjukkan MPP vs resistansi beban untuk 741C dengan tegangan supply +15 V dan -15 V
+		\item Perhatikan bahwa MPP sekitar 27 V untuk $ R_L $ 10 k$ \Omega $.
+		\item Artinya, output saturasi secara positif +13.5 V dan secara negatif -13.5 V.
+		\item Ketika resistansi beban menurun, MPP juga menurun.
+		\item Contohnya, jika resistansi beban 275 $\Omega$, MPP menurun hingga 16 V, yang artinya output saturasi secara positif +8 V dan secara negatif -8 V.
+	\end{itemize}
+\end{frame}
+
+\subsection{Short-Circuit Current}
+
+\begin{frame}{Short-Circuit Current}
+	\begin{itemize}
+		\item Di beberapa aplikasi, op amp mungkin men-drive resistansi beban sekitar nol.
+		\item Pada kasus seperti ini, kita perlu mengetahui nilai dari short-circuit output current.
+		\item Datasheet dari 741C menyatakan short-circuit output current sebesar 25 mA.
+		\item Ini adalah arus output maksimum yang op amp hasilkan.
+		\item Jika kita menggunakan resistor beban yang lebih kecil (kurang dari 75 $\Omega$), jangan harap untuk mendapatkan tegangan output yang besar karena tegangannya tidak akan lebih besar daripada 25 mA dikali dengan resistansi beban tadi.
+	\end{itemize}
+\end{frame}
+
+\subsection{Frequency Response}
+
+\begin{frame}{Frequency Response}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.07}c menunjukkan respon frekuensi dari sinyal yang kecil dari 741C.
+		\item Pada frekuensi tengah, voltage gain sebesar 100000.
+		741C memiliki cutoff frequency $ f_c $ di 10 Hz.
+		\item Seperti yang ditampilkan, voltage gain sebesar 70700 (menurun 3 dB) di 10 Hz.
+		\item Di atas cutoff frequency, voltage gain akan menurun sebesar 20 dB/decade.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Frequency Response}
+	\begin{itemize}
+		\item Unity-gain frequency adalah frekuensi dimana voltage gain bernilai 1.
+		\item Pada Gambar \ref{fig-16.07}c, $ f_{unity} $ adalah 1 MHz.
+		\item Datasheet biasanya menspesifikkan nilai dari $ f_{unity} $ karena ini merepresentasikan batas atas pada gain yang dapat digunakan di op amp.
+		\item Contoh, datasheet 741C menyatakan $ f_{unity} $ sebesar 1 MHz. Artinya 741C dapat menguatkan sinyal hingga 1 MHz.
+		\item Di atas 1 MHz, voltage gain kurang dari 1 dan 741C tidak berguna.
+		\item Jika menginginkan $ f_{unity} $ yang lebih tinggi, gunakan LM318 yang memiliki $ f_{unity} $ 15 Hz.
+	\end{itemize}
 \end{frame}
 
 \subsection{Slew Rate}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Compensating capacitor di dalam 741C memberikan fungsi yang sangat penting.
+		\item Yaitu mencegah osilasi yang dapat menginterferensi sinyal yang diinginkan.
+		\item Namun ada kekurangan, compensating capacitor perlu di-charge dan di-discharge.
+		\item Hal ini membuat batasan pada seberapa cepat output op amp dapat berubah.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Compensating capacitor di dalam 741C memberikan fungsi yang sangat penting.
+		\item Yaitu mencegah osilasi yang dapat menginterferensi sinyal yang diinginkan.
+		\item Namun ada kekurangan, compensating capacitor perlu di-charge dan di-discharge.
+		\item Hal ini membuat batasan pada seberapa cepat output op amp dapat berubah.
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Slew Rate}
 	\begin{multicols}{2}
 		\begin{figure}
