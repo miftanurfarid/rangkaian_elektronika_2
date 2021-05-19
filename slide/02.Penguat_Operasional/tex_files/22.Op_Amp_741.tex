@@ -275,35 +275,55 @@
 
 \begin{frame}{Slew Rate}
 	\begin{itemize}
-		\item Compensating capacitor di dalam 741C memberikan fungsi yang sangat penting.
-		\item Yaitu mencegah osilasi yang dapat menginterferensi sinyal yang diinginkan.
-		\item Namun ada kekurangan, compensating capacitor perlu di-charge dan di-discharge.
-		\item Hal ini membuat batasan pada seberapa cepat output op amp dapat berubah.
+		\item Tegangan input ke op amp adalah tegangan step positif, transisi tegangan yang mendadak dari satu level dc ke level dc yang lebih tinggi.
+		\item Jika op amp nya sempurna, maka kita memperoleh respons ideal seperti pada Gambar \ref{fig-16.08}a.
+		\item Namun, output yang terjadi adalah sinyal eksponensial positif.
+		\item Hal ini terjadi karena compensating capacitor harus di-charge terlebih dahulu sebelum tegangan output dapat berubah ke level yang lebih tinggi.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Slew Rate}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.8\linewidth]{gambar/fig-16.08}
-			\caption{(a) Respon ideal dan aktual terhadap tegangan step input, (b) ilustrasi definisi slew rate, (c) $ S_R = 0.5 \text{ V/}\mu\text{s} $}
-			\label{fig-16.08}
-		\end{figure}
-		\columnbreak
-		\begin{itemize}
-			\item Persamaan slew rate, $ S_R $
-			\begin{equation}\label{pers.16.1}
-				S_R = \frac{\Delta v_{out}}{\Delta t}
-			\end{equation}
-			\item Exponential wave meningkat 0.5 V selama 1 mikrodetik pertama:
-			\begin{align*}
-				S_R &= \frac{\Delta v_{out}}{\Delta t} \\
-				&= \frac{0.5 \text{ V}}{1~\mu\text{s}} \\
-				&= 0.5 \text{ V/}\mu\text{s}
-			\end{align*}
-		\end{itemize}
-	\end{multicols}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.08}
+		\caption{(a) Respon ideal dan aktual terhadap tegangan step input, (b) ilustrasi definisi slew rate, (c) $ S_R = 0.5 \text{ V/}\mu\text{s} $}
+		\label{fig-16.08}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Initial slope dari bentuk sinyal eksponensial disebut slew rate, $ S_R $.
+		\item Persamaan slew rate, $ S_R $.
+		\begin{equation}\label{pers.16.1}
+			S_R = \frac{\Delta v_{out}}{\Delta t}
+		\end{equation}
+		\item Gambar \ref{fig-16.08}b mengilustrasikan makna dari slew rate.
+		\item Initial slope = perubahan vertikal dibagi dengan perubahan hoorizontal di antara 2 titik di bagian awal gelombang eksponensial.
+		\item Exponential wave meningkat 0.5 V selama 1 mikrodetik pertama, maka
+		\begin{align*}
+			S_R &= \frac{\Delta v_{out}}{\Delta t} = \frac{0.5 \text{ V}}{1~\mu\text{s}} \\
+			&= 0.5 \text{ V/}\mu\text{s}
+		\end{align*}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Slew rate merepresentasikan respon tercepat yang dimiliki oleh op amp.
+		\item Contoh, slew rate dari 741C adalah 0.5 V/$\mu$s.
+		\item Artinya adalah output dari 741C dapat berubah tidak lebih cepat dari 0.5 V dalam 1 mikrodetik.
+		\item Dengan kata lain, jika 741C di-drive oleh tegangan inpun step, maka kita tidak mendapatkan tegangan output step tapi kita mendapatkan gelombang output exponensial.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Slew rate dapat dibatasi dengan sinyal sinusoidal.
+		\item Gambar \ref{fig-16.09}a, op amp dapat menghasilkan gelombang sinus output hanya jika initial slope dari gelombang sinus kurang dari slew rate.
+		\item Contoh, jika gelombang sinus output memiliki initial slope 0.1 V/$\mu$s, 741C dapat menghasilkan gelombang sinus tanpa masalah sama sekali karena slew rate 741C adalah 0.5 V/$\mu$s.
+		\item Di lain sisi, jika gelombang sinus memiliki initial slope 0.1 V/$\mu$s, output lebih kecil dari pada initial slope gelombang sinus maka output akan terlihat triangular daripada sinusoidal seperti yang ditambilkan pada Gambar \ref{fig-16.09}b.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Slew Rate}
@@ -317,36 +337,55 @@
 
 \begin{frame}{Slew Rate}
 	\begin{itemize}
-		\item Sinyal dan frekuensinya sangat kecil $ \rightarrow $ slew rate bukan masalah
-		\item Sinyal dan frekuensinya sangat besar $ \rightarrow $ slew rate akan mendistorsi sinyal ouput
+		\item Datasheet op amp selalu menentukan slew rate karena nilai ini membatasi respon sinyal yang besar dari op amp.
+		\item Jika gelombang sinus output sangat kecil atau frekuensinya sangat kecil maka slew rate bukan masalah.
+		\item Namun jika sinyal output besar dan frekuensinya sangat besar maka slew rate akan mendistorsi sinyal output
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Kita akan turunkan persamaan berikut ini:
 		\[ S_S = 2 \pi f V_p \]
-		\item $ S_s $: initial slope dari gelombang sinus, $ f $: frekuensi, $ V_p $: nilai peak
+		\item $ S_s $: initial slope dari gelombang sinus, $ f $: frekuensi, $ V_p $: nilai peak.
+		\item Untuk menghindari slew-rate distortion dari gelombang sinus, $ S_S $ harus lebih kecil atau sama dengan $ S_R $, maka
 		\begin{align*}
 			S_S &\leq S_R \\
 			2 \pi f V_p &\leq S_R \\
 			f &\leq \frac{S_R}{2 \pi V_p} \\
 		\end{align*}
-		\begin{equation} \label{pers.16.2}
-			f_{max} = \frac{S_R}{2 \pi V_p}
-		\end{equation}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Slew Rate}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.8\linewidth]{gambar/fig-16.10}
-			\caption{Grafik power bandwidth vs. peak voltage}
-			\label{fig-16.10}
-		\end{figure}
-		\columnbreak
-		\begin{itemize}
-			\item  $ f_{max} $: power bandwidth atau large-signal bandwidth
-			\item $ S_R = 0.5 \text{ V/}\mu\text{s} \rightarrow $ 741C
-			\item $ S_R = 50 \text{ V/}\mu\text{s} \rightarrow $ LM318
-		\end{itemize}
-	\end{multicols}	
+	\begin{itemize}
+		\item Sehingga
+			\begin{equation} \label{pers.16.2}
+				f_{max} = \frac{S_R}{2 \pi V_p}
+			\end{equation}
+		\item $ f_{max} $ adalah frekuensi tertinggi yang dapat dikuatkan tanpa slew-rate distortion.
+		\item $ f_{max} $ disebut juga power bandwidth.
+		\item Gambar \ref{fig-16.10} menunjukkan grafik dari tiga slew rate. $ S_R $ = 0.5 V/$\mu$S untuk 741C dan 
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Slew Rate}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.10}
+		\caption{Grafik power bandwidth vs. peak voltage}
+		\label{fig-16.10}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Slew Rate}
+	\begin{itemize}
+		\item Misalkan kita menggunakan 741C.
+		\item Agar kita bisa mendapatkan tegangan peaak output sebesar 8 V tanpa distorsi, frekuensi tidak boleh lebih besar daripada 10 kHz.
+		\item Untuk meningkatkan $ f_{max} $, kecilkan tegangan output.
+		\item Misalkan, tegangan peak output 1 V maka $ f_{max} $ meningkat menjadi 80 kHz.
+	\end{itemize}
 \end{frame}
 
 \subsection{Contoh Soal 2.1}
@@ -411,7 +450,7 @@
 		\end{itemize}
 		\item Jawaban:
 		\begin{itemize}
-			\item Berdasarkan Gambar \ref{fig-16.07} (a), $ \text{CMRR}_{\text{dB}} \approx 40 \text{ dB} $ 
+			\item Berdasarkan Gambar \ref{fig-16.07} (a), $ \text{CMRR}_{\text{dB}} \approx 40 \text{ dB} $ di 100 kHz.
 			\[ \text{CMRR} = 10^{(\text{CMRR}_{\text{dB}}/20)} = 10^{(40 \text{ dB}/20)} = 100\]
 		\end{itemize}
 	\end{itemize}
