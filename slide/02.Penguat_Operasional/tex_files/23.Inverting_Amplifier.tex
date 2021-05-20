@@ -3,10 +3,11 @@
 \subsection{Pengantar Inverting Amplifier}
 \begin{frame}{Pengantar Inverting Amplifier}
 	\begin{itemize}
-		\item Inverting amplifier: rangkaian op amp paling dasar
-		\item Menggunakan negative feedback untuk menstabilkan keseluruhan voltage gain
-		\item Keseluruhan voltage gain perlu distabilkan karena $ A_{VOL} $ sangat besar dan tidak stabil
-		\item 741C memiliki $ A_{VOL} $ minimum sebesar 20000 dan $ A_{VOL} $ maksimum lebih dari 200000
+		\item Inverting amplifier: rangkaian op amp paling dasar.
+		\item Menggunakan negative feedback untuk menstabilkan keseluruhan voltage gain.
+		\item Keseluruhan voltage gain perlu distabilkan karena $ A_{VOL} $ sangat besar dan tidak stabil untuk digunakan tanpa feedback.
+		\item Contohnya, 741C memiliki $ A_{VOL} $ minimum sebesar 20.000 dan $ A_{VOL} $ maksimum lebih dari 200.000.
+		\item Voltage gain yang tidak dapat dipredisksi dari magnitude dan variasi ini tidak berguna tanpa feedback.
 	\end{itemize}
 \end{frame}
 
@@ -18,6 +19,28 @@
 		\caption{Inverting amplifier}
 		\label{fig-16.12}
 	\end{figure}
+\end{frame}
+
+\begin{frame}{Inverting Negative Feedback}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.12} menunjukkan sebuah inverting amplifier.
+		\item Tegangan power-supply tidak ditampilkan agar gambar lebih sederhana.
+		\item Tegangan input $ v_{in} $ men-drive inverting input melalui resistor $ R_1 $.
+		\item Menghasilkan tegangan inverting output $ v_2 $.
+		\item Tegangan input dikuatkan oleh open-loop voltage gain untuk menghasilkan tegangan inverted output.
+		\item Tegangan output diumpanbalik ke input melalui resistor feedback $ R_f $.
+		\item Menghasilkan negative feedback karena output memiliki beda fasa sebesar 180$ ^\circ $ dengan input.
+		\item Dengan kata lain, setiap perubahan di $ v_2 $ yang dihasilkan oleh tegangan input berkebalikan dengan sinyal output.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Inverting Negative Feedback}
+	\begin{itemize}
+		\item Bagaimana negative feedback dapat menstabilkan overall voltage gain?
+		\item Jika open-loop voltage gain $ A_{VOL} $ meningkat dengan alasan apa pun, tegangan output akan meningkat dan memberikan tegangan feedback yang lebih banyak ke inverting input.
+		\item Tegangan feedback yang berkebalikan ini akan mereduksi tegangan $ v_2 $.
+		\item Karena itu, meskipun $ A_{VOL} $ meningkat,$ v_2 $ menurun, dan output akhir meningkat jauh lebih sedikit daripada tanpa negative feedback.
+	\end{itemize}
 \end{frame}
 
 \subsection{Virtual Ground}
