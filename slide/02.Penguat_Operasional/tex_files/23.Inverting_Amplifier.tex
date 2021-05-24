@@ -44,51 +44,66 @@
 \end{frame}
 
 \subsection{Virtual Ground}
+
 \begin{frame}{Virtual Ground}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[height=0.4\textheight]{gambar/fig-16.13}
-			\caption{Konsep virtual ground}
-			\label{fig-16.13}
-		\end{figure}
-	\columnbreak
-		\begin{itemize}
-			\item Analisis inverting amplifier lebih mudah
-			\item Berdasarkan op amp ideal:
-			\begin{itemize}
-				\item $ R_{in} = \infty \rightarrow i_2 = 0$
-				\item $ A_{VOL} = \infty \rightarrow v_2 = 0 \rightarrow $
-			\end{itemize}
-			\item Karena $ i_2 = 0 $ maka $ i_{R_f} = i_{in} $
-		\end{itemize}
-	\end{multicols}
+	\begin{itemize}
+		\item Jika kita menghubungkan kabel antara suatu titik di dalam rangkaian ke ground, tegangan pada titik tersebut menjadi nol.
+		\item Kabel tersebut memberikan jalur untuk arus mengalir ke ground.
+		\item Mechanical ground (kabel yang menghubungkan titik ke ground) adalah ground untuk tegangan dan arus.
+		\item Lain halnya dengan Virtual Ground, salah satu jenis ground yang digunakan untuk menganalisis inverting amplifier dengan lebih mudah.
+	\end{itemize}
 \end{frame}
 
-\subsection{Voltage Gain \& Impedansi Input}
-\begin{frame}{Voltage Gain \& Impedansi Input}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[height=0.4\textheight]{gambar/fig-16.14}
-			\caption{Inverting amplifier memiliki arus yang sama yang melewati kedua resistor}
-			\label{fig-16.14}
-		\end{figure}
-	\columnbreak
+\begin{frame}{Virtual Ground}
+	\begin{itemize}
+		\item Konsep dari virtual ground berdasarkan op amp ideal.
+		\item Op amp ideal memiliki open-loop voltage gain yang tak berhingga dan resistansi input tak berhingga.
+		\item Karenanya, kita dapat menyimpulkan sebagai berikut (Gambar \ref{fig-16.13}):
 		\begin{itemize}
-			\item Tegangan input: $ v_{in} = i_{in} R_1 $
-			\item Tegangan output: $ v_{out} = -i_{in} R_f $
-			\item Penguatan tegangan closed-loop:
-			\begin{equation}\label{pers.16.3}
-				A_{v(CL)} = \frac{-R_f}{R_1}
-			\end{equation}
-			%\item $ A_{v(CL)} < A_{VOL} $
-			\item Impedansi input:
-			\begin{equation}\label{pers.16.4}
-				z_{in(CL)} = R_1
-			\end{equation}
+			\item Karena $ I_{in} $ adalah tak berhingga maka $ i_2 $ adalah nol.
+			\item Karena $ A_{VOL} $ adalah tak berhingga, maka $ v_2 $ adalah nol.
 		\end{itemize}
-	\end{multicols}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Virtual Ground}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.13}
+		\caption{Konsep virtual ground}
+		\label{fig-16.13}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Virtual Ground}
+	\begin{itemize}
+		\item Karena $ i_2 $ = nol, arus yang melalui $ R_f $ pasti sama dengan arus input yang melalui $ R_1 $.
+		\item Karena $ v_2 $ = nol, virtual ground yang ditunjukkan pada Gambar \ref{fig-16.13} menunjukkan bahwa inverting input bertindak seperti ground untuk tegangan dan open untuk arus.
+	\end{itemize}
+\end{frame}
+
+\subsection{Voltage Gain}
+\begin{frame}{Voltage Gain}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.14} menunjukkan virtual ground pada inverting input.
+		\item Sisi kanan dari $ R_1 $ adalah ground tegangan, maka dapat kita tulis:\\
+		$$ v_{in} = i_{in} R_1 $$
+		\item Begitu juga sisi kiri dari $ R_f $ adalah ground tegangan, sehingga magnitude dari tegangan output adalah:\\
+		$$ v_{out} = -i_{in} R_f $$
+		\item Untuk mendapatkan voltage gain, maka $ v_{out} $ dibagi dengan $ v_{in} $:
+		\begin{equation}\label{pers.16.3}
+			A_{v(CL)} = \frac{-R_f}{R_1}
+		\end{equation}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage Gain}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.14}
+		\caption{Inverting amplifier memiliki arus yang sama yang melewati kedua resistor}
+		\label{fig-16.14}
+	\end{figure}
 \end{frame}
 
 \subsection{Bandwidth}
