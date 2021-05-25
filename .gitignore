@@ -13,3 +13,5 @@ Robert*
 *.snm
 *.synctex.gz
 *.toc
+*.fdb_latexmk
+*.fls
