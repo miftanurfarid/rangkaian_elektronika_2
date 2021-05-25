@@ -189,7 +189,52 @@
 \begin{frame}[t]{Bias dan Offset}
 	\begin{itemize}
 		\item Negative feedback mengurangi error output yang disebabkan oleh arus bias input, arus offset input, dan tegangan offset input.
-		\item 
+		\item Seperti yang telah didiskusikan pada bab sebelumnya, ketika tegangan error input dan persamaan tegangan error output total adalah:\\
+
+		\[ V_{error} = A_{VOL} (V_{1err} + V_{2err} + V_{3err}) \]
+
+		\item Ketika negative feedback digunakan, persamaan di atas menjadi:
+
+		\begin{equation}\label{pers.16.07}
+			V_{error} \cong \pm A_{v(CL)} ( \pm V_{1err} \pm V_{2err} \pm V_{3err} )
+		\end{equation}
+		\\
+		dimana $ V_{error} $ adalah tegangan error output total.
+		\item Datasheet tidak menunjukkan tanda $ \pm $ karena hal ini dapat menunjukkan bahwa error bisa terjadi di kedua arah.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Bias dan Offset}
+	\begin{itemize}
+		\item Error input sama seperti sebelumnya, yaitu:
+		
+		\begin{equation}\label{pers.16.8}
+			V_{1err} = (R_{B1} - R_{(B2)}) I_{in(bias)}
+		\end{equation}
+	
+		\begin{equation}\label{pers.16.9}
+			V_{2err} = (R_{B1} + R_{(B2)}) \frac{I_{in(off)}}{2}
+		\end{equation}
+	
+		\begin{equation}\label{pers.16.10}
+			V_{3err} = V_{in(off)}
+		\end{equation}
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Bias dan Offset}
+	\begin{itemize}
+		\item Saat $ A_{v(CL)} $ kecil, error output total yang diberikan dari Persamaan \ref{pers.16.07} mungkin cukup kecil untuk diabaikan.
+		\item Jika tidak, resistor compensation dan offset nulling menjadi perlu.
+		\item Di dalam inverting amplifier, $ R_{B2} $ adalah resistor Thevenin.
+		\item Resistor Thevenin:
+		
+		\begin{equation}\label{pers.16.11}
+			R_{B2} = R_1 \parallel R_f
+		\end{equation}
+
+		\item Jika perlu untuk mengkompensasi arus bias input, resistor $ R_{B1} $ yang bernilai sama dapat dihubungkan ke noninverting input.
 	\end{itemize}
 \end{frame}
 
@@ -200,23 +245,15 @@
 			V_{error} \cong \pm A_{v(CL)} (\pm V_{1err} \pm V_{2err} \pm V_{3err} )
 		\end{equation}
 		\item Error tegangan input:
-		\begin{equation}\label{fig-17.0.16.8}
-			V_{1err} = (R_{B1} - R_{(B2)}) I_{in(bias)}
-		\end{equation}
-		\begin{equation}\label{fig-17.0.16.9}
-			V_{2err} = (R_{B1} + R_{(B2)}) \frac{I_{in(off)}}{2}
-		\end{equation}
-		\begin{equation}\label{fig-17.0.16.10}
-			V_{3err} = V_{in(off)}
-		\end{equation}
-		\item Resistor Thevenin
-		\begin{equation}\label{fig-17.0.16.11}
-			R_{B2} = R_1 \parallel R_f
-		\end{equation}
+
 	\end{itemize}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Contoh Soal 2.7}
+
 \begin{frame}[t]{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
