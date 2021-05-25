@@ -1,6 +1,8 @@
 \section{Inverting Amplifier}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pengantar Inverting Amplifier}
+
 \begin{frame}{Pengantar Inverting Amplifier}
 	\begin{itemize}
 		\item Inverting amplifier: rangkaian op amp paling dasar.
@@ -43,6 +45,7 @@
 	\end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Virtual Ground}
 
 \begin{frame}{Virtual Ground}
@@ -82,7 +85,9 @@
 	\end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Voltage Gain}
+
 \begin{frame}{Voltage Gain}
 	\begin{itemize}
 		\item Gambar \ref{fig-16.14} menunjukkan virtual ground pada inverting input.
@@ -94,20 +99,51 @@
 		\begin{equation}\label{pers.16.3}
 			A_{v(CL)} = \frac{-R_f}{R_1}
 		\end{equation}\\
-		dimana 
+		dimana $ A_{v(CL)} $ adalah closed-loop voltage gain.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage Gain}
+	\begin{itemize}
+		\item Disebut closed-loop voltage gain karena merupakan tegangan ketika terdapat jalur feedback antara output dan input.
+		\item Karena negative feedback, closed-loop voltage gain, $ A_{v(CL)} $, selalu lebih kecil daripada open-loop voltage gain, $ A_{VOL} $.
+		\item Misalkan, jika $ R_1 $ = 1 k$\Omega$ dan $ R_f $ = 50 k$\Omega$, maka closed-loop voltage gain sebesar 50.
+		\item Tanda negatif pada Persamaan \ref{pers.16.3} menunjukkan voltage gain memiliki beda fasa sebesar 180$ ^\circ $.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{Voltage Gain}
 	\begin{figure}
 		\centering
-		\includegraphics[height=0.7\textheight]{gambar/fig-16.14}
+		\includegraphics[height=0.4\textheight]{gambar/fig-16.14}
 		\caption{Inverting amplifier memiliki arus yang sama yang melewati kedua resistor}
 		\label{fig-16.14}
 	\end{figure}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Input Impedance}
+
+\begin{frame}{Input Impedance}
+	\begin{itemize}
+		\item Dalam beberapa hal, terkadang seorang engineer menginginkan impendansi input tertentu.
+		\item Ini salah satu kelebihan dari inverting amplifier, mudah untuk mengatur impedansi input yang diinginkan.
+		\item Karena sisi kanan dari $ R_1 $ adalah virtual ground, sehingga closed-loop input impedansinya adalah:\\
+
+		\begin{equation}\label{pers.16.04}
+			z_{in(CL)} = R_1
+		\end{equation}
+
+		\item Ini adalah impedansi input yang ada di sisi kiri dari $ R_1 $ seperti yang ditunjukkan oleh Gambar \ref{fig-16.14}.
+		\item Misalkan, jika impedansi input sebesar 2 k$\Omega$ dan closed-loop voltage gain sebesar 50 yang dibutuhkan, maka engineer akan menggunakan $ R_1 $ = 2 k$\Omega$ dan $ R_f $ = 100 k$\Omega$
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bandwidth}
+
+
+
 \begin{frame}{Bandwidth}
 	\begin{multicols}{2}
 		\begin{figure}
