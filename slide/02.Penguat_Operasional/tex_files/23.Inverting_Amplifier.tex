@@ -208,11 +208,11 @@
 	\begin{itemize}
 		\item Error input sama seperti sebelumnya, yaitu:
 		
-		\begin{equation}\label{pers.16.8}
+		\begin{equation}\label{pers.16.08}
 			V_{1err} = (R_{B1} - R_{(B2)}) I_{in(bias)}
 		\end{equation}
 	
-		\begin{equation}\label{pers.16.9}
+		\begin{equation}\label{pers.16.09}
 			V_{2err} = (R_{B1} + R_{(B2)}) \frac{I_{in(off)}}{2}
 		\end{equation}
 	
@@ -235,17 +235,7 @@
 		\end{equation}
 
 		\item Jika perlu untuk mengkompensasi arus bias input, resistor $ R_{B1} $ yang bernilai sama dapat dihubungkan ke noninverting input.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}[t]{Bias dan Offset}
-	\begin{itemize}
-		\item Total error tegangan output:
-		\begin{equation}\label{fig-17.0.16.7}
-			V_{error} \cong \pm A_{v(CL)} (\pm V_{1err} \pm V_{2err} \pm V_{3err} )
-		\end{equation}
-		\item Error tegangan input:
-
+		\item Resistor ini tidak berdampak pada teknik virtual ground karena tidak ada arus sinyal AC yang akan mengalir melaluinya.
 	\end{itemize}
 \end{frame}
 
@@ -257,13 +247,13 @@
 \begin{frame}[t]{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=\linewidth]{gambar/fig-16.16a}
+			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16a}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
 			\item Pertanyaan:
 			\begin{itemize}
-				\item Berapa penguatan tegangan closed-loop dan bandwidth closed-loop nya?
+				\item Berapa closed-loop voltage gain dan closed-loop bandwidth nya?
 				\item Berapa tegangan output di 1 kHz? dan di 1 MHz?
 			\end{itemize}
 		\end{itemize}
@@ -273,17 +263,18 @@
 \begin{frame}[t]{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=\linewidth]{gambar/fig-16.16b}
+			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16b}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Penguatan tegangan closed-loop:
+				\item Closed-loop voltage gain:
 				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
-				\item Bandwidth closed-loop:
+				\item Closed-loop bandwidth:
 				\[ f_{2(CL)} = \frac{f_{unity}}{A_{v(CL)}} = \frac{1 \text{ MHz}}{50} = 20 \text{ kHz}\]
-				\item Ideal bode-plot dari $ A_{v(CL)} $
+				\item Gambar di samping adalah ideal bode-plot dari closed-loop voltage gain, $ A_{v(CL)} $.
+				\item $ A_{v(CL)} = 20 \times \log(50) = 34 \text{ dB} $
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
@@ -292,7 +283,7 @@
 \begin{frame}[t]{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
-			\includegraphics[width=\linewidth]{gambar/fig-16.16b}
+			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16b}
 		\end{center}
 		\columnbreak
 		\begin{itemize}
@@ -322,7 +313,7 @@
 			\item Pertanyaan:
 			\begin{itemize}
 				\item Berapa tegangan output di 100 kHz ?
-				\item \textit{Hint:} Gunakan fig-17.0amaan \[ A_v = \frac{A_{v(mid)}}{ \sqrt{1 + (f/f_2)^2} } \]
+				\item \textit{Hint:} Gunakan Persamaan \[ A_v = \frac{A_{v(mid)}}{ \sqrt{1 + (f/f_2)^2} } \]
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
@@ -357,7 +348,7 @@
 				\[ I_{\text{in}(\text{bias})} = 80 \text{ nA} \]
 				\[ I_{\text{in}(\text{off})} = 20 \text{ nA} \]
 				\[ V_{\text{in}(\text{off})} = 2 \text{ mV} \]
-				\item Berdasarkan fig-17.0amaan \ref{fig-17.0.16.11}:
+				\item Berdasarkan Persamaan \ref{pers.16.11}:
 				\begin{align*}
 					R_{B2} &= R_1 \parallel R_f = 1.5 \text{ k}\Omega \parallel 75 \text{ k}\Omega \\
 					&= 1.47 \text{ k}\Omega
@@ -376,7 +367,8 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Error tegangan input:
+				\item Karena menggunakan analisis virtual ground, maka $ R_{B1} $ tidak berpengaruh apa-apa.
+				\item Sehingga ketiga tegangan error input:
 				\begin{align*}
 					V_{1err} &= (R_{B1} - R_{B2})I_{in(bias)} \\
 					&= ( - 1.47 \text{ k}\Omega )(80 \text{ nA}) \\
@@ -384,6 +376,23 @@
 					V_{2err} &= (R_{B1} + R_{B2}) \frac{I_{in(off)}}{2} \\
 					&= ( 1.47 \text{ k}\Omega )(10 \text{ nA}) \\
 					&= 0.0147 \text{ mV} \\
+				\end{align*}
+			\end{itemize}
+		\end{itemize}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}[t]{Contoh Soal 2.8}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
+		\end{center}
+		\columnbreak
+		\begin{itemize}
+			\item Jawaban:
+			\begin{itemize}
+				\item 
+				\begin{align*}
 					V_{3err} &= V_{in(off)} = 2 \text{ mV}
 				\end{align*}
 			\end{itemize}
