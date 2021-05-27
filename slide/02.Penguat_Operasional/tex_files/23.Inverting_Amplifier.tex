@@ -391,10 +391,16 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item 
+				\item Sehingga ketiga tegangan error input (lanjutan):
+				
 				\begin{align*}
 					V_{3err} &= V_{in(off)} = 2 \text{ mV}
 				\end{align*}
+				
+				\item Closed-loop voltage gain:
+				
+				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
+				
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
@@ -409,8 +415,7 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Penguatan tegangan closed-loop:
-				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
+				
 				\item Error tegangan output:
 				\begin{align*}
 					V_{error} &= \pm 50 (V_{1err} + V_{2err} + V_{2err}) \\
@@ -467,7 +472,7 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Error tegangan input:
+				\item Tegangan error input:
 				\begin{align*}
 					V_{1err} &= (R_{B1} - R_{B2})I_{in(bias)} \\
 					&= ( - 1.47 \text{ k}\Omega )(500 \text{ nA}) \\
@@ -491,9 +496,9 @@
 		\begin{itemize}
 			\item Jawaban:
 			\begin{itemize}
-				\item Penguatan tegangan closed-loop:
+				\item Closed-loop voltage gain:
 				\[ A_{v(CL)} = \frac{-R_f}{R_1} = \frac{-75 \text{ k}\Omega}{1.5 \text{ k}\Omega} = -50\]
-				\item Error tegangan output:
+				\item Tegangan error output:
 				\begin{align*}
 					V_{error} &= \pm 50 (V_{1err} + V_{2err} + V_{2err}) \\
 					&= \pm 50 (0.735 \text{mV} + 0.147 \text{mV} + 6 \text{mV}) \\
@@ -502,6 +507,25 @@
 			\end{itemize}
 		\end{itemize}
 	\end{multicols}
+\end{frame}
+
+\begin{frame}[t]{Contoh Soal 2.9}
+	\begin{itemize}
+		\item Pada Contoh Soal 2.7, tegangan ouput yang diinginkan adalah 500 mVp-p.
+		\item Bisakah kita mengabaikan tegangan error output yang besar?
+		\item Terganti dalam pengaplikasiannya.
+		\item Untuk amplifier sinyal suara, kita hanya butuh di rentang frekuensi suara yaitu 20 Hz hingga 20 kHz.
+		\item Maka kita secara kapasitif memasangkan output ke resistor beban atau tahap berikutnya.
+		\item Hal ini akan mem-blok tegangan error output DC tapi tetap mentransmisikan sinyal AC. Sehingga Error output menjadi tidak relevan lagi.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Contoh Soal 2.9}
+	\begin{itemize}
+		\item Jika kita ingin menguatkan sinyal dengan frekuensi dari 0 Hz higga 20 kHz, maka kita membutuhkan op amp yang lebih baik (bias dan offset yang lebih kecil), atau memodifikasi rangkaiannya seperti pada Gambar \ref{fig-16.17}b.
+		\item Pada Gambar \ref{fig-16.17}b, kita menambahkan compensating resistor terhadap noinverting input untuk menghilangkan efek dari arus bias input.
+		\item Digunakan juga potentiometer 10 k$\Omega$ untuk meniadakan efek dari arus offset input dan tegangan offset input.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}[t]{Contoh Soal 2.9}
