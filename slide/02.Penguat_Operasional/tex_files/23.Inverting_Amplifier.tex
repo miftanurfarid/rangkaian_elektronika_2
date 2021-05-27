@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pengantar Inverting Amplifier}
 
-\begin{frame}[t]{Pengantar Inverting Amplifier}
+\begin{frame}{Pengantar Inverting Amplifier}
 	\begin{itemize}
 		\item Inverting amplifier: rangkaian op amp paling dasar.
 		\item Menggunakan negative feedback untuk menstabilkan keseluruhan voltage gain.
@@ -14,7 +14,7 @@
 \end{frame}
 
 \subsection{Inverting Negative Feedback}
-\begin{frame}[t]{Inverting Negative Feedback}
+\begin{frame}{Inverting Negative Feedback}
 	\begin{figure}
 		\centering
 		\includegraphics[height=0.5\textheight]{gambar/fig-16.12}
@@ -23,7 +23,7 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}[t]{Inverting Negative Feedback}
+\begin{frame}{Inverting Negative Feedback}
 	\begin{itemize}
 		\item Gambar \ref{fig-16.12} menunjukkan sebuah inverting amplifier.
 		\item Tegangan power-supply tidak ditampilkan agar gambar lebih sederhana.
@@ -36,7 +36,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Inverting Negative Feedback}
+\begin{frame}{Inverting Negative Feedback}
 	\begin{itemize}
 		\item Bagaimana negative feedback dapat menstabilkan overall voltage gain?
 		\item Jika open-loop voltage gain $ A_{VOL} $ meningkat dengan alasan apa pun, tegangan output akan meningkat dan memberikan tegangan feedback yang lebih banyak ke inverting input.
@@ -48,7 +48,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Virtual Ground}
 
-\begin{frame}[t]{Virtual Ground}
+\begin{frame}{Virtual Ground}
 	\begin{itemize}
 		\item Jika kita menghubungkan kabel antara suatu titik di dalam rangkaian ke ground, tegangan pada titik tersebut menjadi nol.
 		\item Kabel tersebut memberikan jalur untuk arus mengalir ke ground.
@@ -57,7 +57,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Virtual Ground}
+\begin{frame}{Virtual Ground}
 	\begin{itemize}
 		\item Konsep dari virtual ground berdasarkan op amp ideal.
 		\item Op amp ideal memiliki open-loop voltage gain yang tak berhingga dan resistansi input tak berhingga.
@@ -69,7 +69,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Virtual Ground}
+\begin{frame}{Virtual Ground}
 	\begin{figure}
 		\centering
 		\includegraphics[height=0.7\textheight]{gambar/fig-16.13}
@@ -78,7 +78,7 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}[t]{Virtual Ground}
+\begin{frame}{Virtual Ground}
 	\begin{itemize}
 		\item Karena $ i_2 $ = nol, arus yang melalui $ R_f $ pasti sama dengan arus input yang melalui $ R_1 $.
 		\item Karena $ v_2 $ = nol, virtual ground yang ditunjukkan pada Gambar \ref{fig-16.13} menunjukkan bahwa inverting input bertindak seperti ground untuk tegangan dan open untuk arus.
@@ -88,7 +88,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Voltage Gain}
 
-\begin{frame}[t]{Voltage Gain}
+\begin{frame}{Voltage Gain}
 	\begin{itemize}
 		\item Gambar \ref{fig-16.14} menunjukkan virtual ground pada inverting input.
 		\item Sisi kanan dari $ R_1 $ adalah ground tegangan, maka dapat kita tulis:\\
@@ -103,7 +103,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Voltage Gain}
+\begin{frame}{Voltage Gain}
 	\begin{itemize}
 		\item Disebut closed-loop voltage gain karena merupakan tegangan ketika terdapat jalur feedback antara output dan input.
 		\item Karena negative feedback, closed-loop voltage gain, $ A_{v(CL)} $, selalu lebih kecil daripada open-loop voltage gain, $ A_{VOL} $.
@@ -112,7 +112,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Voltage Gain}
+\begin{frame}{Voltage Gain}
 	\begin{figure}
 		\centering
 		\includegraphics[height=0.4\textheight]{gambar/fig-16.14}
@@ -124,7 +124,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Input Impedance}
 
-\begin{frame}[t]{Input Impedance}
+\begin{frame}{Input Impedance}
 	\begin{itemize}
 		\item Dalam beberapa hal, terkadang seorang engineer menginginkan impendansi input tertentu.
 		\item Ini salah satu kelebihan dari inverting amplifier, mudah untuk mengatur impedansi input yang diinginkan.
@@ -142,7 +142,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bandwidth}
 
-\begin{frame}[t]{Bandwidth}
+\begin{frame}{Bandwidth}
 	\begin{itemize}
 		\item Open-loop bandwidth atau frekuensi cut-off dari op amp sangat kecil.
 		\item Disebabkan oleh internal compensating capacitor.
@@ -151,7 +151,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Bandwidth}
+\begin{frame}{Bandwidth}
 	\begin{itemize}
 		\item Ketika negative feedback digunakan, overall bandwidth akan meningkat.
 		\item Karena, jika frekuensi input lebih besar daripada $ f_2(OL) $, $ A_{VOL} $ menurun sebesar 20 dB/decade.
@@ -162,7 +162,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Bandwidth}
+\begin{frame}{Bandwidth}
 	\begin{itemize}
 		\item Gambar \ref{fig-16.15} menunjukkan bagaimana closed-loop bandwidth meningkat dengan adanya negative feedback.
 		\item Semakin besar negative feedback ($ A_{v(CL)} $ lebih kecil), semakin besar closed-loop bandwidth $ f_2(CL) $.
@@ -186,7 +186,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bias dan Offset}
 
-\begin{frame}[t]{Bias dan Offset}
+\begin{frame}{Bias dan Offset}
 	\begin{itemize}
 		\item Negative feedback mengurangi error output yang disebabkan oleh arus bias input, arus offset input, dan tegangan offset input.
 		\item Seperti yang telah didiskusikan pada bab sebelumnya, ketika tegangan error input dan persamaan tegangan error output total adalah:\\
@@ -204,7 +204,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Bias dan Offset}
+\begin{frame}{Bias dan Offset}
 	\begin{itemize}
 		\item Error input sama seperti sebelumnya, yaitu:
 		
@@ -223,7 +223,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Bias dan Offset}
+\begin{frame}{Bias dan Offset}
 	\begin{itemize}
 		\item Saat $ A_{v(CL)} $ kecil, error output total yang diberikan dari Persamaan \ref{pers.16.07} mungkin cukup kecil untuk diabaikan.
 		\item Jika tidak, resistor compensation dan offset nulling menjadi perlu.
@@ -244,7 +244,7 @@
 
 \subsection{Contoh Soal 2.7}
 
-\begin{frame}[t]{Contoh Soal 2.7}
+\begin{frame}{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16a}
@@ -260,7 +260,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.7}
+\begin{frame}{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16b}
@@ -280,7 +280,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.7}
+\begin{frame}{Contoh Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=0.7\linewidth]{gambar/fig-16.16b}
@@ -303,7 +303,7 @@
 \end{frame}
 
 \subsection{Latihan Soal 2.7}
-\begin{frame}[t]{Latihan Soal 2.7}
+\begin{frame}{Latihan Soal 2.7}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.16a}
@@ -320,7 +320,7 @@
 \end{frame}
 
 \subsection{Contoh Soal 2.8}
-\begin{frame}[t]{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -335,7 +335,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -358,7 +358,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -382,7 +382,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -406,7 +406,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.8}
+\begin{frame}{Contoh Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -428,7 +428,7 @@
 \end{frame}
 
 \subsection{Latihan Soal 2.8}
-\begin{frame}[t]{Latihan Soal 2.8}
+\begin{frame}{Latihan Soal 2.8}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -444,7 +444,7 @@
 \end{frame}
 
 \subsection{Contoh Soal 2.9}
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -463,7 +463,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -487,7 +487,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{multicols}{2}
 		\begin{center}
 			\includegraphics[width=\linewidth]{gambar/fig-16.17a}
@@ -509,7 +509,7 @@
 	\end{multicols}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{itemize}
 		\item Pada Contoh Soal 2.7, tegangan ouput yang diinginkan adalah 500 mVp-p.
 		\item Bisakah kita mengabaikan tegangan error output yang besar?
@@ -520,7 +520,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{itemize}
 		\item Jika kita ingin menguatkan sinyal dengan frekuensi dari 0 Hz higga 20 kHz, maka kita membutuhkan op amp yang lebih baik (bias dan offset yang lebih kecil), atau memodifikasi rangkaiannya seperti pada Gambar \ref{fig-16.17}b.
 		\item Pada Gambar \ref{fig-16.17}b, kita menambahkan compensating resistor terhadap noinverting input untuk menghilangkan efek dari arus bias input.
@@ -528,7 +528,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Contoh Soal 2.9}
+\begin{frame}{Contoh Soal 2.9}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\linewidth]{gambar/fig-16.17}
