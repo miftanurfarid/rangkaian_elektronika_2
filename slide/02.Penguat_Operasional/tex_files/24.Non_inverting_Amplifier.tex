@@ -1,13 +1,19 @@
 \section{Non-inverting Amplifier}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pengantar Non-Inverting Amplifier}
+
 \begin{frame}{Pengantar Non-inverting Amplifier}
 	\begin{itemize}
-		\item Salah satu rangkaian op amp dasar
-		\item Menggunakan negative feedback untuk menstabilkan overall voltage gain
-		\item Negative feedback juga meningkatkan impedansi input dan menurunkan impedansi output
+		\item Non-inverting amplifier adalah salah satu rangkaian op amp dasar.
+		\item Non-inverting amplifier menggunakan negative feedback untuk menstabilkan overall voltage gain.
+		\item Dengan amplifier jenis ini, negative feedback juga meningkatkan impedansi input dan menurunkan impedansi output.
 	\end{itemize}
 \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Rangkaian Dasar}
 \begin{frame}{Rangkaian Dasar}
@@ -19,7 +25,34 @@
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Rangkaian Dasar}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.18} menunjukkan rangkaian ekivalen ac dari noninverting amplifier.
+		\item Tegangan input ($ v_{in} $) men-drive noninverting input.
+		\item Tegangan input ini dikuatkan untuk menghasilkan tegangan output se-fasa (Seperti yang ditunjukkan oleh Gambar \ref{fig-16.18}).
+		\item Tegangan output diumpanbalikan ke input melalui pembagi tegangan.
+		\item Tegangan sepanjang $ R_1 $ adalah tegangan feedback yang diberikan ke inverting input.
+		\item Tegangan feedback ini hampir sama dengan tegangan input.
+		\item Karena open-loop voltage gain yang besar, perbedaan antara $ v_1 $ dan $ v_2 $ sangat kecil.
+		\item Karena tegangan feedback berlawanan dengan tegangan input, maka kita mendapatkan negative-feedback.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Rangkaian Dasar}
+	\begin{itemize}
+		\item Bagaimana negative-feedback dapat menstabilkan keseluruhan voltage gain?
+		\item Jika open-loop voltage gain ($ A_{VOL} $) meningkat, tegangan output akan meningkat dan lebih banyak tegangan feedback ke inverting input.
+		\item Tegangan feedback yang berkebalikan ini yang akan mereduksi tegangan input ($ v_1 - v_2 $).
+		\item Sehingga, meskipun $ A_{VOL} $ meningkat, $ v_1 - v_2 $ akan berkurang, dan output akhir meningkat jauh lebih sedikit daripada jika tidak ada negative feedback. 
+		\item Overall output hanya sedikit peningkatan dalam tegangan output.
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Virtual Short}
+
 \begin{frame}{Virtual Short}
 	\begin{multicols}{2}
 		\begin{figure}
