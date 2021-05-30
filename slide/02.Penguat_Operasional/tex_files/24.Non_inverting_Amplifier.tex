@@ -44,7 +44,7 @@
 		\item Jika open-loop voltage gain ($ A_{VOL} $) meningkat, tegangan output akan meningkat dan lebih banyak tegangan feedback ke inverting input.
 		\item Tegangan feedback yang berkebalikan ini yang akan mereduksi tegangan input ($ v_1 - v_2 $).
 		\item Sehingga, meskipun $ A_{VOL} $ meningkat, $ v_1 - v_2 $ akan berkurang, dan output akhir meningkat jauh lebih sedikit daripada jika tidak ada negative feedback. 
-		\item Overall output hanya sedikit peningkatan dalam tegangan output.
+		\item Overall output (tegangan output) hanya sedikit peningkatan.
 	\end{itemize}
 \end{frame}
 
@@ -54,48 +54,89 @@
 \subsection{Virtual Short}
 
 \begin{frame}{Virtual Short}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\linewidth]{gambar/fig-16.19}
-			\caption{Virtual short}
-			\label{fig-16.19}
-		\end{figure}
-	\columnbreak
-		\begin{itemize}
-			\item Virtual short digunakan untuk menganalisis noninverting amplifier
-			\item Virtual short berdasarkan 2 sifat dari op amp ideal
-			\begin{enumerate}
-				\item $ R_{in} = \infty \rightarrow i_1 = i_2 = 0$
-				\item $ A_{VOL} = \infty \rightarrow v_1 - v_2 = 0$
-			\end{enumerate}
-		\end{itemize}
-	\end{multicols}
+	\begin{itemize}
+		\item Saat kita menghubungkan dua titik dalam rangkaian dengan kabel, tegangan kedua titik tersebut terhadap ground akan bernilai sama.
+		\item Kabel tersebut memberikan jalur kepada arus untuk mengalir antara dua titik tersebut.
+		\item Mechanical short (kabel yang menghubungkan 2 titik) adalah hubungan singkat (short) untuk tegangan maupun arus.
+	\end{itemize}
 \end{frame}
 
+\begin{frame}{Virtual Short}
+	\begin{itemize}
+		\item Virtual short digunakan untuk menganalisis noninverting amplifier dengan cepat dan mudah.
+		\item Virtual short menggunakan 2 sifat dari op amp ideal:
+		
+		\begin{enumerate}
+			\item Ketika $ R_{in} $ adalah tak hingga, kedua arus input adalah nol.
+			\item Ketika $ A_{VOL} $ adalah tak hingga, $ v_1 - v_2 $ adalah nol.
+		\end{enumerate}
+		
+		\item Gambar \ref{fig-16.19} menunjukkan virtual short antara terminal input op amp.
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Virtual Short}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.7\textheight]{gambar/fig-16.19}
+		\caption{Virtual short}
+		\label{fig-16.19}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Virtual Short}
+	\begin{itemize}
+		\item Virtual short adalah short untuk tegangan tetapi open untuk arus.
+		\item Garis putus-putus menandakan tidak ada arus yang mengalir.
+		\item Meskipun virtual short merupakan pendekatan yang ideal, metode ini memberikan jawaban yang lebih akurat ketika digunakan dengan heavy negative feedback.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Virtual Short}
+	\begin{itemize}
+		\item Bagaimana cara menggunakan virtual short?
+		\item Kapan pun kita menganalisa inverting amplifier atau rangkaian yang semisal, kita dapat memvisualisasikan virtual short antara terminal input dari op amp.
+		\item Selama op amp beroperasi secara linear (tidak saturasi positif maupun negatif), open-loop voltage gain mendekati tak hingga dan virtual short berada di antara kedua input terminal.
+		\item Hal yang perlu diperhatikan: karena virtual short, tegangan input inverting mengikuti tegangan input noninverting. Jika tegangan noninverting input meningkat atau menurun, seketika tegangan input inverting akan meningkat atau menurun. Peristiwa ini disebut dengan \textbf{bootstrapping}
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Voltage Gain}
+
 \begin{frame}{Voltage Gain}
-	\begin{multicols}{2}
-		\begin{figure}
-			\centering
-			\includegraphics[width=\linewidth]{gambar/fig-16.20}
-			\caption{Tegangan input ada di $ R_1 $ dan arus yang sama mengalir di $ R_1 $}
-			\label{fig-16.20}
-		\end{figure}
-		\columnbreak
-		\begin{itemize}
-			\item Tegangan input: $ v_{in} = i_1 R_1 $
-			\item Tegangan output: $ v_{out} = i_1 (R_f + R_1) $
-			\item Penguatan tegangan closed-loop:
-			\begin{align*}
-				A_{v(CL)} = \frac{v_{out}}{v_{in}} = \frac{i_1 (R_f + R_1)}{i_1 R_1} = \frac{R_f + R_1}{R_1}
-			\end{align*}
-			maka
-			\begin{equation}\label{pers.16.12}
-				A_{v(CL)} = \frac{R_f}{R_1} + 1
-			\end{equation}
-		\end{itemize}
-	\end{multicols}
+	\begin{itemize}
+		\item Gambar \ref{fig-16.20} menunjukkan virtual short antara terminal input op amp.
+		\item Artinya tegangan input ada di $ R_1 $, sehingga dapat kita tuliskan\\
+		\[ v_{in} = i_1 R_1 \]
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Voltage Gain}
+	\begin{figure}
+		\centering
+		\includegraphics[width=\linewidth]{gambar/fig-16.20}
+		\caption{Tegangan input ada di $ R_1 $ dan arus yang sama mengalir di $ R_1 $}
+		\label{fig-16.20}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Voltage Gain}
+	\begin{itemize}
+		\item Tegangan input: $ v_{in} = i_1 R_1 $
+		\item Tegangan output: $ v_{out} = i_1 (R_f + R_1) $
+		\item Penguatan tegangan closed-loop:
+		\begin{align*}
+			A_{v(CL)} = \frac{v_{out}}{v_{in}} = \frac{i_1 (R_f + R_1)}{i_1 R_1} = \frac{R_f + R_1}{R_1}
+		\end{align*}
+		maka
+		\begin{equation}\label{pers.16.12}
+			A_{v(CL)} = \frac{R_f}{R_1} + 1
+		\end{equation}
+	\end{itemize}
 \end{frame}
 
 \subsection{Impedansi Input, Bandwidth, Bias \& Offset}
