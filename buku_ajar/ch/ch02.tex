@@ -57,4 +57,30 @@ LF157A adalah salah satu contoh dari BIFET op amp. Seperti yang ditunjukkan oleh
 
 \section{Op Amp 741}
 
-Pada tahun 1965, 
+Pada tahun 1965, Fairchild Semiconductor memperkenalkan $\mu$A709, monolithic ap amp pertama yang banyak digunakan. Meskipun sukses, op amp generasi pertama memiliki banyak kekurangan. Hal ini yang melatarbelakangi terciptanya op amp $\mu$A741. Karena tidak mahal dan mudah digunakan, op amp $\mu$741 telah sukses besar. Desain 741 yang lain telah muncul dari berbagai manufaktur. Sebagai contoh, ON Semiconductor menghasilkan MC1741, Texas Instruments menghasilkan LM741, dan Analog Devices menghasilkan AD741. Semua monolithic op amp ini ekivalen dengan $\mu$A741 karena mereka memiliki spesifikasi yang sama di \textit{datasheet} mereka. Agar lebih mudah, kebanyak orang menghilangkan awalan dan lebih suka dengan istilah 741 saja.
+
+
+\subsection{Standar Industri}
+
+741 telah menjadi standar industri. Sebagai aturan, pertama kali kalian harus mencobanya di desain kalian. Jika kalian tidak dapat memenuhi spesifikasi desain dengan menggunakan 741, maka kalian gunakan op amp yang lebih baik. Karena ini standar, kita akan menggunakan 741 sebagai \textit{basic device} dalam diskusi kita ini. Ketika kalian telah paham dengan 741, kalian bisa mempelajari op amp lainnya.
+
+741 memiliki berbagai nomor versi yang berbeda, 741, 741A, 741C, 741E, dan 741N. Perbedaannya adalah di bagian \textit{voltage gain}, \textit{temperature range}, \textit{noise level}, dan karakteristik-karakteristik lainnya. 741C (C artinya \textit{commercial grade}) adalah yang lebih murah dan paling banyak digunakan. 741C memiliki \textit{open-loop voltage gain} sebesar 100.000, impedansi \textit{input} sebesar 20 M$\Omega$, dan impedansi \textit{output} sebesar 75 $\Omega$. Gambar \ref{fig:16.03} menunjukkan 3 \textit{package style} yang populer dan \textit{pinout}-nya.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{pic/fig:16.03}
+	\caption{741 package stylke}
+	\label{fig:16.03}
+\end{figure}
+
+
+\subsection{Input Diff Amp}
+
+Gambar
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{pic/fig:16.04}
+	\caption{Skematik diagram 741 yang disederhanakan}
+	\label{fig:16.04}
+\end{figure}
