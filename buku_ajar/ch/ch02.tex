@@ -92,4 +92,9 @@ Sinyal yang dikuatkan dari diff amp akan men-\textit{drive} \textit{base} $ Q_5 
 
 \subsection{Final Stage}
 
-Sinyal yang dikuatkan keluar dari \textit{CE drive stage} ($ Q_6 $) menuju ke \textit{final stage}, yang berupa \textit{Class-B push-pull emitter follower} ($ Q_9 $ dan $ Q_{10} $). Karena \textit{split supply} (tegangan +V_{CC} dan -V_{EE})
+Sinyal yang dikuatkan keluar dari \textit{CE drive stage} ($ Q_6 $) menuju ke \textit{final stage}, yang berupa \textit{Class-B push-pull emitter follower} ($ Q_9 $ dan $ Q_{10} $). Karena \textit{split supply} (tegangan +$ V_{CC} $ dan -$ V_{EE} $), \textit{quiescent output} idealnya bernilai 0 V saat tegangan \textit{input} bernilai nol.
+
+Ketika $ v_1 $ lebih besar daripada $ v_2 $, tegangan \textit{input} $ v_{in} $ menghasilkan tegangan \textit{output} positif. Ketika $ v_2 $ lebih besar daripada $ v_1 $, tegangan input $ v_{in} $ menghasilkan tegangan \textit{output} negatif $ v_{out} $. Idealnya, $ v_{out} $ bisa positif seperti +$ V_{CC} $ dan negatif seperti -$ V_{EE} $ sebelum \textit{clipping} terjadi. \textit{Output swing} normalnya antara 1 hingga 2 V dari masing-masing tegangan \textit{supply} karena teganan drop di dalam 741.
+
+
+\subsection{Active Loading}
