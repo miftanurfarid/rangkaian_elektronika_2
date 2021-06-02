@@ -76,11 +76,20 @@ Pada tahun 1965, Fairchild Semiconductor memperkenalkan $\mu$A709, monolithic ap
 
 \subsection{Input Diff Amp}
 
-Gambar
+Gambar \ref{fig:16.04} adalah skematik diagram dari 741 yang disederhanakan. Rangkaian ini ekivalen dengan 741 dan banyak op amp generasi selanjutnya. Kalian tidak perlu memahami setiap detilnya tentang desain rangkaian ini, tapi kalian harus memiliki ide dasar dari bagaimana rangkaian ini bekerja.
+
+\textit{Input stage} yang digunakan adalah diff amp ($ Q_1 $ dan $ Q_2 $). Pada 741, $ Q_{14} $ adalah sumber arus yang menggantikan \textit{tail resistor}. $ R_2 $, $ Q_{13} $, dan $ Q_{14} $ adalah arus mirror (\textit{current mirror}) yang menghasilkan arus \textit{tail} untuk $ Q_1 $ dan $ Q_2 $. Alih-alih menggunakan resistor biasa sebagai resistor \textit{collector} diff amp, 741 menggunakan \textit{active-load} resistor. \textit{Active-load} $ Q_4 $ ini bertindak seperti sumber arus dengan impedansi yang sangat tinggi. Karenanya, \textit{voltage gain} dari diff amp jauh lebih besar daripada dengan menggunakan \textit{passive-load} resistor.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{pic/fig:16.04}
+	\includegraphics[width=\linewidth]{pic/fig:16.04}
 	\caption{Skematik diagram 741 yang disederhanakan}
 	\label{fig:16.04}
 \end{figure}
+
+Sinyal yang dikuatkan dari diff amp akan men-\textit{drive} \textit{base} $ Q_5 $, sebuah \textit{emitter follower}. Pada \textit{stage} ini, level impedansi dinaikkan untuk menghindari pembebanan diff amp. Sinyal yang keluar dari $ Q_5 $ menuju $ Q_6 $. Dioda $ Q_7 $ dan $ Q_8 $ adalah bagian dari bias untuk \textit{final stage}. $ Q_{11} $ adalah \textit{active-load} resistor untuk $ Q_6 $. Sehingga, $ Q_6 $ dan $ Q_{11} $ seperti \textit{CE driver stage} dengan \textit{voltage gain} yang sangat besar. Seperti yang telah dijelaskan pada bab sebelumnya, simbol dioda terkadang digunakan ketika \textit{base} transistor adalah dihubung-singkat ke \textit{collector}. Contohnya, $ Q_3 $ sebenarnya adalah transistor dengan base-collectornya terhubung singkat dan bekerja seperti dioda.
+
+
+\subsection{Final Stage}
+
+Sinyal yang dikuatkan keluar dari \textit{CE drive stage} ($ Q_6 $) menuju ke \textit{final stage}, yang berupa \textit{Class-B push-pull emitter follower} ($ Q_9 $ dan $ Q_{10} $). Karena \textit{split supply} (tegangan +V_{CC} dan -V_{EE})
