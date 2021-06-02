@@ -33,4 +33,19 @@ Tidak semua op amp didesain seperti pada Gambar \ref{fig:16.01}. Misalkan, beber
 	\label{fig:16.02}
 \end{figure}
 
-Gambar \ref{fig:16.02} adalah simbol skematik dari op amp. Pada gambar tersebut terdapat noninverting, inverting input dan single-ended output. Idealnya,
+Gambar \ref{fig:16.02} adalah simbol skematik dari op amp. Pada gambar tersebut terdapat \textit{noninverting input}, \textit{inverting input} dan \textit{single-ended output}. Idealnya, simbol ini menjelaskan bahwa \textit{amplifier} memiliki \textit{voltage gain} yang tak berhingga, impedansi \textit{input} tak berhingga, dan impedansi \textit{output} nol. Op amp ideal merepresentasikan \textit{voltage amplifier} / penguat tegangan yang ideal dan ini sering disebut sebagai \textbf{voltage-controlled voltage source (VCVS)}. Kita dapat menggambarkan sebuah VCVS seperti pada Gambar \ref{fig:16.02}b, yang mana $ R_{in} $ adalah tak berhingga dan $ R_{out} $ adalah nol.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{pic/tab:16.01}
+	\caption{Ciri khas op amp}
+	\label{tab:16.01}
+\end{figure}
+
+Gambar \ref{tab:16.01} menunjukkan ringkasan dari ciri khas atau karakteristik op amp. Op amp ideal memiliki \textit{voltage gain} yang tak berhingga, \textit{unity-gain frequency} yang tak berhingga, impedansi \textit{input} yang tak berhingga, dan CMRR yang tak berhingga. Op amp ideal juga memiliki resistansi \textit{output} yang nol, arus bias yang nol, dan arus offset yang nol. Seperti ini seharusnya op amp itu dibuat, jika mereka bisa. Namun apa yang mampu mereka buat hanyalah mendekati nilai ideal tersebut.
+
+Sebagai contoh, LM741C dari Gambar \ref{tab:16.01} adalah op amp standar yang telah tersedia sejak 1960-an. Karaktistiknya adalah minimum dari dari apa yang kita harapkan dari monolithic ap amp. LM741C memiliki \textit{voltage gain} sebesar 100.000, \textit{unity-gain frequency} sebesar 1 MHz, impedansi \textit{input} sebesar 2 M$\omega$, dan seterusnya. Karena \textit{voltage gain} sangat besar, offset input dapat dengan mudah membuat op amp bersaturasi. Hal ini lah mengapa kita membutuhkan komponen eksternal antara \textit{input} dan \textit{output} op amp untuk menstabilkan \textit{voltage gain}. Contohnya, di banyak aplikasi, \textit{negative feedback} digunakan untuk menyesuaikan \textit{overall voltage gain} ke nilai yang jauh lebih rendah sebagai ganti dari \textit{stable linear operation}.
+
+Ketika tidak ada \textit{feedback} (atau \textit{loop}) yang digunakan, \textit{voltage gain} bernilai maksimum dan disebut dengan \textit{open-loop voltage gain}, yang dinotasikan dengan $ A_{VOL} $. Pada Gambar \ref{tab:16.01}, terlihat bahwa $ A_{VOL} $ dari LM741C adalah 100.000. Meskipun bukan tak berhingga, \textit{open-loop voltage gain} ini sangat besar. Contohnya, sebuah \textit{input} sebesar 10 $\mu$V menghasilkan \textit{output} 1 V. Karena \textit{open-loop voltage gain} sangat besar, kita dapat menggunakan \textit{heavy negative feedback} untuk meningkatkan performa keseluruhan dari rangkaian.
+
+741C memiliki \textit{unity-gain frequency} sebesar 1 MHz. 741C 
