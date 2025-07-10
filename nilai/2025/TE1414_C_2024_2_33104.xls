@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>ITS</Author>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11985</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#FFFF00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#FF7F7F" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1"/>
+   <Interior ss:Color="#BEE3D7" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Nilai NINA">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="23" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Hidden="1" ss:AutoFitWidth="0" ss:Width="69.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="300"/>
+   <Column ss:AutoFitWidth="0" ss:Width="69.75" ss:Span="7"/>
+   <Row>
+    <Cell ss:MergeAcross="5" ss:StyleID="s64"><Data ss:Type="String">TE1414 - Rangkaian Elektronika II   - Kelas: C - Jurusan: S1 Teknik Elektro - Tahun: 2024 - Sem: 2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="6" ss:StyleID="s66"><Data ss:Type="String">MOHON ISI NILAI DENGAN ANGKA BULAT, ATAU SISTEM AKAN KONVERSI SETIAP NILAI KE ANGKA BULAT SECARA OTOMATIS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">ID</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NRP - Nama Lengkap</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Tugas 1</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Tugas 2</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">UTS</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">UAS</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3321104077</Data></Cell>
+    <Cell><Data ss:Type="String">04211077 - SAMUEL HOTTUA SIMANULLANG</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104022</Data></Cell>
+    <Cell><Data ss:Type="String">04221022 - Virza Tri Yuwantana</Data></Cell>
+    <Cell><Data ss:Type="Number">62</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104041</Data></Cell>
+    <Cell><Data ss:Type="String">04221041 - Abrar Rafiq An Nashr</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104048</Data></Cell>
+    <Cell><Data ss:Type="String">04221048 - Verdana Yorda Imaradani</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104049</Data></Cell>
+    <Cell><Data ss:Type="String">04221049 - Gilang Maulana</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104052</Data></Cell>
+    <Cell><Data ss:Type="String">04221052 - Syahmi</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">56</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104054</Data></Cell>
+    <Cell><Data ss:Type="String">04221054 - Fadilah Apriliya Sari</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104058</Data></Cell>
+    <Cell><Data ss:Type="String">04221058 - Rasendriya Fadla Ayyadana</Data></Cell>
+    <Cell><Data ss:Type="Number">57</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">65</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104063</Data></Cell>
+    <Cell><Data ss:Type="String">04221063 - Muhammad Arif Rifa`i</Data></Cell>
+    <Cell><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104071</Data></Cell>
+    <Cell><Data ss:Type="String">04221071 - Mochamad Farhan Fadillah</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104074</Data></Cell>
+    <Cell><Data ss:Type="String">04221074 - Fajri Ulama</Data></Cell>
+    <Cell><Data ss:Type="Number">77</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104078</Data></Cell>
+    <Cell><Data ss:Type="String">04221078 - Muhammad Alief Achmad</Data></Cell>
+    <Cell><Data ss:Type="Number">69</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104079</Data></Cell>
+    <Cell><Data ss:Type="String">04221079 - Maulana Ibrahim</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">55</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104082</Data></Cell>
+    <Cell><Data ss:Type="String">04221082 - Izradavi</Data></Cell>
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3322104088</Data></Cell>
+    <Cell><Data ss:Type="String">04221088 - Luthfy Dian Afrizzal</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3323104010</Data></Cell>
+    <Cell><Data ss:Type="String">04231010 - Anggita Sari</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">56</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3323104013</Data></Cell>
+    <Cell><Data ss:Type="String">04231013 - Ariyo Arianto</Data></Cell>
+    <Cell><Data ss:Type="Number">57</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3323104015</Data></Cell>
+    <Cell><Data ss:Type="String">04231015 - Balin Priya Suhada</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3323104017</Data></Cell>
+    <Cell><Data ss:Type="String">04231017 - David Jordan Kaki Mbou</Data></Cell>
+    <Cell><Data ss:Type="Number">62</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">3323104061</Data></Cell>
+    <Cell><Data ss:Type="String">04231061 - Muhammad Rizky Dimas Pratama</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">57</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Selected/>
+   <LeftColumnVisible>1</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>15</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
